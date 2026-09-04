@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quantize images to arbitrary fixed palettes with perceptual OKLab matching and linear-light dithering.">
+  <meta name="theme-color" content="#130d1c">
+  <title>Gamut Forge — perceptual palette quantizer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div><h1>Gamut Forge</h1><p>Fixed-palette image quantizer</p></div>
+    </div>
+    <div class="badges" aria-label="Application properties">
+      <span><b></b> Local only</span><span>1024+ colors</span><span>OKLab</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="controls" aria-label="Quantization controls">
+      <section>
+        <div class="section-head"><span>01</span><h2>Source image</h2></div>
+        <label class="dropzone" id="imageDrop">
+          <input id="imageInput" type="file" accept="image/*">
+          <span class="drop-icon" aria-hidden="true">↥</span>
+          <strong id="imagePrompt">Drop an image or browse</strong>
+          <small id="imageMeta">PNG, JPEG, WebP, GIF, AVIF</small>
+        </label>
+      </section>
+
+      <section>
+        <div class="section-head"><span>02</span><h2>Target palette</h2></div>
+        <label class="field-label" for="paletteSelect">Built-in palette</label>
+        <select id="paletteSelect">
+          <option value="maxCoverage">Maximum coverage · 48 vivid anchors</option>
+          <option value="rgb9Hybrid">RGB9 hybrid · 512 cube + 512 coverage</option>
+          <option value="rgbCube">RGB cube · 10×10×10 + 24 grays</option>
+          <option value="twoTier">Two-tier · 48/24 hues</option>
+          <option value="threeTier">Three-tier · 48/24/12 hues</option>
+          <option value="original">Original · 96/48 hues</option>
+        </select>
+        <label class="file-button" for="paletteInput">Import another palette</label>
+        <input id="paletteInput" class="visually-hidden" type="file" accept=".gpl,.txt,.hex,.json,image/png,image/webp">
+        <div class="palette-card">
+          <canvas id="paletteCanvas" width="512" height="64" aria-label="Palette preview"></canvas>
+          <div><strong id="paletteName">Maximum coverage</strong><span id="paletteCount">1024 colors</span></div>
+        </div>
+        <p class="hint">Reads GPL, hex text, JSON, or a flat-color palette image. Duplicate colors are removed.</p>
+      </section>
+
+      <section>
+        <div class="section-head"><span>03</span><h2>Mapping</h2></div>
+        <label class="field-label" for="ditherSelect">Dithering</label>
+        <select id="ditherSelect">
+          <option value="none">None · clean regions</option>
+          <option value="floyd">Floyd–Steinberg · linear light</option>
+        </select>
+        <div class="range-row" id="strengthRow" hidden>
+          <label for="strength">Strength <output id="strengthOut">80%</output></label>
+          <input id="strength" type="range" min="0" max="100" value="80">
+        </div>
+        <label class="check-row"><input id="preserveAlpha" type="checkbox" checked><span>Preserve original transparency</span></label>
+        <p class="hint">Matching is exact nearest-neighbor in OKLab. Dither error is diffused through linear-light RGB.</p>
+      </section>
+
+      <button id="processButton" class="primary" disabled><span>Quantize image</span><span aria-hidden="true">→</span></button>
+      <div class="progress-wrap" id="progressWrap" hidden><div id="progressBar"></div><span id="progressText">Preparing palette…</span></div>
+    </aside>
+
+    <section class="workspace" aria-label="Image comparison">
+      <div class="stage-toolbar">
+        <div class="segmented" role="group" aria-label="Preview mode">
+          <button data-view="split" class="active">Split</button>
+          <button data-view="source">Source</button>
+          <button data-view="result">Result</button>
+        </div>
+        <button id="downloadButton" class="download" disabled>Download PNG ↓</button>
+      </div>
+
+      <div class="preview-grid split" id="previewGrid">
+        <figure>
+          <figcaption><span>Source</span><small id="sourceCaption">Waiting for an image</small></figcaption>
+          <div class="canvas-wrap empty" id="sourceWrap"><canvas id="sourceCanvas"></canvas><p>Drop an image into the first panel</p></div>
+        </figure>
+        <figure>
+          <figcaption><span>Quantized</span><small id="resultCaption">No result yet</small></figcaption>
+          <div class="canvas-wrap empty" id="resultWrap"><canvas id="resultCanvas"></canvas><p>Your palette-mapped image will appear here</p></div>
+        </figure>
+      </div>
+
+      <div class="metrics" id="metrics" aria-live="polite">
+        <div><span>Used colors</span><strong>—</strong></div>
+        <div><span>Mean ΔE<sub>OK</sub></span><strong>—</strong></div>
+        <div><span>Maximum ΔE<sub>OK</sub></span><strong>—</strong></div>
+        <div><span>Off-palette pixels</span><strong>—</strong></div>
+        <div><span>Elapsed</span><strong>—</strong></div>
+      </div>
+
+      <details class="method">
+        <summary>What this method does—and what it deliberately does not do</summary>
+        <div>
+          <p>Every visible source pixel is converted from sRGB to linear light and then OKLab. A balanced k-d tree finds the mathematically nearest palette entry in that perceptual space. The output is written as an RGBA PNG, so palettes larger than the 256-entry indexed-PNG limit remain intact.</p>
+          <p>Floyd–Steinberg mode snakes across alternating rows and diffuses RGB error in linear light. This is more physically sensible than diffusing gamma-encoded sRGB values, although any error diffusion trades local accuracy for a better area-average impression.</p>
+          <p>OKLab is a strong practical metric, not a perfect visual observer. It does not model viewing conditions, spatial adaptation, or individual color-vision differences. The report above measures direct OKLab error against the original pixels; a dithered image may look smoother even when that number rises.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer><span>Runs entirely in your browser.</span><span>No uploads. No palette-size downgrade.</span></footer>
+  <script src="./palettes.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
