@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Exact nearest-neighbor matching in OKLab using a balanced k-d tree
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes six 1024-color palettes: three structured HCT-style profiles, Maximum Coverage 48, an RGB9/max-coverage hybrid, and a literal 10×10×10 encoded-sRGB cube with 24 supplemental grays
+- Includes eight 1024-color palettes: three structured HCT-style profiles, Maximum Coverage 48, three RGB9-derived profiles, and a literal 10×10×10 encoded-sRGB cube with 24 supplemental grays
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum OKLab error, processing time, and palette conformance
 
