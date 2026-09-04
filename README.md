@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Exact nearest-neighbor matching in OKLab using a balanced k-d tree
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes twelve 1024-color palettes: three structured HCT-style profiles, Maximum Coverage 48, seven retro/curated/RGB9-derived profiles, and a literal 10×10×10 encoded-sRGB cube with 24 supplemental grays
+- Includes twelve 1024-color palettes plus a 4096-color retro source union assembled from 29 supplied artist/game palettes, historical hardware and software palettes, low-bit RGB arrangements, and deweighted X11 colors
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum OKLab error, processing time, and palette conformance
 
@@ -42,6 +42,8 @@ The **Retro artist wheel** profile replaces the web-safe cube in an RGB333 + RGB
 The **Lospec 19 max-fit** profile contains only verbatim colors from 19 supplied low-spec palettes. Their 1,487 entries collapse to 1,420 unique RGB colors. Eight RGB corners are fixed, then weighted farthest-point sampling in OKLab retains the 1,016 strongest remaining colors. The 396 omitted candidates are all represented by close retained neighbors; the worst omission is about 0.0186 ΔEOK away.
 
 The **Lospec × machine max-fit** profile makes a fresh selection from the full 1,420-color Lospec union plus complete RGB333, RGB332, and RGB222 vocabularies. The three machine formats collapse from 832 nominal entries to 688 unique colors; only 32 exactly overlap the artist union, producing 2,076 legal candidates. Eight RGB corners are fixed and weighted farthest-point sampling in OKLab selects the remaining 1,016. The result contains 680 Lospec-only colors, 328 machine-only colors, and 16 colors shared by both vocabularies.
+
+The **Retro source union 4096** profile begins with 5,576 exact candidate colors from 29 supplied palettes, RGB333/RGB332/RGB222, fixed low-bit hardware reference palettes, common software RGB arrangements, grayscale, web-safe RGB, and the X Consortium's 1994 `rgb.txt`. Exact duplicates collapse first. Selection then exhausts a cardinality-oriented set whose colors are at least 2.0 CIEDE2000 apart before filling the unavoidable remaining slots by greatest available CIEDE2000 separation. Provenance only breaks distance ties, with X11-only colors deliberately deweighted. The finished palette contains 3,171 colors from the ≥2 stage and 925 necessary closer additions; its minimum pairwise distance is approximately 1.226 CIEDE2000.
 
 ## License
 
