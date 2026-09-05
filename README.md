@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes seventeen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, two HSV three-tier experiments, and the retro source unions
+- Includes eighteen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -111,6 +111,28 @@ All placement uses **HSV geometry**, with conventional HSV→sRGB code conversio
 Open the [sample diagrams and downloads](dist/hsv-three-tier.html), or get the [thirds/14% package](dist/palettes/hsv-three-tier-64-package.zip) and [10% grid package](dist/palettes/hsv-three-tier-10-package.zip). Each includes TXT, GPL, KPL, JSON audit, exact HSV coordinates and a swatch PNG. The interactive diagrams show the true square/L boundaries, numbered points and hue-subset membership on identical S/V axes.
 
 Rebuild both with `python3 scripts/build-hsv-three-tier.py` (NumPy, Pillow); verify them independently with `node tests/hsv-three-tier.test.cjs`.
+
+## HSV sketch spread
+
+The additional **HSV three-tier · sketch spread** profile translates the owner's colored-dot sketch into a precise layout. It keeps the green 3×3 core, uses **2/2/5 purple points** across three rows in the middle band, and **3/2/4 yellow points** across three rows in the outer band. Counts, hue subsets, bounds and grays stay at 64/32/16 hues, nine samples per tier, 14% outer limit, and 16 HSV-linear grays: **1024 unique colors**.
+
+Exact S/V placement (coordinates below are fractions of full scale):
+
+| Band / row | Value | Saturation positions |
+| --- | ---: | --- |
+| Core: each of three rows | 1, 5/6, 2/3 | 2/3, 5/6, 1 |
+| Middle: top | 1 | 1/3, 1/2 |
+| Middle: center | 2/3 | 1/3, 1/2 |
+| Middle: bottom | 1/3 | 1/3, 1/2, 2/3, 5/6, 1 |
+| Outer: top | 1 | 0.14, 0.204444…, 0.268889… |
+| Outer: center | 1/2 | 0.14, 0.268889… |
+| Outer: bottom | 0.14 | 0.14, 1/3, 2/3, 1 |
+
+These coordinates are an explicit interpretation of the sketch's row structure, not digitized hand-drawn dot positions. The outer top's three S coordinates divide the 14%-to-1/3 band into thirds while excluding the already-sampled 1/3 boundary. There is no perceptual fitting, pruning or invented filler. The earlier profiles' color files remain unchanged.
+
+For hue indices with all three tiers, the mean nearest-sample Euclidean S/V gap on a 400×400 uniform midpoint grid over [0.14,1]² falls from 0.12414 to 0.08725; the largest sampled gap falls from 0.36013 to 0.22190. This measures **HSV-plane coverage**, not perceptual color error or image quality. Minimum pairwise ΔE00 remains approximately 0.295 because the dense 64-hue core is unchanged.
+
+The [interactive sampling page](dist/hsv-three-tier.html?version=sketch) now includes a combined green/purple/yellow overview like the sketch, plus individual band diagrams and exact coordinates. [Download the package](dist/palettes/hsv-three-tier-sketch-package.zip) for TXT, GPL, KPL, JSON audit, geometry and swatches. Rebuild this profile with `python3 scripts/build-hsv-sketch.py`; the shared `node tests/hsv-three-tier.test.cjs` verifies all three profiles.
 
 ## License
 

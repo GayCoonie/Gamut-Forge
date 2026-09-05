@@ -5,21 +5,23 @@
 </style></head><body>
 <a href="./">← Gamut Forge quantizer</a>
 <h1>HSV three-tier · 64 / 32 / 16</h1>
-<label for="version">Version <select id="version"><option value="thirds">Thirds → 14% · original design</option><option value="grid">10% grid → 10% · comparison</option></select></label>
+<label for="version">Version <select id="version"><option value="thirds">Thirds → 14% · nested Ls</option><option value="grid">10% grid → 10% · comparison</option><option value="sketch">Sketch spread → 14% · interior rows</option></select></label>
 <p>64 hues at 5.625° intervals. Each receives a 3×3 bright, saturated core; every second hue gains nine middle-band samples, and every fourth hue gains nine outer-band samples. Sixteen evenly spaced HSV grays complete the palette.</p>
 <div class="links"><a href="./palettes/hsv-three-tier-64-package.zip" download>All formats (ZIP)</a><a href="./palettes/hsv-three-tier-64.txt" download>Hex text</a><a href="./palettes/hsv-three-tier-64.gpl" download>GIMP</a><a href="./palettes/hsv-three-tier-64.kpl" download>Krita</a><a href="./palettes/hsv-three-tier-64.json" download>Color audit</a><a href="./palettes/hsv-three-tier-64-geometry.json" download>Exact sample coordinates</a></div>
 <p id="status">576 + 288 + 144 + 16 = 1,024 colors</p>
 <label for="hue">Hue index <input id="hue" type="range" min="0" max="63" step="1" value="0"> <strong id="hueLabel">0 · 0°</strong></label>
-<div class="panels" id="panels"></div>
-<p>Each graph uses the whole 0–100% saturation/value square at the same scale. Bright regions are the sampled areas; numbered circles are the actual sample locations. In the main version, each added band contains three nested Ls, sampled at both ends and the bend. The previous boundary is not repeated. The comparison version uses the 10% lattice.</p>
+<p><span style="color:#32d296">● Core / 64 hues</span> · <span style="color:#bf7bea">● Middle / 32 hues</span> · <span style="color:#ffd038">● Outer / 16 hues</span></p>
+<canvas id="overview" width="600" height="580" style="max-width:600px;margin:auto" aria-label="All active samples on one HSV saturation and value square"></canvas>
+<details><summary>Individual bands and exact sample coordinates</summary><div class="panels" id="panels"></div></details>
+<p>Every graph uses the full 0–100% saturation/value square. The overview shows only the samples present at the chosen hue. Individual band diagrams also show the unused locations as a guide. The sketch version follows the colored row pattern; the earlier versions remain available for comparison.</p>
 <p id="placement"></p>
-<p>Grayscale is V = 0/15 through 15/15, producing RGB levels 0, 17, …, 255, in both versions. The 10% grid restriction applies to the colored samples. Perceptual distance is measured for comparison; both profiles keep their HSV geometry without ΔE pruning.</p>
+<p>Grayscale is V = 0/15 through 15/15, producing RGB levels 0, 17, …, 255, in every version. The 10% grid restriction applies to the colored samples. Perceptual distance is measured for comparison; these profiles keep their HSV geometry without ΔE pruning.</p>
 <h2>All 1,024 colors</h2><p>Display order is lightness bands with alternating hue order. Each color appears once.</p>
 <img id="swatches" src="./palettes/hsv-three-tier-64.png" alt="The complete 1024-color HSV three-tier palette">
 <footer><a href="./palette-guide.html">Compare Static Bloom and RGB343</a></footer>
 <script>
 const slider=document.querySelector('#hue'),panels=document.querySelector('#panels'),version=document.querySelector('#version');let geometry;
-if(new URLSearchParams(location.search).get('version')==='grid')version.value='grid';
+const requested=new URLSearchParams(location.search).get('version');if(['thirds','grid','sketch'].includes(requested))version.value=requested;
 function rgb(h,s,v){const k=n=>(n+h/60)%6;const f=n=>Math.floor(255*(v-v*s*Math.max(0,Math.min(k(n),4-k(n),1)))+.5+1e-10);return [f(5),f(3),f(1)];}
 function render(){
  const index=Number(slider.value),h=index*geometry.hue_step_degrees;
@@ -38,16 +40,26 @@ function render(){
   ctx.putImageData(img,left,top);const xy=(s,v)=>[left+s*(size-1),top+(1-v)*(size-1)];
   const a=tier.lower,b=tier.upper,vertices=tierIndex===0?[[a,a],[1,a],[1,1],[a,1]]:[[a,a],[1,a],[1,b],[b,b],[b,1],[a,1]];
   ctx.strokeStyle='#69f4dc';ctx.lineWidth=2;ctx.beginPath();vertices.forEach(([s,v],i)=>{const [x,y]=xy(s,v);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.closePath();ctx.stroke();
-  if(tierIndex>0&&!geometry.ten_percent_grid){ctx.strokeStyle='#d4a9ff';ctx.lineWidth=1.5;for(let k=0;k<9;k+=3){ctx.beginPath();tier.points.slice(k,k+3).forEach(([s,v],i)=>{const [x,y]=xy(s,v);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();}}
+  if(tierIndex>0&&!geometry.ten_percent_grid&&geometry.layout!=='sketch_rows'){ctx.strokeStyle='#d4a9ff';ctx.lineWidth=1.5;for(let k=0;k<9;k+=3){ctx.beginPath();tier.points.slice(k,k+3).forEach(([s,v],i)=>{const [x,y]=xy(s,v);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.stroke();}}
   for(const [i,[s,v]] of tier.points.entries()){
    const [x,y]=xy(s,v);ctx.beginPath();ctx.arc(x,y,7,0,2*Math.PI);ctx.fillStyle=active?'#ffffff':'#aba0b6';ctx.fill();ctx.strokeStyle='#18101f';ctx.lineWidth=2;ctx.stroke();ctx.fillStyle='#19121e';ctx.font='bold 9px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(i+1,x,y);
   }
   ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle='#ddd1e7';ctx.font='12px system-ui';ctx.fillText('V 100%',0,20);ctx.fillText('0%',20,334);ctx.fillText('S 0%',left,355);ctx.fillText('100%',318,355);
   coords.textContent=tier.points.map(([s,v],i)=>`${i+1}: S ${(s*100).toFixed(2)}% / V ${(v*100).toFixed(2)}%`).join('\n');
  }
+ const ctx=document.querySelector('#overview').getContext('2d'),size=500,left=55,top=30,img=ctx.createImageData(size,size);
+ ctx.clearRect(0,0,600,580);
+ for(let y=0;y<size;y++)for(let x=0;x<size;x++){const c=rgb(h,x/(size-1),1-y/(size-1)),i=(y*size+x)*4;img.data[i]=c[0];img.data[i+1]=c[1];img.data[i+2]=c[2];img.data[i+3]=255;}
+ ctx.putImageData(img,left,top);
+ let count=0;
+ for(const [t,tier] of geometry.tiers.entries()){
+  if(index%tier.hue_stride!==0)continue;
+  for(const [s,v] of tier.points){const x=left+s*(size-1),y=top+(1-v)*(size-1);ctx.beginPath();ctx.arc(x,y,6,0,2*Math.PI);ctx.fillStyle=['#32d296','#bf7bea','#ffd038'][t];ctx.fill();ctx.strokeStyle='#231a2b';ctx.lineWidth=1.5;ctx.stroke();count++;}
+ }
+ ctx.fillStyle='#ded0e9';ctx.font='13px system-ui';ctx.fillText('V 100%',0,22);ctx.fillText('0%',20,535);ctx.fillText('S 0%',left,553);ctx.fillText('100%',523,553);ctx.fillText(`${count} active colored samples at this hue`,left,575);
 }
 async function load(){
- const chosen=version.value,stem=chosen==='grid'?'hsv-three-tier-10':'hsv-three-tier-64';
+ const chosen=version.value,stem={grid:'hsv-three-tier-10',thirds:'hsv-three-tier-64',sketch:'hsv-three-tier-sketch'}[chosen];
  history.replaceState(null,'','?version='+chosen);
  document.querySelector('.links').innerHTML=[['-package.zip','All formats (ZIP)'],['.txt','Hex text'],['.gpl','GIMP'],['.kpl','Krita'],['.json','Color audit'],['-geometry.json','Exact sample coordinates']].map(([ext,label])=>`<a href="./palettes/${stem}${ext}" download>${label}</a>`).join('');
  document.querySelector('#swatches').src=`./palettes/${stem}.png`;
