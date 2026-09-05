@@ -1,7 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all 31 Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all 32 Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
 <header class="topbar"><a class="site-name" href="./">Gamut Forge</a><nav aria-label="Main navigation"><a href="./">Image quantizer</a><a href="./palette-library.html" aria-current="page">Palette library</a></nav></header>
-<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All 31 built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">27 palettes of 1,024 colors · 4 palettes of 4,096 colors</p>
+<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All 32 built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">28 palettes of 1,024 colors · 4 palettes of 4,096 colors</p>
 <p class="format-note">Every palette includes Krita (KPL), GIMP (GPL), hex text, JSON and a swatch PNG. ZIP packages gather those formats; audited profiles also retain their reports. Downloads contain the exact colors used by the quantizer.</p><nav class="jump-links" aria-label="Palette families">
+<a href="#oklab-experiments">Oklab experiments</a>
 <a href="#okhsv-experiments">OKHSV experiments</a>
 <a href="#random-strata-v2">Random Strata v2</a>
 <a href="#random-strata-beta">Random Strata Beta</a>
@@ -11,6 +12,18 @@
 <a href="#cubes-and-coverage">Cubes and coverage</a>
 <a href="#early-tier-experiments">Early tier experiments</a>
 </nav>
+<section id="oklab-experiments" class="family"><h2>Oklab experiments</h2><div class="palette-grid">
+<article id="oklabRings1024" class="palette-entry"><a href="./palette-guide.html?palette=oklabRings1024" tabindex="-1" aria-hidden="true"><img loading="lazy" width="512" height="512" src="./palettes/oklab-rings-1024.png" alt=""></a><div class="entry-body"><p class="count">1,024 unique colors</p><h3><a href="./palette-guide.html?palette=oklabRings1024">Oklab · seven ring slices · 1024</a></h3><p>Seven Oklab lightness slices, 24 hue angles and eight chroma rings produce 1,133 unique clipped sRGB colors. A hard CIEDE2000 separation filter retains 837; 187 unchanged colors from OKHSV Sketch, including black, complete the palette. All 1,024 colors are mutually at least 2 ΔE00 apart. Requested Oklab coordinates change where RGB channels are clipped.</p><div class="entry-actions"><a href="./palette-guide.html?palette=oklabRings1024">Info &amp; color atlas →</a><a href="./?palette=oklabRings1024">Use palette →</a>
+<a href="./oklab-rings.html">Sampling diagram →</a>
+</div><div class="palette-downloads" aria-label="Downloads for Oklab · seven ring slices · 1024">
+<a href="./palettes/oklab-rings-1024.kpl" download>Krita</a>
+<a href="./palettes/oklab-rings-1024.gpl" download>GIMP</a>
+<a href="./palettes/oklab-rings-1024.txt" download>Hex</a>
+<a href="./palettes/oklab-rings-1024.json" download>JSON</a>
+<a href="./palettes/oklab-rings-1024.png" download>PNG</a>
+<a href="./palettes/oklab-rings-1024-package.zip" download>All formats ↓</a>
+</div></div></article>
+</div></section>
 <section id="okhsv-experiments" class="family"><h2>OKHSV experiments</h2><div class="palette-grid">
 <article id="okhsvSketch1024" class="palette-entry"><a href="./palette-guide.html?palette=okhsvSketch1024" tabindex="-1" aria-hidden="true"><img loading="lazy" width="512" height="512" src="./palettes/okhsv-sketch-1024.png" alt=""></a><div class="entry-body"><p class="count">1,024 unique colors</p><h3><a href="./palette-guide.html?palette=okhsvSketch1024">OKHSV · sketch sampling · 1024</a></h3><p>48 Oklab hue angles at 7.5° intervals, each using the same 20-point OKHSV pattern bowed toward high saturation and value. Sixteen evenly spaced OKHSV grays and four tinted samples at each 30° hue mark complete 1,024 distinct colors. Uses Ottosson’s reference conversion, with no individual RGB nudges or perceptual pruning.</p><div class="entry-actions"><a href="./palette-guide.html?palette=okhsvSketch1024">Info &amp; color atlas →</a><a href="./?palette=okhsvSketch1024">Use palette →</a>
 <a href="./okhsv-sketch.html">Sampling diagram →</a>

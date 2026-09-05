@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes twenty-seven 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
+- Includes twenty-eight 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -16,7 +16,7 @@ Everything runs in the browser. No image or palette is uploaded.
 
 ## Palette library
 
-The home page links to [the complete palette library](dist/palette-library.html). All 31 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+The home page links to [the complete palette library](dist/palette-library.html). All 32 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
 
 ## GitHub Pages
 
@@ -159,3 +159,11 @@ The combined 4,096 palette retains their 4,001-color exact union, replaces six d
 `okhsvSketch1024` uses Björn Ottosson’s [reference OKHSV conversion](https://bottosson.github.io/posts/colorpicker/) (vendored under MIT in `dist/vendor/`). All 48 Oklab hue angles at 7.5° steps receive the same twenty S/V coordinates. The user’s freehand pattern is gently bowed toward high S and high V by `f(x)=x+0.35*x*(1-x)`, snapped to 5% steps, with the bottom-left main point at `(25%,25%)` to prevent duplicate byte encodings. Sixteen grays evenly spaced along OKHSV V, including black and white, and four tinted samples at each of twelve 30° hue marks complete 1,024 unique colors. No fillers, individual byte nudges, or perceptual pruning are used.
 
 Build with `python scripts/build-okhsv-sketch.py` then `python scripts/build-palette-library.py` (Node, NumPy, Pillow). `dist/okhsv-sketch.html` shows all 48 S/V pages, selectable enlarged pages, the exact coordinate tables and downloads. JSON records every requested coordinate and actual RGB code, the reference-code hash, and the pairwise audit. Minimum separation is approximately 0.610 ΔE00; this is a geometry experiment, not a distance-constrained palette.
+
+## Oklab ring palette
+
+`oklabRings1024` reconstructs the supplied seven ring-wheel screenshots: L = .10, .25, .40, .55, .70, .85, 1.00; 24 hues at 15° steps; eight chroma rings including C=0, through C=.25. Independent sRGB channel clipping reproduces the supplied RGB readouts (including L=.85, a=.25, b=0 → 255,118,199). This is a deliberate screenshot reconstruction, not lightness-preserving gamut mapping: 763/1344 targets are outside sRGB, and the actual Oklab values differ after clipping.
+
+The 1,344 positions collapse to 1,133 exact RGB colors. Black and white are fixed first. Deterministic CIEDE2000 farthest-point selection retains 837 grid colors at a hard ΔE00 ≥ 2, then fills with 187 OKHSV-only colors including black. The 186 post-grid fillers each enter at least 4.351789 ΔE00 from the already selected palette. Final all-pairs minimum: 2.00139556, with zero pairs below 2. No threshold relaxation, centroids, or RGB edits. Source priority applies only among colors that satisfy separation. No global optimality claim.
+
+Rebuild: `python scripts/build-oklab-rings.py` then `python scripts/build-palette-library.py`. The wheel atlas at `dist/oklab-rings.html` shows selected/omitted candidates, optional out-of-gamut markers, and requested versus actual coordinates. Downloads include the final palette and the full 1,133-color grid union.

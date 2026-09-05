@@ -1,5 +1,14 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "oklabRings1024",
+    "stem": "oklab-rings-1024",
+    "group": "Oklab experiments",
+    "name": "Oklab \u00b7 seven ring slices \u00b7 1024",
+    "count": 1024,
+    "description": "Seven Oklab lightness slices, 24 hue angles and eight chroma rings produce 1,133 unique clipped sRGB colors. A hard CIEDE2000 separation filter retains 837; 187 unchanged colors from OKHSV Sketch, including black, complete the palette. All 1,024 colors are mutually at least 2 \u0394E00 apart. Requested Oklab coordinates change where RGB channels are clipped.",
+    "diagram": "oklab-rings.html"
+  },
+  {
     "key": "okhsvSketch1024",
     "stem": "okhsv-sketch-1024",
     "group": "OKHSV experiments",
