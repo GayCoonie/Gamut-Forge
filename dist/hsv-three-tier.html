@@ -3,7 +3,7 @@
 <style>
 :root{color-scheme:dark;font:16px/1.5 system-ui,sans-serif;color:#eee7f4;background:#141119}body{max-width:1280px;margin:auto;padding:24px}a{color:#65e8d1}h1{font-size:clamp(28px,4vw,42px);margin:.3em 0}p{max-width:88ch;color:#c5bbd0}.links{display:flex;flex-wrap:wrap;gap:18px;margin:20px 0}.panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}article{background:#201a27;border:1px solid #50405f;border-radius:10px;padding:12px}article p{font-size:14px;min-height:3em}h2{font-size:19px;margin:0}canvas{width:100%;display:block}.coords{font:12px/1.7 monospace;white-space:pre-wrap;color:#c6b7d7}#hue{width:min(600px,65vw);vertical-align:middle}#swatches{width:min(100%,800px);image-rendering:pixelated;border:1px solid #51425e}#status{color:#69e6cf}label{display:block;margin:20px 0}footer{margin-top:28px;color:#c5bbd0}@media(max-width:800px){.panels{grid-template-columns:1fr}canvas{max-width:500px;margin:auto}}
 </style></head><body>
-<a href="./">← Gamut Forge quantizer</a>
+<nav class="links"><a href="./palette-library.html">← Palette library</a><a href="./">Image quantizer →</a></nav>
 <h1>HSV three-tier · 64 / 32 / 16</h1>
 <label for="version">Version <select id="version"><option value="thirds">Thirds → 14% · nested Ls</option><option value="grid">10% grid → 10% · comparison</option><option value="sketch">Sketch spread → 14% · interior rows</option></select></label>
 <p>64 hues at 5.625° intervals. Each receives a 3×3 bright, saturated core; every second hue gains nine middle-band samples, and every fourth hue gains nine outer-band samples. Sixteen evenly spaced HSV grays complete the palette.</p>

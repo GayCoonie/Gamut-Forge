@@ -12,6 +12,8 @@ const els = {
 
 let imageData = null;
 let imageName = 'image';
+const requestedPalette = new URLSearchParams(location.search).get('palette');
+if (Object.hasOwn(builtins, requestedPalette) && [...els.paletteSelect.options].some(o => o.value === requestedPalette)) els.paletteSelect.value = requestedPalette;
 let currentPalette = { ...builtins[els.paletteSelect.value] };
 let worker = null;
 

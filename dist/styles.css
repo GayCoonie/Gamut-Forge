@@ -114,3 +114,8 @@ footer { min-height:48px; display:flex; align-items:center; justify-content:spac
   .workspace { padding:16px; }
   footer { padding:12px 18px; align-items:flex-start; flex-direction:column; gap:4px; }
 }
+/* Main navigation wraps below the brand on narrow screens. */
+.topbar { gap: 16px; flex-wrap: wrap; }
+@media (max-width: 620px) {
+  .topbar nav { order: 3; flex-basis: 100%; font-size: .9rem; }
+}

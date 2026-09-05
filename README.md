@@ -14,6 +14,10 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 
 Everything runs in the browser. No image or palette is uploaded.
 
+## Palette library
+
+The home page links to [the complete palette library](dist/palette-library.html). All 20 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+
 ## GitHub Pages
 
 The publishable site is the `dist/` directory. Either configure Pages to publish that directory through the included Actions workflow, or copy its contents to the root of a `gh-pages` branch.
