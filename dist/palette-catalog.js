@@ -1,5 +1,14 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "okhsvSketch1024",
+    "stem": "okhsv-sketch-1024",
+    "group": "OKHSV experiments",
+    "name": "OKHSV \u00b7 sketch sampling \u00b7 1024",
+    "count": 1024,
+    "description": "48 Oklab hue angles at 7.5\u00b0 intervals, each using the same 20-point OKHSV pattern bowed toward high saturation and value. Sixteen evenly spaced OKHSV grays and four tinted samples at each 30\u00b0 hue mark complete 1,024 distinct colors. Uses Ottosson\u2019s reference conversion, with no individual RGB nudges or perceptual pruning.",
+    "diagram": "okhsv-sketch.html"
+  },
+  {
     "key": "randomStrataTry5",
     "stem": "random-strata-try5",
     "group": "Random Strata v2",

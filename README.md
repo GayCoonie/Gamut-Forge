@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes twenty-six 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
+- Includes twenty-seven 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -16,7 +16,7 @@ Everything runs in the browser. No image or palette is uploaded.
 
 ## Palette library
 
-The home page links to [the complete palette library](dist/palette-library.html). All 30 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+The home page links to [the complete palette library](dist/palette-library.html). All 31 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
 
 ## GitHub Pages
 
@@ -153,3 +153,9 @@ Four user-supplied Gemini-assisted trials retain their exact 1,024 RGB colors an
 Four user-supplied 1,024-color runs are preserved exactly, including Try 8’s different exported ordering. All contain 64 near-grays, 120 vivid entries and 840 quadrant samples. Independent audits find every non-vivid–vivid pair at least 2.5 ΔE00 apart. Seeds and per-sector configured targets were not supplied.
 
 The combined 4,096 palette retains their 4,001-color exact union, replaces six duplicate black/white occurrences with missing full-range RGB3 gray levels (36, 73, 109, 146, 182, 219), and fills 89 other duplicates using only Try 1–4 colors, chosen by deterministic CIEDE2000 farthest-point selection. Minimum borrowed-color separation is 3.698572 ΔE00. Existing close cross-trial pairs remain: the combined global minimum is 0.007470. The JSON replacement ledger preserves all provenance. Rebuild with `python scripts/build-random-strata-v2-trials.py /path/to/uploads`, then refresh the palette library.
+
+## OKHSV sketch palette
+
+`okhsvSketch1024` uses Björn Ottosson’s [reference OKHSV conversion](https://bottosson.github.io/posts/colorpicker/) (vendored under MIT in `dist/vendor/`). All 48 Oklab hue angles at 7.5° steps receive the same twenty S/V coordinates. The user’s freehand pattern is gently bowed toward high S and high V by `f(x)=x+0.35*x*(1-x)`, snapped to 5% steps, with the bottom-left main point at `(25%,25%)` to prevent duplicate byte encodings. Sixteen grays evenly spaced along OKHSV V, including black and white, and four tinted samples at each of twelve 30° hue marks complete 1,024 unique colors. No fillers, individual byte nudges, or perceptual pruning are used.
+
+Build with `python scripts/build-okhsv-sketch.py` then `python scripts/build-palette-library.py` (Node, NumPy, Pillow). `dist/okhsv-sketch.html` shows all 48 S/V pages, selectable enlarged pages, the exact coordinate tables and downloads. JSON records every requested coordinate and actual RGB code, the reference-code hash, and the pairwise audit. Minimum separation is approximately 0.610 ΔE00; this is a geometry experiment, not a distance-constrained palette.

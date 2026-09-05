@@ -30,6 +30,7 @@
 <script src="./hsv-three-tier-sketch.js"></script>
 <script src="./random-strata.js"></script>
 <script src="./random-strata-v2-trials.js"></script>
+<script src="./okhsv-sketch.js"></script>
 <script src="./palette-catalog.js"></script>
 <script src="./color-math.js"></script>
 <script>
@@ -47,7 +48,7 @@ async function draw(){
  document.querySelector('#downloads').innerHTML=['txt','gpl','kpl','json','png'].map(ext=>`<a href="./palettes/${stem}.${ext}" download>${ext==='gpl'?'GIMP':ext==='kpl'?'Krita':ext.toUpperCase()}</a>`).join('')+`<a href="./palettes/${stem}-package.zip" download>All formats (ZIP)</a>`;
  if(key.startsWith('randomStrata')){const link=document.createElement('a');link.href='./random-strata.html';link.textContent='Trial reports & generator →';document.querySelector('#downloads').append(link);}
  const diagram=window.GAMUT_CATALOG.find(p=>p.key===key).diagram;
- if(diagram){const link=document.createElement('a');link.href='./'+diagram;link.textContent='HSV sampling diagram →';document.querySelector('#downloads').append(link);}
+ if(diagram){const link=document.createElement('a');link.href='./'+diagram;link.textContent='Sampling diagram →';document.querySelector('#downloads').append(link);}
  const grid=view.value==='swatches';canvas.height=grid?1440:1050;hits=[];ctx.fillStyle='#19151f';ctx.fillRect(0,0,canvas.width,canvas.height);
  colors.forEach((hex,i)=>{
   const rgb=[1,3,5].map(p=>parseInt(hex.slice(p,p+2),16)),[L,a,b]=GamutColor.rgbToLab(...rgb),C=Math.hypot(a,b),h=(Math.atan2(b,a)*180/Math.PI+360)%360;
