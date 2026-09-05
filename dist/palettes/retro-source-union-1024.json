@@ -1,0 +1,10340 @@
+{
+  "report": {
+    "name": "Retro source union \u00b7 distance-first \u00b7 1024",
+    "count": 1024,
+    "parent_count": 4096,
+    "parent_sha256": "4cf80a4548258a4737b8f18b6540f2e97d5a8db1f999b8a21f6d053f4db3af11",
+    "metric": "CIEDE2000, CIELAB D65 / 2\u00b0, kL=kC=kH=1",
+    "method": "Eight farthest-point starts; strict minimum-distance-improving one-color swaps; best separation wins before pool coverage.",
+    "global_optimality_claim": false,
+    "locked_colors": [
+      "#000000",
+      "#ffffff"
+    ],
+    "minimum_delta_e_2000": 4.203349479638309,
+    "pairs_below_2": 0,
+    "nearest_neighbor_percentiles": {
+      "min": 4.203349479638309,
+      "p25": 4.445915959463145,
+      "median": 4.720979747478823,
+      "p75": 5.107382173332345,
+      "max": 6.987010061337125
+    },
+    "closest_pair": [
+      "#c25dd4",
+      "#b66ddb"
+    ],
+    "pool_covering_radius": 4.20300151040668,
+    "pool_mean_delta_e_2000": 2.077706977756784,
+    "winning_trial": 7,
+    "trials": [
+      {
+        "seed": "black+white",
+        "initial_minimum": 4.160066243010919,
+        "minimum": 4.163648899907977,
+        "swaps": 5,
+        "pool_covering_radius": 4.16290708262264,
+        "pool_mean_error": 2.066158367243951
+      },
+      {
+        "seed": "#ff0000",
+        "initial_minimum": 4.168555900006295,
+        "minimum": 4.168555900006295,
+        "swaps": 0,
+        "pool_covering_radius": 4.168254311809063,
+        "pool_mean_error": 2.0654956932853104
+      },
+      {
+        "seed": "#00ff00",
+        "initial_minimum": 4.154156191686703,
+        "minimum": 4.163648899907977,
+        "swaps": 6,
+        "pool_covering_radius": 4.15801646157264,
+        "pool_mean_error": 2.061966921035915
+      },
+      {
+        "seed": "#0000ff",
+        "initial_minimum": 4.181469410453399,
+        "minimum": 4.181469410453399,
+        "swaps": 0,
+        "pool_covering_radius": 4.18072161902148,
+        "pool_mean_error": 2.077221061402172
+      },
+      {
+        "seed": "#00ffff",
+        "initial_minimum": 4.166705659711816,
+        "minimum": 4.17613146088638,
+        "swaps": 5,
+        "pool_covering_radius": 4.163648899907977,
+        "pool_mean_error": 2.0801806195386896
+      },
+      {
+        "seed": "#ff00ff",
+        "initial_minimum": 4.17613146088638,
+        "minimum": 4.17613146088638,
+        "swaps": 0,
+        "pool_covering_radius": 4.176103204723307,
+        "pool_mean_error": 2.0735706931224516
+      },
+      {
+        "seed": "#ffff00",
+        "initial_minimum": 4.167279189502782,
+        "minimum": 4.167279189502782,
+        "swaps": 0,
+        "pool_covering_radius": 4.166347198876719,
+        "pool_mean_error": 2.063998416435476
+      },
+      {
+        "seed": "#808080",
+        "initial_minimum": 4.178788988254077,
+        "minimum": 4.203349479638309,
+        "swaps": 18,
+        "pool_covering_radius": 4.20300151040668,
+        "pool_mean_error": 2.077706977756784
+      }
+    ],
+    "all_colors_verbatim_from_parent": true
+  },
+  "colors": [
+    {
+      "hex": "#000000",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "parent_index": 0,
+      "nearest_delta_e_2000": 4.62307648741801
+    },
+    {
+      "hex": "#23000b",
+      "rgb": [
+        35,
+        0,
+        11
+      ],
+      "parent_index": 3,
+      "nearest_delta_e_2000": 5.099646756636397
+    },
+    {
+      "hex": "#0f0000",
+      "rgb": [
+        15,
+        0,
+        0
+      ],
+      "parent_index": 10,
+      "nearest_delta_e_2000": 5.490110558517739
+    },
+    {
+      "hex": "#2f0000",
+      "rgb": [
+        47,
+        0,
+        0
+      ],
+      "parent_index": 8,
+      "nearest_delta_e_2000": 5.22330780168269
+    },
+    {
+      "hex": "#26120e",
+      "rgb": [
+        38,
+        18,
+        14
+      ],
+      "parent_index": 120,
+      "nearest_delta_e_2000": 4.763343941103089
+    },
+    {
+      "hex": "#331001",
+      "rgb": [
+        51,
+        16,
+        1
+      ],
+      "parent_index": 117,
+      "nearest_delta_e_2000": 5.616644639829514
+    },
+    {
+      "hex": "#231712",
+      "rgb": [
+        35,
+        23,
+        18
+      ],
+      "parent_index": 118,
+      "nearest_delta_e_2000": 4.763343941103089
+    },
+    {
+      "hex": "#2b1607",
+      "rgb": [
+        43,
+        22,
+        7
+      ],
+      "parent_index": 116,
+      "nearest_delta_e_2000": 4.2449321139961755
+    },
+    {
+      "hex": "#110a00",
+      "rgb": [
+        17,
+        10,
+        0
+      ],
+      "parent_index": 15,
+      "nearest_delta_e_2000": 4.62307648741801
+    },
+    {
+      "hex": "#231a00",
+      "rgb": [
+        35,
+        26,
+        0
+      ],
+      "parent_index": 113,
+      "nearest_delta_e_2000": 4.27974330138425
+    },
+    {
+      "hex": "#070f04",
+      "rgb": [
+        7,
+        15,
+        4
+      ],
+      "parent_index": 17,
+      "nearest_delta_e_2000": 5.898851936314758
+    },
+    {
+      "hex": "#021b01",
+      "rgb": [
+        2,
+        27,
+        1
+      ],
+      "parent_index": 18,
+      "nearest_delta_e_2000": 4.778777160181724
+    },
+    {
+      "hex": "#001911",
+      "rgb": [
+        0,
+        25,
+        17
+      ],
+      "parent_index": 21,
+      "nearest_delta_e_2000": 5.967016642231945
+    },
+    {
+      "hex": "#021a21",
+      "rgb": [
+        2,
+        26,
+        33
+      ],
+      "parent_index": 101,
+      "nearest_delta_e_2000": 5.084026082447358
+    },
+    {
+      "hex": "#03121f",
+      "rgb": [
+        3,
+        18,
+        31
+      ],
+      "parent_index": 24,
+      "nearest_delta_e_2000": 4.404460093576518
+    },
+    {
+      "hex": "#0f192d",
+      "rgb": [
+        15,
+        25,
+        45
+      ],
+      "parent_index": 96,
+      "nearest_delta_e_2000": 5.3685499626743045
+    },
+    {
+      "hex": "#03193f",
+      "rgb": [
+        3,
+        25,
+        63
+      ],
+      "parent_index": 97,
+      "nearest_delta_e_2000": 6.279114442478505
+    },
+    {
+      "hex": "#00000f",
+      "rgb": [
+        0,
+        0,
+        15
+      ],
+      "parent_index": 27,
+      "nearest_delta_e_2000": 5.898849198077882
+    },
+    {
+      "hex": "#00001f",
+      "rgb": [
+        0,
+        0,
+        31
+      ],
+      "parent_index": 28,
+      "nearest_delta_e_2000": 5.644181026181714
+    },
+    {
+      "hex": "#00003f",
+      "rgb": [
+        0,
+        0,
+        63
+      ],
+      "parent_index": 31,
+      "nearest_delta_e_2000": 4.505328755360614
+    },
+    {
+      "hex": "#000052",
+      "rgb": [
+        0,
+        0,
+        82
+      ],
+      "parent_index": 33,
+      "nearest_delta_e_2000": 4.341686497663655
+    },
+    {
+      "hex": "#00006d",
+      "rgb": [
+        0,
+        0,
+        109
+      ],
+      "parent_index": 167,
+      "nearest_delta_e_2000": 4.417650681686329
+    },
+    {
+      "hex": "#17092e",
+      "rgb": [
+        23,
+        9,
+        46
+      ],
+      "parent_index": 48,
+      "nearest_delta_e_2000": 4.938431423004073
+    },
+    {
+      "hex": "#150a1f",
+      "rgb": [
+        21,
+        10,
+        31
+      ],
+      "parent_index": 53,
+      "nearest_delta_e_2000": 5.167722617618972
+    },
+    {
+      "hex": "#1d0a3f",
+      "rgb": [
+        29,
+        10,
+        63
+      ],
+      "parent_index": 83,
+      "nearest_delta_e_2000": 4.421190413871648
+    },
+    {
+      "hex": "#240055",
+      "rgb": [
+        36,
+        0,
+        85
+      ],
+      "parent_index": 176,
+      "nearest_delta_e_2000": 4.341686497663655
+    },
+    {
+      "hex": "#24142c",
+      "rgb": [
+        36,
+        20,
+        44
+      ],
+      "parent_index": 77,
+      "nearest_delta_e_2000": 4.6124465919521045
+    },
+    {
+      "hex": "#220029",
+      "rgb": [
+        34,
+        0,
+        41
+      ],
+      "parent_index": 56,
+      "nearest_delta_e_2000": 5.425883833382351
+    },
+    {
+      "hex": "#35003b",
+      "rgb": [
+        53,
+        0,
+        59
+      ],
+      "parent_index": 182,
+      "nearest_delta_e_2000": 5.467069891502125
+    },
+    {
+      "hex": "#160a15",
+      "rgb": [
+        22,
+        10,
+        21
+      ],
+      "parent_index": 58,
+      "nearest_delta_e_2000": 4.340320439579715
+    },
+    {
+      "hex": "#280a1e",
+      "rgb": [
+        40,
+        10,
+        30
+      ],
+      "parent_index": 65,
+      "nearest_delta_e_2000": 5.4111010672526705
+    },
+    {
+      "hex": "#19000c",
+      "rgb": [
+        25,
+        0,
+        12
+      ],
+      "parent_index": 62,
+      "nearest_delta_e_2000": 4.340320439579715
+    },
+    {
+      "hex": "#490024",
+      "rgb": [
+        73,
+        0,
+        36
+      ],
+      "parent_index": 193,
+      "nearest_delta_e_2000": 5.274169858307082
+    },
+    {
+      "hex": "#3b1725",
+      "rgb": [
+        59,
+        23,
+        37
+      ],
+      "parent_index": 194,
+      "nearest_delta_e_2000": 5.1657499371724835
+    },
+    {
+      "hex": "#3d1132",
+      "rgb": [
+        61,
+        17,
+        50
+      ],
+      "parent_index": 197,
+      "nearest_delta_e_2000": 5.959372025105819
+    },
+    {
+      "hex": "#2b1c2b",
+      "rgb": [
+        43,
+        28,
+        43
+      ],
+      "parent_index": 184,
+      "nearest_delta_e_2000": 4.6124465919521045
+    },
+    {
+      "hex": "#211b21",
+      "rgb": [
+        33,
+        27,
+        33
+      ],
+      "parent_index": 183,
+      "nearest_delta_e_2000": 4.663672189831686
+    },
+    {
+      "hex": "#3f005f",
+      "rgb": [
+        63,
+        0,
+        95
+      ],
+      "parent_index": 312,
+      "nearest_delta_e_2000": 4.8508146631294125
+    },
+    {
+      "hex": "#291945",
+      "rgb": [
+        41,
+        25,
+        69
+      ],
+      "parent_index": 205,
+      "nearest_delta_e_2000": 4.421190413871648
+    },
+    {
+      "hex": "#000091",
+      "rgb": [
+        0,
+        0,
+        145
+      ],
+      "parent_index": 299,
+      "nearest_delta_e_2000": 4.365045603166743
+    },
+    {
+      "hex": "#1b1853",
+      "rgb": [
+        27,
+        24,
+        83
+      ],
+      "parent_index": 172,
+      "nearest_delta_e_2000": 5.03335158245805
+    },
+    {
+      "hex": "#262342",
+      "rgb": [
+        38,
+        35,
+        66
+      ],
+      "parent_index": 212,
+      "nearest_delta_e_2000": 4.755559721566327
+    },
+    {
+      "hex": "#242234",
+      "rgb": [
+        36,
+        34,
+        52
+      ],
+      "parent_index": 210,
+      "nearest_delta_e_2000": 4.610727179586335
+    },
+    {
+      "hex": "#1a1c26",
+      "rgb": [
+        26,
+        28,
+        38
+      ],
+      "parent_index": 87,
+      "nearest_delta_e_2000": 4.961936348467827
+    },
+    {
+      "hex": "#002440",
+      "rgb": [
+        0,
+        36,
+        64
+      ],
+      "parent_index": 163,
+      "nearest_delta_e_2000": 4.897498917604196
+    },
+    {
+      "hex": "#0d2030",
+      "rgb": [
+        13,
+        32,
+        48
+      ],
+      "parent_index": 161,
+      "nearest_delta_e_2000": 4.404460093576518
+    },
+    {
+      "hex": "#002b3c",
+      "rgb": [
+        0,
+        43,
+        60
+      ],
+      "parent_index": 226,
+      "nearest_delta_e_2000": 4.462404930901299
+    },
+    {
+      "hex": "#03282b",
+      "rgb": [
+        3,
+        40,
+        43
+      ],
+      "parent_index": 160,
+      "nearest_delta_e_2000": 5.620362786440516
+    },
+    {
+      "hex": "#122020",
+      "rgb": [
+        18,
+        32,
+        32
+      ],
+      "parent_index": 105,
+      "nearest_delta_e_2000": 5.084026082447358
+    },
+    {
+      "hex": "#002d28",
+      "rgb": [
+        0,
+        45,
+        40
+      ],
+      "parent_index": 228,
+      "nearest_delta_e_2000": 4.214792013335483
+    },
+    {
+      "hex": "#1e1e1e",
+      "rgb": [
+        30,
+        30,
+        30
+      ],
+      "parent_index": 128,
+      "nearest_delta_e_2000": 5.381080828985532
+    },
+    {
+      "hex": "#04260d",
+      "rgb": [
+        4,
+        38,
+        13
+      ],
+      "parent_index": 157,
+      "nearest_delta_e_2000": 4.778777160181724
+    },
+    {
+      "hex": "#172808",
+      "rgb": [
+        23,
+        40,
+        8
+      ],
+      "parent_index": 154,
+      "nearest_delta_e_2000": 5.008815277321898
+    },
+    {
+      "hex": "#191e0f",
+      "rgb": [
+        25,
+        30,
+        15
+      ],
+      "parent_index": 111,
+      "nearest_delta_e_2000": 5.898851936314758
+    },
+    {
+      "hex": "#242400",
+      "rgb": [
+        36,
+        36,
+        0
+      ],
+      "parent_index": 151,
+      "nearest_delta_e_2000": 6.024654239699046
+    },
+    {
+      "hex": "#251f14",
+      "rgb": [
+        37,
+        31,
+        20
+      ],
+      "parent_index": 148,
+      "nearest_delta_e_2000": 4.27974330138425
+    },
+    {
+      "hex": "#332400",
+      "rgb": [
+        51,
+        36,
+        0
+      ],
+      "parent_index": 240,
+      "nearest_delta_e_2000": 4.388654573889789
+    },
+    {
+      "hex": "#2a1800",
+      "rgb": [
+        42,
+        24,
+        0
+      ],
+      "parent_index": 114,
+      "nearest_delta_e_2000": 4.2449321139961755
+    },
+    {
+      "hex": "#3d1f0c",
+      "rgb": [
+        61,
+        31,
+        12
+      ],
+      "parent_index": 243,
+      "nearest_delta_e_2000": 4.502217957358584
+    },
+    {
+      "hex": "#36221b",
+      "rgb": [
+        54,
+        34,
+        27
+      ],
+      "parent_index": 245,
+      "nearest_delta_e_2000": 4.409965424715598
+    },
+    {
+      "hex": "#440300",
+      "rgb": [
+        68,
+        3,
+        0
+      ],
+      "parent_index": 140,
+      "nearest_delta_e_2000": 4.958589769634771
+    },
+    {
+      "hex": "#560013",
+      "rgb": [
+        86,
+        0,
+        19
+      ],
+      "parent_index": 257,
+      "nearest_delta_e_2000": 4.786546976262148
+    },
+    {
+      "hex": "#391f21",
+      "rgb": [
+        57,
+        31,
+        33
+      ],
+      "parent_index": 253,
+      "nearest_delta_e_2000": 4.699262701962512
+    },
+    {
+      "hex": "#410316",
+      "rgb": [
+        65,
+        3,
+        22
+      ],
+      "parent_index": 133,
+      "nearest_delta_e_2000": 5.22330780168269
+    },
+    {
+      "hex": "#660022",
+      "rgb": [
+        102,
+        0,
+        34
+      ],
+      "parent_index": 389,
+      "nearest_delta_e_2000": 4.786546976262148
+    },
+    {
+      "hex": "#492424",
+      "rgb": [
+        73,
+        36,
+        36
+      ],
+      "parent_index": 380,
+      "nearest_delta_e_2000": 4.4125605188158055
+    },
+    {
+      "hex": "#471916",
+      "rgb": [
+        71,
+        25,
+        22
+      ],
+      "parent_index": 261,
+      "nearest_delta_e_2000": 4.4125605188158055
+    },
+    {
+      "hex": "#4f1507",
+      "rgb": [
+        79,
+        21,
+        7
+      ],
+      "parent_index": 264,
+      "nearest_delta_e_2000": 4.931951855482894
+    },
+    {
+      "hex": "#322b28",
+      "rgb": [
+        50,
+        43,
+        40
+      ],
+      "parent_index": 266,
+      "nearest_delta_e_2000": 4.7828513480932395
+    },
+    {
+      "hex": "#471b00",
+      "rgb": [
+        71,
+        27,
+        0
+      ],
+      "parent_index": 267,
+      "nearest_delta_e_2000": 4.502217957358584
+    },
+    {
+      "hex": "#422300",
+      "rgb": [
+        66,
+        35,
+        0
+      ],
+      "parent_index": 271,
+      "nearest_delta_e_2000": 4.774958141457601
+    },
+    {
+      "hex": "#392a1c",
+      "rgb": [
+        57,
+        42,
+        28
+      ],
+      "parent_index": 272,
+      "nearest_delta_e_2000": 5.148983109488951
+    },
+    {
+      "hex": "#332b13",
+      "rgb": [
+        51,
+        43,
+        19
+      ],
+      "parent_index": 275,
+      "nearest_delta_e_2000": 4.2509927718409655
+    },
+    {
+      "hex": "#332a00",
+      "rgb": [
+        51,
+        42,
+        0
+      ],
+      "parent_index": 276,
+      "nearest_delta_e_2000": 4.2509927718409655
+    },
+    {
+      "hex": "#283405",
+      "rgb": [
+        40,
+        52,
+        5
+      ],
+      "parent_index": 360,
+      "nearest_delta_e_2000": 4.8255272845432495
+    },
+    {
+      "hex": "#28331b",
+      "rgb": [
+        40,
+        51,
+        27
+      ],
+      "parent_index": 359,
+      "nearest_delta_e_2000": 4.762446065797236
+    },
+    {
+      "hex": "#003510",
+      "rgb": [
+        0,
+        53,
+        16
+      ],
+      "parent_index": 283,
+      "nearest_delta_e_2000": 5.839502759417943
+    },
+    {
+      "hex": "#1e2d23",
+      "rgb": [
+        30,
+        45,
+        35
+      ],
+      "parent_index": 231,
+      "nearest_delta_e_2000": 4.342362066835118
+    },
+    {
+      "hex": "#053525",
+      "rgb": [
+        5,
+        53,
+        37
+      ],
+      "parent_index": 284,
+      "nearest_delta_e_2000": 4.898795782904496
+    },
+    {
+      "hex": "#19332d",
+      "rgb": [
+        25,
+        51,
+        45
+      ],
+      "parent_index": 285,
+      "nearest_delta_e_2000": 4.214792013335483
+    },
+    {
+      "hex": "#233333",
+      "rgb": [
+        35,
+        51,
+        51
+      ],
+      "parent_index": 351,
+      "nearest_delta_e_2000": 5.497468071918864
+    },
+    {
+      "hex": "#0f343f",
+      "rgb": [
+        15,
+        52,
+        63
+      ],
+      "parent_index": 349,
+      "nearest_delta_e_2000": 4.462404930901299
+    },
+    {
+      "hex": "#22282e",
+      "rgb": [
+        34,
+        40,
+        46
+      ],
+      "parent_index": 225,
+      "nearest_delta_e_2000": 5.381080828985532
+    },
+    {
+      "hex": "#202e40",
+      "rgb": [
+        32,
+        46,
+        64
+      ],
+      "parent_index": 292,
+      "nearest_delta_e_2000": 4.977927280462815
+    },
+    {
+      "hex": "#262b44",
+      "rgb": [
+        38,
+        43,
+        68
+      ],
+      "parent_index": 302,
+      "nearest_delta_e_2000": 4.610727179586335
+    },
+    {
+      "hex": "#032769",
+      "rgb": [
+        3,
+        39,
+        105
+      ],
+      "parent_index": 295,
+      "nearest_delta_e_2000": 4.323331521762431
+    },
+    {
+      "hex": "#272b57",
+      "rgb": [
+        39,
+        43,
+        87
+      ],
+      "parent_index": 336,
+      "nearest_delta_e_2000": 5.241565903435057
+    },
+    {
+      "hex": "#24246d",
+      "rgb": [
+        36,
+        36,
+        109
+      ],
+      "parent_index": 337,
+      "nearest_delta_e_2000": 4.606615071964007
+    },
+    {
+      "hex": "#00187c",
+      "rgb": [
+        0,
+        24,
+        124
+      ],
+      "parent_index": 297,
+      "nearest_delta_e_2000": 4.304060345576185
+    },
+    {
+      "hex": "#330080",
+      "rgb": [
+        51,
+        0,
+        128
+      ],
+      "parent_index": 335,
+      "nearest_delta_e_2000": 4.365045603166743
+    },
+    {
+      "hex": "#3d1b6d",
+      "rgb": [
+        61,
+        27,
+        109
+      ],
+      "parent_index": 431,
+      "nearest_delta_e_2000": 4.3155510612293275
+    },
+    {
+      "hex": "#381b58",
+      "rgb": [
+        56,
+        27,
+        88
+      ],
+      "parent_index": 310,
+      "nearest_delta_e_2000": 4.3155510612293275
+    },
+    {
+      "hex": "#332a33",
+      "rgb": [
+        51,
+        42,
+        51
+      ],
+      "parent_index": 314,
+      "nearest_delta_e_2000": 5.4493045131013895
+    },
+    {
+      "hex": "#3c233c",
+      "rgb": [
+        60,
+        35,
+        60
+      ],
+      "parent_index": 315,
+      "nearest_delta_e_2000": 4.9341398167024275
+    },
+    {
+      "hex": "#55004c",
+      "rgb": [
+        85,
+        0,
+        76
+      ],
+      "parent_index": 325,
+      "nearest_delta_e_2000": 4.832613583255854
+    },
+    {
+      "hex": "#56093e",
+      "rgb": [
+        86,
+        9,
+        62
+      ],
+      "parent_index": 323,
+      "nearest_delta_e_2000": 4.615057050097352
+    },
+    {
+      "hex": "#670033",
+      "rgb": [
+        103,
+        0,
+        51
+      ],
+      "parent_index": 384,
+      "nearest_delta_e_2000": 4.259955364521252
+    },
+    {
+      "hex": "#562137",
+      "rgb": [
+        86,
+        33,
+        55
+      ],
+      "parent_index": 447,
+      "nearest_delta_e_2000": 4.614633344445623
+    },
+    {
+      "hex": "#4b2837",
+      "rgb": [
+        75,
+        40,
+        55
+      ],
+      "parent_index": 446,
+      "nearest_delta_e_2000": 4.614633344445623
+    },
+    {
+      "hex": "#442e38",
+      "rgb": [
+        68,
+        46,
+        56
+      ],
+      "parent_index": 445,
+      "nearest_delta_e_2000": 4.720264451673983
+    },
+    {
+      "hex": "#6d0049",
+      "rgb": [
+        109,
+        0,
+        73
+      ],
+      "parent_index": 574,
+      "nearest_delta_e_2000": 4.615057050097352
+    },
+    {
+      "hex": "#542a4b",
+      "rgb": [
+        84,
+        42,
+        75
+      ],
+      "parent_index": 572,
+      "nearest_delta_e_2000": 6.088790605825484
+    },
+    {
+      "hex": "#660066",
+      "rgb": [
+        102,
+        0,
+        102
+      ],
+      "parent_index": 569,
+      "nearest_delta_e_2000": 4.3498383117590995
+    },
+    {
+      "hex": "#463246",
+      "rgb": [
+        70,
+        50,
+        70
+      ],
+      "parent_index": 455,
+      "nearest_delta_e_2000": 4.529457057306183
+    },
+    {
+      "hex": "#4f1661",
+      "rgb": [
+        79,
+        22,
+        97
+      ],
+      "parent_index": 438,
+      "nearest_delta_e_2000": 4.8508146631294125
+    },
+    {
+      "hex": "#530f7f",
+      "rgb": [
+        83,
+        15,
+        127
+      ],
+      "parent_index": 565,
+      "nearest_delta_e_2000": 4.746110625832487
+    },
+    {
+      "hex": "#402751",
+      "rgb": [
+        64,
+        39,
+        81
+      ],
+      "parent_index": 435,
+      "nearest_delta_e_2000": 5.528211381200091
+    },
+    {
+      "hex": "#442288",
+      "rgb": [
+        68,
+        34,
+        136
+      ],
+      "parent_index": 561,
+      "nearest_delta_e_2000": 4.675753695593024
+    },
+    {
+      "hex": "#3f354e",
+      "rgb": [
+        63,
+        53,
+        78
+      ],
+      "parent_index": 458,
+      "nearest_delta_e_2000": 4.464095749204689
+    },
+    {
+      "hex": "#0000b6",
+      "rgb": [
+        0,
+        0,
+        182
+      ],
+      "parent_index": 468,
+      "nearest_delta_e_2000": 4.959466859840313
+    },
+    {
+      "hex": "#0024aa",
+      "rgb": [
+        0,
+        36,
+        170
+      ],
+      "parent_index": 550,
+      "nearest_delta_e_2000": 5.0835215243404175
+    },
+    {
+      "hex": "#002782",
+      "rgb": [
+        0,
+        39,
+        130
+      ],
+      "parent_index": 420,
+      "nearest_delta_e_2000": 4.304060345576185
+    },
+    {
+      "hex": "#213960",
+      "rgb": [
+        33,
+        57,
+        96
+      ],
+      "parent_index": 470,
+      "nearest_delta_e_2000": 5.462910883609113
+    },
+    {
+      "hex": "#333941",
+      "rgb": [
+        51,
+        57,
+        65
+      ],
+      "parent_index": 471,
+      "nearest_delta_e_2000": 4.865486927931402
+    },
+    {
+      "hex": "#003c52",
+      "rgb": [
+        0,
+        60,
+        82
+      ],
+      "parent_index": 414,
+      "nearest_delta_e_2000": 5.231902404600292
+    },
+    {
+      "hex": "#003f37",
+      "rgb": [
+        0,
+        63,
+        55
+      ],
+      "parent_index": 408,
+      "nearest_delta_e_2000": 4.772953083464841
+    },
+    {
+      "hex": "#333333",
+      "rgb": [
+        51,
+        51,
+        51
+      ],
+      "parent_index": 364,
+      "nearest_delta_e_2000": 4.561740738682201
+    },
+    {
+      "hex": "#253a2d",
+      "rgb": [
+        37,
+        58,
+        45
+      ],
+      "parent_index": 407,
+      "nearest_delta_e_2000": 4.316063612244027
+    },
+    {
+      "hex": "#1c3d07",
+      "rgb": [
+        28,
+        61,
+        7
+      ],
+      "parent_index": 402,
+      "nearest_delta_e_2000": 5.210935404999809
+    },
+    {
+      "hex": "#333300",
+      "rgb": [
+        51,
+        51,
+        0
+      ],
+      "parent_index": 361,
+      "nearest_delta_e_2000": 5.094384564679955
+    },
+    {
+      "hex": "#43331b",
+      "rgb": [
+        67,
+        51,
+        27
+      ],
+      "parent_index": 401,
+      "nearest_delta_e_2000": 5.148983109488951
+    },
+    {
+      "hex": "#503000",
+      "rgb": [
+        80,
+        48,
+        0
+      ],
+      "parent_index": 495,
+      "nearest_delta_e_2000": 5.620714319517717
+    },
+    {
+      "hex": "#662400",
+      "rgb": [
+        102,
+        36,
+        0
+      ],
+      "parent_index": 522,
+      "nearest_delta_e_2000": 5.016597005884676
+    },
+    {
+      "hex": "#612514",
+      "rgb": [
+        97,
+        37,
+        20
+      ],
+      "parent_index": 498,
+      "nearest_delta_e_2000": 4.931951855482894
+    },
+    {
+      "hex": "#6d0000",
+      "rgb": [
+        109,
+        0,
+        0
+      ],
+      "parent_index": 501,
+      "nearest_delta_e_2000": 5.456348817893516
+    },
+    {
+      "hex": "#691b22",
+      "rgb": [
+        105,
+        27,
+        34
+      ],
+      "parent_index": 515,
+      "nearest_delta_e_2000": 4.335198539085069
+    },
+    {
+      "hex": "#790020",
+      "rgb": [
+        121,
+        0,
+        32
+      ],
+      "parent_index": 514,
+      "nearest_delta_e_2000": 4.335198539085069
+    },
+    {
+      "hex": "#571c27",
+      "rgb": [
+        87,
+        28,
+        39
+      ],
+      "parent_index": 390,
+      "nearest_delta_e_2000": 5.36729332935009
+    },
+    {
+      "hex": "#7b0b3f",
+      "rgb": [
+        123,
+        11,
+        63
+      ],
+      "parent_index": 639,
+      "nearest_delta_e_2000": 4.259955364521252
+    },
+    {
+      "hex": "#5b3138",
+      "rgb": [
+        91,
+        49,
+        56
+      ],
+      "parent_index": 512,
+      "nearest_delta_e_2000": 4.889558284677695
+    },
+    {
+      "hex": "#602c2c",
+      "rgb": [
+        96,
+        44,
+        44
+      ],
+      "parent_index": 516,
+      "nearest_delta_e_2000": 4.889558284677695
+    },
+    {
+      "hex": "#4d3533",
+      "rgb": [
+        77,
+        53,
+        51
+      ],
+      "parent_index": 518,
+      "nearest_delta_e_2000": 6.567870113211677
+    },
+    {
+      "hex": "#850014",
+      "rgb": [
+        133,
+        0,
+        20
+      ],
+      "parent_index": 644,
+      "nearest_delta_e_2000": 4.6892623373172055
+    },
+    {
+      "hex": "#5d342a",
+      "rgb": [
+        93,
+        52,
+        42
+      ],
+      "parent_index": 628,
+      "nearest_delta_e_2000": 5.318124965455374
+    },
+    {
+      "hex": "#592f15",
+      "rgb": [
+        89,
+        47,
+        21
+      ],
+      "parent_index": 524,
+      "nearest_delta_e_2000": 5.386060309540659
+    },
+    {
+      "hex": "#423934",
+      "rgb": [
+        66,
+        57,
+        52
+      ],
+      "parent_index": 497,
+      "nearest_delta_e_2000": 4.7828513480932395
+    },
+    {
+      "hex": "#563927",
+      "rgb": [
+        86,
+        57,
+        39
+      ],
+      "parent_index": 624,
+      "nearest_delta_e_2000": 5.010609805838451
+    },
+    {
+      "hex": "#663300",
+      "rgb": [
+        102,
+        51,
+        0
+      ],
+      "parent_index": 623,
+      "nearest_delta_e_2000": 4.388641522293776
+    },
+    {
+      "hex": "#453a11",
+      "rgb": [
+        69,
+        58,
+        17
+      ],
+      "parent_index": 493,
+      "nearest_delta_e_2000": 5.061181005518092
+    },
+    {
+      "hex": "#433c25",
+      "rgb": [
+        67,
+        60,
+        37
+      ],
+      "parent_index": 532,
+      "nearest_delta_e_2000": 5.014350884915406
+    },
+    {
+      "hex": "#414123",
+      "rgb": [
+        65,
+        65,
+        35
+      ],
+      "parent_index": 533,
+      "nearest_delta_e_2000": 5.014350884915406
+    },
+    {
+      "hex": "#323f1d",
+      "rgb": [
+        50,
+        63,
+        29
+      ],
+      "parent_index": 491,
+      "nearest_delta_e_2000": 4.465499376872988
+    },
+    {
+      "hex": "#274220",
+      "rgb": [
+        39,
+        66,
+        32
+      ],
+      "parent_index": 488,
+      "nearest_delta_e_2000": 4.465499376872988
+    },
+    {
+      "hex": "#004800",
+      "rgb": [
+        0,
+        72,
+        0
+      ],
+      "parent_index": 486,
+      "nearest_delta_e_2000": 5.12120086603907
+    },
+    {
+      "hex": "#004824",
+      "rgb": [
+        0,
+        72,
+        36
+      ],
+      "parent_index": 481,
+      "nearest_delta_e_2000": 4.308461640798272
+    },
+    {
+      "hex": "#414141",
+      "rgb": [
+        65,
+        65,
+        65
+      ],
+      "parent_index": 617,
+      "nearest_delta_e_2000": 4.561740738682201
+    },
+    {
+      "hex": "#114533",
+      "rgb": [
+        17,
+        69,
+        51
+      ],
+      "parent_index": 480,
+      "nearest_delta_e_2000": 4.772953083464841
+    },
+    {
+      "hex": "#004848",
+      "rgb": [
+        0,
+        72,
+        72
+      ],
+      "parent_index": 543,
+      "nearest_delta_e_2000": 4.882101279249168
+    },
+    {
+      "hex": "#1e4044",
+      "rgb": [
+        30,
+        64,
+        68
+      ],
+      "parent_index": 476,
+      "nearest_delta_e_2000": 5.289027150085651
+    },
+    {
+      "hex": "#004855",
+      "rgb": [
+        0,
+        72,
+        85
+      ],
+      "parent_index": 546,
+      "nearest_delta_e_2000": 4.569220808007044
+    },
+    {
+      "hex": "#314047",
+      "rgb": [
+        49,
+        64,
+        71
+      ],
+      "parent_index": 547,
+      "nearest_delta_e_2000": 4.563420186915186
+    },
+    {
+      "hex": "#2a3f55",
+      "rgb": [
+        42,
+        63,
+        85
+      ],
+      "parent_index": 548,
+      "nearest_delta_e_2000": 5.691808723230215
+    },
+    {
+      "hex": "#113f82",
+      "rgb": [
+        17,
+        63,
+        130
+      ],
+      "parent_index": 599,
+      "nearest_delta_e_2000": 4.534293998533084
+    },
+    {
+      "hex": "#3b3b57",
+      "rgb": [
+        59,
+        59,
+        87
+      ],
+      "parent_index": 559,
+      "nearest_delta_e_2000": 4.464095749204689
+    },
+    {
+      "hex": "#1c3890",
+      "rgb": [
+        28,
+        56,
+        144
+      ],
+      "parent_index": 594,
+      "nearest_delta_e_2000": 4.238843297424491
+    },
+    {
+      "hex": "#3c3b66",
+      "rgb": [
+        60,
+        59,
+        102
+      ],
+      "parent_index": 588,
+      "nearest_delta_e_2000": 4.596887326598046
+    },
+    {
+      "hex": "#303090",
+      "rgb": [
+        48,
+        48,
+        144
+      ],
+      "parent_index": 591,
+      "nearest_delta_e_2000": 4.238843297424491
+    },
+    {
+      "hex": "#552d72",
+      "rgb": [
+        85,
+        45,
+        114
+      ],
+      "parent_index": 585,
+      "nearest_delta_e_2000": 4.273521376158507
+    },
+    {
+      "hex": "#662266",
+      "rgb": [
+        102,
+        34,
+        102
+      ],
+      "parent_index": 581,
+      "nearest_delta_e_2000": 4.3498383117590995
+    },
+    {
+      "hex": "#6d2449",
+      "rgb": [
+        109,
+        36,
+        73
+      ],
+      "parent_index": 577,
+      "nearest_delta_e_2000": 5.329502542373466
+    },
+    {
+      "hex": "#504347",
+      "rgb": [
+        80,
+        67,
+        71
+      ],
+      "parent_index": 703,
+      "nearest_delta_e_2000": 4.788333770021203
+    },
+    {
+      "hex": "#5f3a49",
+      "rgb": [
+        95,
+        58,
+        73
+      ],
+      "parent_index": 702,
+      "nearest_delta_e_2000": 4.706069721210442
+    },
+    {
+      "hex": "#841255",
+      "rgb": [
+        132,
+        18,
+        85
+      ],
+      "parent_index": 704,
+      "nearest_delta_e_2000": 5.190793985337009
+    },
+    {
+      "hex": "#7b0d69",
+      "rgb": [
+        123,
+        13,
+        105
+      ],
+      "parent_index": 707,
+      "nearest_delta_e_2000": 4.42683069764484
+    },
+    {
+      "hex": "#7e007e",
+      "rgb": [
+        126,
+        0,
+        126
+      ],
+      "parent_index": 829,
+      "nearest_delta_e_2000": 4.423485910998131
+    },
+    {
+      "hex": "#553f55",
+      "rgb": [
+        85,
+        63,
+        85
+      ],
+      "parent_index": 711,
+      "nearest_delta_e_2000": 4.529457057306183
+    },
+    {
+      "hex": "#780c99",
+      "rgb": [
+        120,
+        12,
+        153
+      ],
+      "parent_index": 838,
+      "nearest_delta_e_2000": 5.118023430292113
+    },
+    {
+      "hex": "#662480",
+      "rgb": [
+        102,
+        36,
+        128
+      ],
+      "parent_index": 712,
+      "nearest_delta_e_2000": 4.585303003859958
+    },
+    {
+      "hex": "#573b73",
+      "rgb": [
+        87,
+        59,
+        115
+      ],
+      "parent_index": 718,
+      "nearest_delta_e_2000": 4.273521376158507
+    },
+    {
+      "hex": "#551faa",
+      "rgb": [
+        85,
+        31,
+        170
+      ],
+      "parent_index": 720,
+      "nearest_delta_e_2000": 4.203560017555833
+    },
+    {
+      "hex": "#473c8b",
+      "rgb": [
+        71,
+        60,
+        139
+      ],
+      "parent_index": 724,
+      "nearest_delta_e_2000": 4.208689573763783
+    },
+    {
+      "hex": "#3a4466",
+      "rgb": [
+        58,
+        68,
+        102
+      ],
+      "parent_index": 689,
+      "nearest_delta_e_2000": 4.582405666813914
+    },
+    {
+      "hex": "#00486d",
+      "rgb": [
+        0,
+        72,
+        109
+      ],
+      "parent_index": 602,
+      "nearest_delta_e_2000": 4.779672580878102
+    },
+    {
+      "hex": "#354b59",
+      "rgb": [
+        53,
+        75,
+        89
+      ],
+      "parent_index": 737,
+      "nearest_delta_e_2000": 4.497987530918247
+    },
+    {
+      "hex": "#004d68",
+      "rgb": [
+        0,
+        77,
+        104
+      ],
+      "parent_index": 677,
+      "nearest_delta_e_2000": 4.779672580878102
+    },
+    {
+      "hex": "#244855",
+      "rgb": [
+        36,
+        72,
+        85
+      ],
+      "parent_index": 603,
+      "nearest_delta_e_2000": 4.497987530918247
+    },
+    {
+      "hex": "#394646",
+      "rgb": [
+        57,
+        70,
+        70
+      ],
+      "parent_index": 604,
+      "nearest_delta_e_2000": 4.563420186915186
+    },
+    {
+      "hex": "#334940",
+      "rgb": [
+        51,
+        73,
+        64
+      ],
+      "parent_index": 610,
+      "nearest_delta_e_2000": 5.368961965149767
+    },
+    {
+      "hex": "#2f4f1f",
+      "rgb": [
+        47,
+        79,
+        31
+      ],
+      "parent_index": 661,
+      "nearest_delta_e_2000": 4.397560374913411
+    },
+    {
+      "hex": "#334900",
+      "rgb": [
+        51,
+        73,
+        0
+      ],
+      "parent_index": 615,
+      "nearest_delta_e_2000": 4.565209528889404
+    },
+    {
+      "hex": "#484919",
+      "rgb": [
+        72,
+        73,
+        25
+      ],
+      "parent_index": 660,
+      "nearest_delta_e_2000": 4.253760722423371
+    },
+    {
+      "hex": "#494900",
+      "rgb": [
+        73,
+        73,
+        0
+      ],
+      "parent_index": 659,
+      "nearest_delta_e_2000": 4.246745759723571
+    },
+    {
+      "hex": "#554800",
+      "rgb": [
+        85,
+        72,
+        0
+      ],
+      "parent_index": 754,
+      "nearest_delta_e_2000": 4.7754802740365125
+    },
+    {
+      "hex": "#553f00",
+      "rgb": [
+        85,
+        63,
+        0
+      ],
+      "parent_index": 618,
+      "nearest_delta_e_2000": 4.525887443035573
+    },
+    {
+      "hex": "#54432b",
+      "rgb": [
+        84,
+        67,
+        43
+      ],
+      "parent_index": 656,
+      "nearest_delta_e_2000": 5.037416352467559
+    },
+    {
+      "hex": "#5b3f1f",
+      "rgb": [
+        91,
+        63,
+        31
+      ],
+      "parent_index": 655,
+      "nearest_delta_e_2000": 4.723893088590009
+    },
+    {
+      "hex": "#74341a",
+      "rgb": [
+        116,
+        52,
+        26
+      ],
+      "parent_index": 759,
+      "nearest_delta_e_2000": 4.307772200519048
+    },
+    {
+      "hex": "#78250f",
+      "rgb": [
+        120,
+        37,
+        15
+      ],
+      "parent_index": 649,
+      "nearest_delta_e_2000": 4.307772200519048
+    },
+    {
+      "hex": "#920000",
+      "rgb": [
+        146,
+        0,
+        0
+      ],
+      "parent_index": 777,
+      "nearest_delta_e_2000": 4.837858594743721
+    },
+    {
+      "hex": "#742f29",
+      "rgb": [
+        116,
+        47,
+        41
+      ],
+      "parent_index": 764,
+      "nearest_delta_e_2000": 5.640162086504871
+    },
+    {
+      "hex": "#920024",
+      "rgb": [
+        146,
+        0,
+        36
+      ],
+      "parent_index": 773,
+      "nearest_delta_e_2000": 4.6892623373172055
+    },
+    {
+      "hex": "#73263d",
+      "rgb": [
+        115,
+        38,
+        61
+      ],
+      "parent_index": 640,
+      "nearest_delta_e_2000": 4.739743884055213
+    },
+    {
+      "hex": "#920049",
+      "rgb": [
+        146,
+        0,
+        73
+      ],
+      "parent_index": 895,
+      "nearest_delta_e_2000": 4.367001945351772
+    },
+    {
+      "hex": "#5e474c",
+      "rgb": [
+        94,
+        71,
+        76
+      ],
+      "parent_index": 769,
+      "nearest_delta_e_2000": 4.788333770021203
+    },
+    {
+      "hex": "#684545",
+      "rgb": [
+        104,
+        69,
+        69
+      ],
+      "parent_index": 891,
+      "nearest_delta_e_2000": 4.969986815219242
+    },
+    {
+      "hex": "#8f2727",
+      "rgb": [
+        143,
+        39,
+        39
+      ],
+      "parent_index": 890,
+      "nearest_delta_e_2000": 4.762237209704473
+    },
+    {
+      "hex": "#684634",
+      "rgb": [
+        104,
+        70,
+        52
+      ],
+      "parent_index": 880,
+      "nearest_delta_e_2000": 4.274999457754394
+    },
+    {
+      "hex": "#724113",
+      "rgb": [
+        114,
+        65,
+        19
+      ],
+      "parent_index": 879,
+      "nearest_delta_e_2000": 4.215265354893296
+    },
+    {
+      "hex": "#6e4300",
+      "rgb": [
+        110,
+        67,
+        0
+      ],
+      "parent_index": 785,
+      "nearest_delta_e_2000": 4.757863937519678
+    },
+    {
+      "hex": "#664900",
+      "rgb": [
+        102,
+        73,
+        0
+      ],
+      "parent_index": 788,
+      "nearest_delta_e_2000": 4.525887443035573
+    },
+    {
+      "hex": "#554824",
+      "rgb": [
+        85,
+        72,
+        36
+      ],
+      "parent_index": 755,
+      "nearest_delta_e_2000": 5.061181005518092
+    },
+    {
+      "hex": "#465032",
+      "rgb": [
+        70,
+        80,
+        50
+      ],
+      "parent_index": 793,
+      "nearest_delta_e_2000": 5.026977070252401
+    },
+    {
+      "hex": "#005800",
+      "rgb": [
+        0,
+        88,
+        0
+      ],
+      "parent_index": 747,
+      "nearest_delta_e_2000": 4.3723500625632035
+    },
+    {
+      "hex": "#23532b",
+      "rgb": [
+        35,
+        83,
+        43
+      ],
+      "parent_index": 666,
+      "nearest_delta_e_2000": 4.31422593052276
+    },
+    {
+      "hex": "#005533",
+      "rgb": [
+        0,
+        85,
+        51
+      ],
+      "parent_index": 671,
+      "nearest_delta_e_2000": 4.308461640798272
+    },
+    {
+      "hex": "#2f5443",
+      "rgb": [
+        47,
+        84,
+        67
+      ],
+      "parent_index": 744,
+      "nearest_delta_e_2000": 4.680046584429494
+    },
+    {
+      "hex": "#00534b",
+      "rgb": [
+        0,
+        83,
+        75
+      ],
+      "parent_index": 672,
+      "nearest_delta_e_2000": 4.835431287970355
+    },
+    {
+      "hex": "#2f4f4f",
+      "rgb": [
+        47,
+        79,
+        79
+      ],
+      "parent_index": 740,
+      "nearest_delta_e_2000": 5.1116458145764625
+    },
+    {
+      "hex": "#125359",
+      "rgb": [
+        18,
+        83,
+        89
+      ],
+      "parent_index": 738,
+      "nearest_delta_e_2000": 4.656460717588301
+    },
+    {
+      "hex": "#124e89",
+      "rgb": [
+        18,
+        78,
+        137
+      ],
+      "parent_index": 806,
+      "nearest_delta_e_2000": 4.2564447594967785
+    },
+    {
+      "hex": "#334980",
+      "rgb": [
+        51,
+        73,
+        128
+      ],
+      "parent_index": 812,
+      "nearest_delta_e_2000": 4.551804888376548
+    },
+    {
+      "hex": "#484855",
+      "rgb": [
+        72,
+        72,
+        85
+      ],
+      "parent_index": 725,
+      "nearest_delta_e_2000": 5.052353938789905
+    },
+    {
+      "hex": "#4c4c66",
+      "rgb": [
+        76,
+        76,
+        102
+      ],
+      "parent_index": 846,
+      "nearest_delta_e_2000": 5.237345197775716
+    },
+    {
+      "hex": "#494973",
+      "rgb": [
+        73,
+        73,
+        115
+      ],
+      "parent_index": 819,
+      "nearest_delta_e_2000": 4.582405666813914
+    },
+    {
+      "hex": "#0f43bb",
+      "rgb": [
+        15,
+        67,
+        187
+      ],
+      "parent_index": 855,
+      "nearest_delta_e_2000": 6.164141502476651
+    },
+    {
+      "hex": "#3333cc",
+      "rgb": [
+        51,
+        51,
+        204
+      ],
+      "parent_index": 939,
+      "nearest_delta_e_2000": 5.945281501920165
+    },
+    {
+      "hex": "#0000f6",
+      "rgb": [
+        0,
+        0,
+        246
+      ],
+      "parent_index": 937,
+      "nearest_delta_e_2000": 5.08662914347088
+    },
+    {
+      "hex": "#5500d2",
+      "rgb": [
+        85,
+        0,
+        210
+      ],
+      "parent_index": 944,
+      "nearest_delta_e_2000": 4.865479213059237
+    },
+    {
+      "hex": "#504758",
+      "rgb": [
+        80,
+        71,
+        88
+      ],
+      "parent_index": 716,
+      "nearest_delta_e_2000": 5.052353938789905
+    },
+    {
+      "hex": "#663399",
+      "rgb": [
+        102,
+        51,
+        153
+      ],
+      "parent_index": 946,
+      "nearest_delta_e_2000": 5.402677540353357
+    },
+    {
+      "hex": "#6d00b6",
+      "rgb": [
+        109,
+        0,
+        182
+      ],
+      "parent_index": 840,
+      "nearest_delta_e_2000": 4.203560017555833
+    },
+    {
+      "hex": "#584066",
+      "rgb": [
+        88,
+        64,
+        102
+      ],
+      "parent_index": 826,
+      "nearest_delta_e_2000": 4.939047956800956
+    },
+    {
+      "hex": "#68386c",
+      "rgb": [
+        104,
+        56,
+        108
+      ],
+      "parent_index": 827,
+      "nearest_delta_e_2000": 5.333315590132083
+    },
+    {
+      "hex": "#94007a",
+      "rgb": [
+        148,
+        0,
+        122
+      ],
+      "parent_index": 965,
+      "nearest_delta_e_2000": 4.471079220115948
+    },
+    {
+      "hex": "#6d4855",
+      "rgb": [
+        109,
+        72,
+        85
+      ],
+      "parent_index": 959,
+      "nearest_delta_e_2000": 4.706069721210442
+    },
+    {
+      "hex": "#92246d",
+      "rgb": [
+        146,
+        36,
+        109
+      ],
+      "parent_index": 1086,
+      "nearest_delta_e_2000": 4.67022959421843
+    },
+    {
+      "hex": "#7d3564",
+      "rgb": [
+        125,
+        53,
+        100
+      ],
+      "parent_index": 955,
+      "nearest_delta_e_2000": 4.321081609101524
+    },
+    {
+      "hex": "#882e7e",
+      "rgb": [
+        136,
+        46,
+        126
+      ],
+      "parent_index": 1083,
+      "nearest_delta_e_2000": 4.471079220115948
+    },
+    {
+      "hex": "#920092",
+      "rgb": [
+        146,
+        0,
+        146
+      ],
+      "parent_index": 1082,
+      "nearest_delta_e_2000": 4.423485910998131
+    },
+    {
+      "hex": "#7a378b",
+      "rgb": [
+        122,
+        55,
+        139
+      ],
+      "parent_index": 1081,
+      "nearest_delta_e_2000": 4.970124930354712
+    },
+    {
+      "hex": "#5b4e6b",
+      "rgb": [
+        91,
+        78,
+        107
+      ],
+      "parent_index": 948,
+      "nearest_delta_e_2000": 5.404190067819081
+    },
+    {
+      "hex": "#553faa",
+      "rgb": [
+        85,
+        63,
+        170
+      ],
+      "parent_index": 981,
+      "nearest_delta_e_2000": 5.2323267384784415
+    },
+    {
+      "hex": "#494992",
+      "rgb": [
+        73,
+        73,
+        146
+      ],
+      "parent_index": 942,
+      "nearest_delta_e_2000": 4.208689573763783
+    },
+    {
+      "hex": "#4a5462",
+      "rgb": [
+        74,
+        84,
+        98
+      ],
+      "parent_index": 934,
+      "nearest_delta_e_2000": 6.096463860046201
+    },
+    {
+      "hex": "#3b5773",
+      "rgb": [
+        59,
+        87,
+        115
+      ],
+      "parent_index": 932,
+      "nearest_delta_e_2000": 6.24442804369717
+    },
+    {
+      "hex": "#175c5b",
+      "rgb": [
+        23,
+        92,
+        91
+      ],
+      "parent_index": 859,
+      "nearest_delta_e_2000": 4.44265027880023
+    },
+    {
+      "hex": "#00604b",
+      "rgb": [
+        0,
+        96,
+        75
+      ],
+      "parent_index": 861,
+      "nearest_delta_e_2000": 4.25492512630676
+    },
+    {
+      "hex": "#265c42",
+      "rgb": [
+        38,
+        92,
+        66
+      ],
+      "parent_index": 863,
+      "nearest_delta_e_2000": 4.25492512630676
+    },
+    {
+      "hex": "#3b573b",
+      "rgb": [
+        59,
+        87,
+        59
+      ],
+      "parent_index": 800,
+      "nearest_delta_e_2000": 5.003111038231466
+    },
+    {
+      "hex": "#205c20",
+      "rgb": [
+        32,
+        92,
+        32
+      ],
+      "parent_index": 798,
+      "nearest_delta_e_2000": 4.3723500625632035
+    },
+    {
+      "hex": "#2a5f00",
+      "rgb": [
+        42,
+        95,
+        0
+      ],
+      "parent_index": 866,
+      "nearest_delta_e_2000": 4.243199629740759
+    },
+    {
+      "hex": "#495627",
+      "rgb": [
+        73,
+        86,
+        39
+      ],
+      "parent_index": 869,
+      "nearest_delta_e_2000": 5.026977070252401
+    },
+    {
+      "hex": "#405600",
+      "rgb": [
+        64,
+        86,
+        0
+      ],
+      "parent_index": 794,
+      "nearest_delta_e_2000": 4.565209528889404
+    },
+    {
+      "hex": "#555500",
+      "rgb": [
+        85,
+        85,
+        0
+      ],
+      "parent_index": 870,
+      "nearest_delta_e_2000": 4.246745759723571
+    },
+    {
+      "hex": "#6d4924",
+      "rgb": [
+        109,
+        73,
+        36
+      ],
+      "parent_index": 916,
+      "nearest_delta_e_2000": 4.380917555779952
+    },
+    {
+      "hex": "#5a4e44",
+      "rgb": [
+        90,
+        78,
+        68
+      ],
+      "parent_index": 876,
+      "nearest_delta_e_2000": 6.315923134960301
+    },
+    {
+      "hex": "#77472b",
+      "rgb": [
+        119,
+        71,
+        43
+      ],
+      "parent_index": 911,
+      "nearest_delta_e_2000": 4.583767866505211
+    },
+    {
+      "hex": "#8e2e00",
+      "rgb": [
+        142,
+        46,
+        0
+      ],
+      "parent_index": 909,
+      "nearest_delta_e_2000": 4.891645255073206
+    },
+    {
+      "hex": "#9f1e00",
+      "rgb": [
+        159,
+        30,
+        0
+      ],
+      "parent_index": 1016,
+      "nearest_delta_e_2000": 4.837858594743721
+    },
+    {
+      "hex": "#664940",
+      "rgb": [
+        102,
+        73,
+        64
+      ],
+      "parent_index": 881,
+      "nearest_delta_e_2000": 4.274999457754394
+    },
+    {
+      "hex": "#8f3622",
+      "rgb": [
+        143,
+        54,
+        34
+      ],
+      "parent_index": 1015,
+      "nearest_delta_e_2000": 4.4925536753156
+    },
+    {
+      "hex": "#a80020",
+      "rgb": [
+        168,
+        0,
+        32
+      ],
+      "parent_index": 1029,
+      "nearest_delta_e_2000": 5.043632781249654
+    },
+    {
+      "hex": "#764145",
+      "rgb": [
+        118,
+        65,
+        69
+      ],
+      "parent_index": 901,
+      "nearest_delta_e_2000": 4.812288435467662
+    },
+    {
+      "hex": "#992440",
+      "rgb": [
+        153,
+        36,
+        64
+      ],
+      "parent_index": 1022,
+      "nearest_delta_e_2000": 5.008138654900588
+    },
+    {
+      "hex": "#8c394e",
+      "rgb": [
+        140,
+        57,
+        78
+      ],
+      "parent_index": 1025,
+      "nearest_delta_e_2000": 4.534583062894153
+    },
+    {
+      "hex": "#763d4e",
+      "rgb": [
+        118,
+        61,
+        78
+      ],
+      "parent_index": 894,
+      "nearest_delta_e_2000": 5.025930532000673
+    },
+    {
+      "hex": "#b00258",
+      "rgb": [
+        176,
+        2,
+        88
+      ],
+      "parent_index": 1153,
+      "nearest_delta_e_2000": 5.384321008082009
+    },
+    {
+      "hex": "#b3003d",
+      "rgb": [
+        179,
+        0,
+        61
+      ],
+      "parent_index": 1157,
+      "nearest_delta_e_2000": 4.3089651488883485
+    },
+    {
+      "hex": "#884444",
+      "rgb": [
+        136,
+        68,
+        68
+      ],
+      "parent_index": 1146,
+      "nearest_delta_e_2000": 4.595793651332615
+    },
+    {
+      "hex": "#7a4841",
+      "rgb": [
+        122,
+        72,
+        65
+      ],
+      "parent_index": 1017,
+      "nearest_delta_e_2000": 4.665192389935771
+    },
+    {
+      "hex": "#a22e24",
+      "rgb": [
+        162,
+        46,
+        36
+      ],
+      "parent_index": 1143,
+      "nearest_delta_e_2000": 4.4925536753156
+    },
+    {
+      "hex": "#b20f0f",
+      "rgb": [
+        178,
+        15,
+        15
+      ],
+      "parent_index": 1162,
+      "nearest_delta_e_2000": 4.500006289047779
+    },
+    {
+      "hex": "#8b4726",
+      "rgb": [
+        139,
+        71,
+        38
+      ],
+      "parent_index": 1137,
+      "nearest_delta_e_2000": 4.530672972220398
+    },
+    {
+      "hex": "#8e3d00",
+      "rgb": [
+        142,
+        61,
+        0
+      ],
+      "parent_index": 1039,
+      "nearest_delta_e_2000": 4.92437490760668
+    },
+    {
+      "hex": "#82491e",
+      "rgb": [
+        130,
+        73,
+        30
+      ],
+      "parent_index": 1042,
+      "nearest_delta_e_2000": 4.215265354893296
+    },
+    {
+      "hex": "#864a00",
+      "rgb": [
+        134,
+        74,
+        0
+      ],
+      "parent_index": 1044,
+      "nearest_delta_e_2000": 5.009592932512998
+    },
+    {
+      "hex": "#65533b",
+      "rgb": [
+        101,
+        83,
+        59
+      ],
+      "parent_index": 1010,
+      "nearest_delta_e_2000": 5.545875217180992
+    },
+    {
+      "hex": "#5e5637",
+      "rgb": [
+        94,
+        86,
+        55
+      ],
+      "parent_index": 1008,
+      "nearest_delta_e_2000": 5.422207450659121
+    },
+    {
+      "hex": "#555f00",
+      "rgb": [
+        85,
+        95,
+        0
+      ],
+      "parent_index": 1050,
+      "nearest_delta_e_2000": 4.271055349965648
+    },
+    {
+      "hex": "#006600",
+      "rgb": [
+        0,
+        102,
+        0
+      ],
+      "parent_index": 924,
+      "nearest_delta_e_2000": 4.243199629740759
+    },
+    {
+      "hex": "#3b6332",
+      "rgb": [
+        59,
+        99,
+        50
+      ],
+      "parent_index": 1002,
+      "nearest_delta_e_2000": 4.493391811559819
+    },
+    {
+      "hex": "#006633",
+      "rgb": [
+        0,
+        102,
+        51
+      ],
+      "parent_index": 925,
+      "nearest_delta_e_2000": 4.773029050683583
+    },
+    {
+      "hex": "#595959",
+      "rgb": [
+        89,
+        89,
+        89
+      ],
+      "parent_index": 1048,
+      "nearest_delta_e_2000": 4.75554603759762
+    },
+    {
+      "hex": "#2a5f55",
+      "rgb": [
+        42,
+        95,
+        85
+      ],
+      "parent_index": 927,
+      "nearest_delta_e_2000": 4.3500759561376805
+    },
+    {
+      "hex": "#435b5b",
+      "rgb": [
+        67,
+        91,
+        91
+      ],
+      "parent_index": 996,
+      "nearest_delta_e_2000": 4.722714094616583
+    },
+    {
+      "hex": "#00616b",
+      "rgb": [
+        0,
+        97,
+        107
+      ],
+      "parent_index": 995,
+      "nearest_delta_e_2000": 4.915740133486459
+    },
+    {
+      "hex": "#415d66",
+      "rgb": [
+        65,
+        93,
+        102
+      ],
+      "parent_index": 993,
+      "nearest_delta_e_2000": 4.412586626378851
+    },
+    {
+      "hex": "#135e71",
+      "rgb": [
+        19,
+        94,
+        113
+      ],
+      "parent_index": 930,
+      "nearest_delta_e_2000": 5.038942407958184
+    },
+    {
+      "hex": "#1f5f7f",
+      "rgb": [
+        31,
+        95,
+        127
+      ],
+      "parent_index": 1066,
+      "nearest_delta_e_2000": 5.284215150344146
+    },
+    {
+      "hex": "#0055aa",
+      "rgb": [
+        0,
+        85,
+        170
+      ],
+      "parent_index": 991,
+      "nearest_delta_e_2000": 4.2564447594967785
+    },
+    {
+      "hex": "#3854a8",
+      "rgb": [
+        56,
+        84,
+        168
+      ],
+      "parent_index": 1070,
+      "nearest_delta_e_2000": 4.402863148617894
+    },
+    {
+      "hex": "#0036ff",
+      "rgb": [
+        0,
+        54,
+        255
+      ],
+      "parent_index": 1193,
+      "nearest_delta_e_2000": 5.592938369837651
+    },
+    {
+      "hex": "#5c4f7d",
+      "rgb": [
+        92,
+        79,
+        125
+      ],
+      "parent_index": 977,
+      "nearest_delta_e_2000": 4.8995913512667935
+    },
+    {
+      "hex": "#6a31ca",
+      "rgb": [
+        106,
+        49,
+        202
+      ],
+      "parent_index": 1101,
+      "nearest_delta_e_2000": 5.629009350733714
+    },
+    {
+      "hex": "#6d4992",
+      "rgb": [
+        109,
+        73,
+        146
+      ],
+      "parent_index": 1098,
+      "nearest_delta_e_2000": 4.781150082025402
+    },
+    {
+      "hex": "#8800cc",
+      "rgb": [
+        136,
+        0,
+        204
+      ],
+      "parent_index": 1205,
+      "nearest_delta_e_2000": 5.113420796131903
+    },
+    {
+      "hex": "#6d496d",
+      "rgb": [
+        109,
+        73,
+        109
+      ],
+      "parent_index": 969,
+      "nearest_delta_e_2000": 5.482349970406565
+    },
+    {
+      "hex": "#8b3a62",
+      "rgb": [
+        139,
+        58,
+        98
+      ],
+      "parent_index": 1087,
+      "nearest_delta_e_2000": 4.321081609101524
+    },
+    {
+      "hex": "#aa246d",
+      "rgb": [
+        170,
+        36,
+        109
+      ],
+      "parent_index": 1217,
+      "nearest_delta_e_2000": 5.24243856171001
+    },
+    {
+      "hex": "#824b6c",
+      "rgb": [
+        130,
+        75,
+        108
+      ],
+      "parent_index": 1212,
+      "nearest_delta_e_2000": 5.322427267441266
+    },
+    {
+      "hex": "#aa0091",
+      "rgb": [
+        170,
+        0,
+        145
+      ],
+      "parent_index": 1218,
+      "nearest_delta_e_2000": 4.372174264592872
+    },
+    {
+      "hex": "#993399",
+      "rgb": [
+        153,
+        51,
+        153
+      ],
+      "parent_index": 1341,
+      "nearest_delta_e_2000": 4.801438389845267
+    },
+    {
+      "hex": "#884488",
+      "rgb": [
+        136,
+        68,
+        136
+      ],
+      "parent_index": 1222,
+      "nearest_delta_e_2000": 4.901204650620252
+    },
+    {
+      "hex": "#665566",
+      "rgb": [
+        102,
+        85,
+        102
+      ],
+      "parent_index": 1093,
+      "nearest_delta_e_2000": 5.441990733985323
+    },
+    {
+      "hex": "#9224aa",
+      "rgb": [
+        146,
+        36,
+        170
+      ],
+      "parent_index": 1224,
+      "nearest_delta_e_2000": 4.817363853002306
+    },
+    {
+      "hex": "#6624ff",
+      "rgb": [
+        102,
+        36,
+        255
+      ],
+      "parent_index": 1361,
+      "nearest_delta_e_2000": 4.872210116941364
+    },
+    {
+      "hex": "#6d49aa",
+      "rgb": [
+        109,
+        73,
+        170
+      ],
+      "parent_index": 1204,
+      "nearest_delta_e_2000": 4.781150082025402
+    },
+    {
+      "hex": "#4949db",
+      "rgb": [
+        73,
+        73,
+        219
+      ],
+      "parent_index": 1235,
+      "nearest_delta_e_2000": 4.8194757859232995
+    },
+    {
+      "hex": "#5851a8",
+      "rgb": [
+        88,
+        81,
+        168
+      ],
+      "parent_index": 1200,
+      "nearest_delta_e_2000": 4.5484743294778065
+    },
+    {
+      "hex": "#336666",
+      "rgb": [
+        51,
+        102,
+        102
+      ],
+      "parent_index": 1114,
+      "nearest_delta_e_2000": 4.503250602692861
+    },
+    {
+      "hex": "#07675f",
+      "rgb": [
+        7,
+        103,
+        95
+      ],
+      "parent_index": 1061,
+      "nearest_delta_e_2000": 4.3500759561376805
+    },
+    {
+      "hex": "#006d48",
+      "rgb": [
+        0,
+        109,
+        72
+      ],
+      "parent_index": 1119,
+      "nearest_delta_e_2000": 4.447755112596827
+    },
+    {
+      "hex": "#555f55",
+      "rgb": [
+        85,
+        95,
+        85
+      ],
+      "parent_index": 1121,
+      "nearest_delta_e_2000": 4.658428766732586
+    },
+    {
+      "hex": "#506450",
+      "rgb": [
+        80,
+        100,
+        80
+      ],
+      "parent_index": 1122,
+      "nearest_delta_e_2000": 5.365209395502897
+    },
+    {
+      "hex": "#446644",
+      "rgb": [
+        68,
+        102,
+        68
+      ],
+      "parent_index": 1123,
+      "nearest_delta_e_2000": 4.257435829172104
+    },
+    {
+      "hex": "#246d24",
+      "rgb": [
+        36,
+        109,
+        36
+      ],
+      "parent_index": 1125,
+      "nearest_delta_e_2000": 4.371863061824629
+    },
+    {
+      "hex": "#446600",
+      "rgb": [
+        68,
+        102,
+        0
+      ],
+      "parent_index": 1051,
+      "nearest_delta_e_2000": 5.04477285854729
+    },
+    {
+      "hex": "#6e5c00",
+      "rgb": [
+        110,
+        92,
+        0
+      ],
+      "parent_index": 1129,
+      "nearest_delta_e_2000": 5.56717299366191
+    },
+    {
+      "hex": "#785423",
+      "rgb": [
+        120,
+        84,
+        35
+      ],
+      "parent_index": 1132,
+      "nearest_delta_e_2000": 4.943744510135199
+    },
+    {
+      "hex": "#7f532f",
+      "rgb": [
+        127,
+        83,
+        47
+      ],
+      "parent_index": 1171,
+      "nearest_delta_e_2000": 4.2583467925905465
+    },
+    {
+      "hex": "#765740",
+      "rgb": [
+        118,
+        87,
+        64
+      ],
+      "parent_index": 1170,
+      "nearest_delta_e_2000": 5.119664799412964
+    },
+    {
+      "hex": "#a43d00",
+      "rgb": [
+        164,
+        61,
+        0
+      ],
+      "parent_index": 1266,
+      "nearest_delta_e_2000": 4.441107335813466
+    },
+    {
+      "hex": "#b02f00",
+      "rgb": [
+        176,
+        47,
+        0
+      ],
+      "parent_index": 1267,
+      "nearest_delta_e_2000": 4.441107335813466
+    },
+    {
+      "hex": "#6b5853",
+      "rgb": [
+        107,
+        88,
+        83
+      ],
+      "parent_index": 1139,
+      "nearest_delta_e_2000": 4.379713856472455
+    },
+    {
+      "hex": "#94493a",
+      "rgb": [
+        148,
+        73,
+        58
+      ],
+      "parent_index": 1269,
+      "nearest_delta_e_2000": 5.189047663528881
+    },
+    {
+      "hex": "#77534e",
+      "rgb": [
+        119,
+        83,
+        78
+      ],
+      "parent_index": 1144,
+      "nearest_delta_e_2000": 4.763910836329491
+    },
+    {
+      "hex": "#a33b3b",
+      "rgb": [
+        163,
+        59,
+        59
+      ],
+      "parent_index": 1273,
+      "nearest_delta_e_2000": 4.844061056904484
+    },
+    {
+      "hex": "#b31c35",
+      "rgb": [
+        179,
+        28,
+        53
+      ],
+      "parent_index": 1275,
+      "nearest_delta_e_2000": 4.3089651488883485
+    },
+    {
+      "hex": "#72565c",
+      "rgb": [
+        114,
+        86,
+        92
+      ],
+      "parent_index": 1155,
+      "nearest_delta_e_2000": 5.614867677721517
+    },
+    {
+      "hex": "#8b475d",
+      "rgb": [
+        139,
+        71,
+        93
+      ],
+      "parent_index": 1152,
+      "nearest_delta_e_2000": 4.534583062894153
+    },
+    {
+      "hex": "#be1250",
+      "rgb": [
+        190,
+        18,
+        80
+      ],
+      "parent_index": 1404,
+      "nearest_delta_e_2000": 4.20934810869136
+    },
+    {
+      "hex": "#aa3f55",
+      "rgb": [
+        170,
+        63,
+        85
+      ],
+      "parent_index": 1402,
+      "nearest_delta_e_2000": 4.7215032348670425
+    },
+    {
+      "hex": "#855657",
+      "rgb": [
+        133,
+        86,
+        87
+      ],
+      "parent_index": 1284,
+      "nearest_delta_e_2000": 4.578181459813202
+    },
+    {
+      "hex": "#c42430",
+      "rgb": [
+        196,
+        36,
+        48
+      ],
+      "parent_index": 1414,
+      "nearest_delta_e_2000": 4.600050485321411
+    },
+    {
+      "hex": "#8e524c",
+      "rgb": [
+        142,
+        82,
+        76
+      ],
+      "parent_index": 1288,
+      "nearest_delta_e_2000": 4.578181459813202
+    },
+    {
+      "hex": "#b23e34",
+      "rgb": [
+        178,
+        62,
+        52
+      ],
+      "parent_index": 1401,
+      "nearest_delta_e_2000": 4.217044071336366
+    },
+    {
+      "hex": "#cd0000",
+      "rgb": [
+        205,
+        0,
+        0
+      ],
+      "parent_index": 1418,
+      "nearest_delta_e_2000": 4.612571249383313
+    },
+    {
+      "hex": "#8b5742",
+      "rgb": [
+        139,
+        87,
+        66
+      ],
+      "parent_index": 1295,
+      "nearest_delta_e_2000": 5.113709597212
+    },
+    {
+      "hex": "#a04b05",
+      "rgb": [
+        160,
+        75,
+        5
+      ],
+      "parent_index": 1297,
+      "nearest_delta_e_2000": 4.74790810641281
+    },
+    {
+      "hex": "#8b5a00",
+      "rgb": [
+        139,
+        90,
+        0
+      ],
+      "parent_index": 1299,
+      "nearest_delta_e_2000": 5.764088589339585
+    },
+    {
+      "hex": "#666622",
+      "rgb": [
+        102,
+        102,
+        34
+      ],
+      "parent_index": 1260,
+      "nearest_delta_e_2000": 4.537441577053398
+    },
+    {
+      "hex": "#556b2f",
+      "rgb": [
+        85,
+        107,
+        47
+      ],
+      "parent_index": 1258,
+      "nearest_delta_e_2000": 4.959025997437391
+    },
+    {
+      "hex": "#336d40",
+      "rgb": [
+        51,
+        109,
+        64
+      ],
+      "parent_index": 1182,
+      "nearest_delta_e_2000": 4.412818915854822
+    },
+    {
+      "hex": "#486d55",
+      "rgb": [
+        72,
+        109,
+        85
+      ],
+      "parent_index": 1253,
+      "nearest_delta_e_2000": 4.459387157744305
+    },
+    {
+      "hex": "#246d55",
+      "rgb": [
+        36,
+        109,
+        85
+      ],
+      "parent_index": 1118,
+      "nearest_delta_e_2000": 4.314120639736344
+    },
+    {
+      "hex": "#576863",
+      "rgb": [
+        87,
+        104,
+        99
+      ],
+      "parent_index": 1251,
+      "nearest_delta_e_2000": 4.658428766732586
+    },
+    {
+      "hex": "#006d80",
+      "rgb": [
+        0,
+        109,
+        128
+      ],
+      "parent_index": 1186,
+      "nearest_delta_e_2000": 5.026916402445972
+    },
+    {
+      "hex": "#496975",
+      "rgb": [
+        73,
+        105,
+        117
+      ],
+      "parent_index": 1248,
+      "nearest_delta_e_2000": 4.412586626378851
+    },
+    {
+      "hex": "#00679b",
+      "rgb": [
+        0,
+        103,
+        155
+      ],
+      "parent_index": 1187,
+      "nearest_delta_e_2000": 5.284215150344146
+    },
+    {
+      "hex": "#2a57c9",
+      "rgb": [
+        42,
+        87,
+        201
+      ],
+      "parent_index": 1239,
+      "nearest_delta_e_2000": 4.402863148617894
+    },
+    {
+      "hex": "#555faa",
+      "rgb": [
+        85,
+        95,
+        170
+      ],
+      "parent_index": 1328,
+      "nearest_delta_e_2000": 4.848507427381533
+    },
+    {
+      "hex": "#5e5b8c",
+      "rgb": [
+        94,
+        91,
+        140
+      ],
+      "parent_index": 1232,
+      "nearest_delta_e_2000": 4.715817046648009
+    },
+    {
+      "hex": "#0052f6",
+      "rgb": [
+        0,
+        82,
+        246
+      ],
+      "parent_index": 1368,
+      "nearest_delta_e_2000": 5.354942612894585
+    },
+    {
+      "hex": "#665599",
+      "rgb": [
+        102,
+        85,
+        153
+      ],
+      "parent_index": 1229,
+      "nearest_delta_e_2000": 4.715817046648009
+    },
+    {
+      "hex": "#6644ee",
+      "rgb": [
+        102,
+        68,
+        238
+      ],
+      "parent_index": 1457,
+      "nearest_delta_e_2000": 4.8194757859232995
+    },
+    {
+      "hex": "#73578f",
+      "rgb": [
+        115,
+        87,
+        143
+      ],
+      "parent_index": 1334,
+      "nearest_delta_e_2000": 4.220260806134835
+    },
+    {
+      "hex": "#725b83",
+      "rgb": [
+        114,
+        91,
+        131
+      ],
+      "parent_index": 1335,
+      "nearest_delta_e_2000": 4.220260806134835
+    },
+    {
+      "hex": "#8a2be2",
+      "rgb": [
+        138,
+        43,
+        226
+      ],
+      "parent_index": 1463,
+      "nearest_delta_e_2000": 4.444696618460166
+    },
+    {
+      "hex": "#8443b7",
+      "rgb": [
+        132,
+        67,
+        183
+      ],
+      "parent_index": 1355,
+      "nearest_delta_e_2000": 4.463941099529788
+    },
+    {
+      "hex": "#665d66",
+      "rgb": [
+        102,
+        93,
+        102
+      ],
+      "parent_index": 1208,
+      "nearest_delta_e_2000": 5.274863038990411
+    },
+    {
+      "hex": "#b600aa",
+      "rgb": [
+        182,
+        0,
+        170
+      ],
+      "parent_index": 1475,
+      "nearest_delta_e_2000": 4.372174264592872
+    },
+    {
+      "hex": "#a23e8c",
+      "rgb": [
+        162,
+        62,
+        140
+      ],
+      "parent_index": 1469,
+      "nearest_delta_e_2000": 5.120396084355171
+    },
+    {
+      "hex": "#c12a73",
+      "rgb": [
+        193,
+        42,
+        115
+      ],
+      "parent_index": 1599,
+      "nearest_delta_e_2000": 5.0209624657883465
+    },
+    {
+      "hex": "#9a4d76",
+      "rgb": [
+        154,
+        77,
+        118
+      ],
+      "parent_index": 1470,
+      "nearest_delta_e_2000": 5.322427267441266
+    },
+    {
+      "hex": "#9148aa",
+      "rgb": [
+        145,
+        72,
+        170
+      ],
+      "parent_index": 1466,
+      "nearest_delta_e_2000": 4.463941099529788
+    },
+    {
+      "hex": "#9933cc",
+      "rgb": [
+        153,
+        51,
+        204
+      ],
+      "parent_index": 1479,
+      "nearest_delta_e_2000": 4.444696618460166
+    },
+    {
+      "hex": "#6d6778",
+      "rgb": [
+        109,
+        103,
+        120
+      ],
+      "parent_index": 1358,
+      "nearest_delta_e_2000": 5.274863038990411
+    },
+    {
+      "hex": "#6655cc",
+      "rgb": [
+        102,
+        85,
+        204
+      ],
+      "parent_index": 1458,
+      "nearest_delta_e_2000": 5.263546055783509
+    },
+    {
+      "hex": "#6a5faf",
+      "rgb": [
+        106,
+        95,
+        175
+      ],
+      "parent_index": 1460,
+      "nearest_delta_e_2000": 4.848507427381533
+    },
+    {
+      "hex": "#3466b0",
+      "rgb": [
+        52,
+        102,
+        176
+      ],
+      "parent_index": 1324,
+      "nearest_delta_e_2000": 4.606063647343516
+    },
+    {
+      "hex": "#626773",
+      "rgb": [
+        98,
+        103,
+        115
+      ],
+      "parent_index": 1326,
+      "nearest_delta_e_2000": 6.399491739262552
+    },
+    {
+      "hex": "#496d92",
+      "rgb": [
+        73,
+        109,
+        146
+      ],
+      "parent_index": 1371,
+      "nearest_delta_e_2000": 4.8615151599822966
+    },
+    {
+      "hex": "#176f8d",
+      "rgb": [
+        23,
+        111,
+        141
+      ],
+      "parent_index": 1320,
+      "nearest_delta_e_2000": 4.93489749639123
+    },
+    {
+      "hex": "#496d6d",
+      "rgb": [
+        73,
+        109,
+        109
+      ],
+      "parent_index": 1318,
+      "nearest_delta_e_2000": 4.211735023406384
+    },
+    {
+      "hex": "#3b7373",
+      "rgb": [
+        59,
+        115,
+        115
+      ],
+      "parent_index": 1374,
+      "nearest_delta_e_2000": 4.211735023406384
+    },
+    {
+      "hex": "#0f776f",
+      "rgb": [
+        15,
+        119,
+        111
+      ],
+      "parent_index": 1317,
+      "nearest_delta_e_2000": 4.531373195354249
+    },
+    {
+      "hex": "#666666",
+      "rgb": [
+        102,
+        102,
+        102
+      ],
+      "parent_index": 1302,
+      "nearest_delta_e_2000": 4.75554603759762
+    },
+    {
+      "hex": "#3f7552",
+      "rgb": [
+        63,
+        117,
+        82
+      ],
+      "parent_index": 1314,
+      "nearest_delta_e_2000": 4.412818915854822
+    },
+    {
+      "hex": "#007800",
+      "rgb": [
+        0,
+        120,
+        0
+      ],
+      "parent_index": 1256,
+      "nearest_delta_e_2000": 5.783725869870104
+    },
+    {
+      "hex": "#556d48",
+      "rgb": [
+        85,
+        109,
+        72
+      ],
+      "parent_index": 1308,
+      "nearest_delta_e_2000": 4.257435829172104
+    },
+    {
+      "hex": "#447600",
+      "rgb": [
+        68,
+        118,
+        0
+      ],
+      "parent_index": 1307,
+      "nearest_delta_e_2000": 5.663128741444509
+    },
+    {
+      "hex": "#666d40",
+      "rgb": [
+        102,
+        109,
+        64
+      ],
+      "parent_index": 1383,
+      "nearest_delta_e_2000": 4.694648848523538
+    },
+    {
+      "hex": "#666d00",
+      "rgb": [
+        102,
+        109,
+        0
+      ],
+      "parent_index": 1304,
+      "nearest_delta_e_2000": 4.859012757374006
+    },
+    {
+      "hex": "#826300",
+      "rgb": [
+        130,
+        99,
+        0
+      ],
+      "parent_index": 1387,
+      "nearest_delta_e_2000": 5.477744906956534
+    },
+    {
+      "hex": "#995500",
+      "rgb": [
+        153,
+        85,
+        0
+      ],
+      "parent_index": 1390,
+      "nearest_delta_e_2000": 4.708921939137445
+    },
+    {
+      "hex": "#8f5f37",
+      "rgb": [
+        143,
+        95,
+        55
+      ],
+      "parent_index": 1424,
+      "nearest_delta_e_2000": 4.431967032148649
+    },
+    {
+      "hex": "#995533",
+      "rgb": [
+        153,
+        85,
+        51
+      ],
+      "parent_index": 1395,
+      "nearest_delta_e_2000": 4.326239781119926
+    },
+    {
+      "hex": "#aa4824",
+      "rgb": [
+        170,
+        72,
+        36
+      ],
+      "parent_index": 1396,
+      "nearest_delta_e_2000": 4.730178687165521
+    },
+    {
+      "hex": "#7f5f55",
+      "rgb": [
+        127,
+        95,
+        85
+      ],
+      "parent_index": 1293,
+      "nearest_delta_e_2000": 4.917943762193093
+    },
+    {
+      "hex": "#c43226",
+      "rgb": [
+        196,
+        50,
+        38
+      ],
+      "parent_index": 1524,
+      "nearest_delta_e_2000": 4.217044071336366
+    },
+    {
+      "hex": "#726361",
+      "rgb": [
+        114,
+        99,
+        97
+      ],
+      "parent_index": 1290,
+      "nearest_delta_e_2000": 4.379713856472455
+    },
+    {
+      "hex": "#cc2244",
+      "rgb": [
+        204,
+        34,
+        68
+      ],
+      "parent_index": 1538,
+      "nearest_delta_e_2000": 5.159638127865657
+    },
+    {
+      "hex": "#b93260",
+      "rgb": [
+        185,
+        50,
+        96
+      ],
+      "parent_index": 1410,
+      "nearest_delta_e_2000": 4.20934810869136
+    },
+    {
+      "hex": "#8f5765",
+      "rgb": [
+        143,
+        87,
+        101
+      ],
+      "parent_index": 1406,
+      "nearest_delta_e_2000": 4.942146556460409
+    },
+    {
+      "hex": "#b6496d",
+      "rgb": [
+        182,
+        73,
+        109
+      ],
+      "parent_index": 1663,
+      "nearest_delta_e_2000": 4.399605180843263
+    },
+    {
+      "hex": "#8b636c",
+      "rgb": [
+        139,
+        99,
+        108
+      ],
+      "parent_index": 1533,
+      "nearest_delta_e_2000": 4.4514271290971825
+    },
+    {
+      "hex": "#db0055",
+      "rgb": [
+        219,
+        0,
+        85
+      ],
+      "parent_index": 1667,
+      "nearest_delta_e_2000": 5.2941994541251916
+    },
+    {
+      "hex": "#956263",
+      "rgb": [
+        149,
+        98,
+        99
+      ],
+      "parent_index": 1539,
+      "nearest_delta_e_2000": 4.743423487838692
+    },
+    {
+      "hex": "#b34f4f",
+      "rgb": [
+        179,
+        79,
+        79
+      ],
+      "parent_index": 1655,
+      "nearest_delta_e_2000": 6.070853622427295
+    },
+    {
+      "hex": "#db0024",
+      "rgb": [
+        219,
+        0,
+        36
+      ],
+      "parent_index": 1654,
+      "nearest_delta_e_2000": 4.569664492661865
+    },
+    {
+      "hex": "#be4a2f",
+      "rgb": [
+        190,
+        74,
+        47
+      ],
+      "parent_index": 1651,
+      "nearest_delta_e_2000": 4.557510506673343
+    },
+    {
+      "hex": "#da2400",
+      "rgb": [
+        218,
+        36,
+        0
+      ],
+      "parent_index": 1677,
+      "nearest_delta_e_2000": 4.374203050073255
+    },
+    {
+      "hex": "#ab572c",
+      "rgb": [
+        171,
+        87,
+        44
+      ],
+      "parent_index": 1550,
+      "nearest_delta_e_2000": 4.326239781119926
+    },
+    {
+      "hex": "#886644",
+      "rgb": [
+        136,
+        102,
+        68
+      ],
+      "parent_index": 1514,
+      "nearest_delta_e_2000": 4.431967032148649
+    },
+    {
+      "hex": "#7e6a52",
+      "rgb": [
+        126,
+        106,
+        82
+      ],
+      "parent_index": 1513,
+      "nearest_delta_e_2000": 4.3158672569830605
+    },
+    {
+      "hex": "#846830",
+      "rgb": [
+        132,
+        104,
+        48
+      ],
+      "parent_index": 1428,
+      "nearest_delta_e_2000": 5.068302861390574
+    },
+    {
+      "hex": "#7f6d00",
+      "rgb": [
+        127,
+        109,
+        0
+      ],
+      "parent_index": 1510,
+      "nearest_delta_e_2000": 5.477744906956534
+    },
+    {
+      "hex": "#6d6d55",
+      "rgb": [
+        109,
+        109,
+        85
+      ],
+      "parent_index": 1431,
+      "nearest_delta_e_2000": 6.987010061337125
+    },
+    {
+      "hex": "#657029",
+      "rgb": [
+        101,
+        112,
+        41
+      ],
+      "parent_index": 1382,
+      "nearest_delta_e_2000": 4.537441577053398
+    },
+    {
+      "hex": "#5c7759",
+      "rgb": [
+        92,
+        119,
+        89
+      ],
+      "parent_index": 1502,
+      "nearest_delta_e_2000": 4.57192423355269
+    },
+    {
+      "hex": "#1a7a3e",
+      "rgb": [
+        26,
+        122,
+        62
+      ],
+      "parent_index": 1313,
+      "nearest_delta_e_2000": 4.777833081429935
+    },
+    {
+      "hex": "#16795e",
+      "rgb": [
+        22,
+        121,
+        94
+      ],
+      "parent_index": 1316,
+      "nearest_delta_e_2000": 4.314120639736344
+    },
+    {
+      "hex": "#467569",
+      "rgb": [
+        70,
+        117,
+        105
+      ],
+      "parent_index": 1375,
+      "nearest_delta_e_2000": 5.482747460738767
+    },
+    {
+      "hex": "#577277",
+      "rgb": [
+        87,
+        114,
+        119
+      ],
+      "parent_index": 1441,
+      "nearest_delta_e_2000": 4.383428963133256
+    },
+    {
+      "hex": "#617077",
+      "rgb": [
+        97,
+        112,
+        119
+      ],
+      "parent_index": 1442,
+      "nearest_delta_e_2000": 4.833016490378687
+    },
+    {
+      "hex": "#27779f",
+      "rgb": [
+        39,
+        119,
+        159
+      ],
+      "parent_index": 1494,
+      "nearest_delta_e_2000": 4.93489749639123
+    },
+    {
+      "hex": "#006dbf",
+      "rgb": [
+        0,
+        109,
+        191
+      ],
+      "parent_index": 1445,
+      "nearest_delta_e_2000": 4.606063647343516
+    },
+    {
+      "hex": "#4c5fd4",
+      "rgb": [
+        76,
+        95,
+        212
+      ],
+      "parent_index": 1485,
+      "nearest_delta_e_2000": 4.5753428645841625
+    },
+    {
+      "hex": "#7f5faa",
+      "rgb": [
+        127,
+        95,
+        170
+      ],
+      "parent_index": 1589,
+      "nearest_delta_e_2000": 4.231433995108373
+    },
+    {
+      "hex": "#9249db",
+      "rgb": [
+        146,
+        73,
+        219
+      ],
+      "parent_index": 1715,
+      "nearest_delta_e_2000": 4.835608575057879
+    },
+    {
+      "hex": "#8c58b8",
+      "rgb": [
+        140,
+        88,
+        184
+      ],
+      "parent_index": 1612,
+      "nearest_delta_e_2000": 4.231433995108373
+    },
+    {
+      "hex": "#b600db",
+      "rgb": [
+        182,
+        0,
+        219
+      ],
+      "parent_index": 1719,
+      "nearest_delta_e_2000": 4.741358969350705
+    },
+    {
+      "hex": "#aa38b9",
+      "rgb": [
+        170,
+        56,
+        185
+      ],
+      "parent_index": 1608,
+      "nearest_delta_e_2000": 4.215528544014443
+    },
+    {
+      "hex": "#8f578f",
+      "rgb": [
+        143,
+        87,
+        143
+      ],
+      "parent_index": 1477,
+      "nearest_delta_e_2000": 5.560371297209945
+    },
+    {
+      "hex": "#c30ec3",
+      "rgb": [
+        195,
+        14,
+        195
+      ],
+      "parent_index": 1734,
+      "nearest_delta_e_2000": 4.215528544014443
+    },
+    {
+      "hex": "#cc0088",
+      "rgb": [
+        204,
+        0,
+        136
+      ],
+      "parent_index": 1602,
+      "nearest_delta_e_2000": 4.823859174708246
+    },
+    {
+      "hex": "#b55088",
+      "rgb": [
+        181,
+        80,
+        136
+      ],
+      "parent_index": 1731,
+      "nearest_delta_e_2000": 4.500411317364113
+    },
+    {
+      "hex": "#d400aa",
+      "rgb": [
+        212,
+        0,
+        170
+      ],
+      "parent_index": 1852,
+      "nearest_delta_e_2000": 5.860438672706443
+    },
+    {
+      "hex": "#826794",
+      "rgb": [
+        130,
+        103,
+        148
+      ],
+      "parent_index": 1611,
+      "nearest_delta_e_2000": 5.13251061476643
+    },
+    {
+      "hex": "#9536ff",
+      "rgb": [
+        149,
+        54,
+        255
+      ],
+      "parent_index": 1743,
+      "nearest_delta_e_2000": 4.845117981065703
+    },
+    {
+      "hex": "#7a6b89",
+      "rgb": [
+        122,
+        107,
+        137
+      ],
+      "parent_index": 1591,
+      "nearest_delta_e_2000": 5.13251061476643
+    },
+    {
+      "hex": "#6655ff",
+      "rgb": [
+        102,
+        85,
+        255
+      ],
+      "parent_index": 1709,
+      "nearest_delta_e_2000": 5.079254418065316
+    },
+    {
+      "hex": "#6666cc",
+      "rgb": [
+        102,
+        102,
+        204
+      ],
+      "parent_index": 1617,
+      "nearest_delta_e_2000": 4.5753428645841625
+    },
+    {
+      "hex": "#6d6daa",
+      "rgb": [
+        109,
+        109,
+        170
+      ],
+      "parent_index": 1616,
+      "nearest_delta_e_2000": 5.336045667729952
+    },
+    {
+      "hex": "#0066ff",
+      "rgb": [
+        0,
+        102,
+        255
+      ],
+      "parent_index": 1625,
+      "nearest_delta_e_2000": 4.631796778641521
+    },
+    {
+      "hex": "#6d6d92",
+      "rgb": [
+        109,
+        109,
+        146
+      ],
+      "parent_index": 1585,
+      "nearest_delta_e_2000": 5.73500555076836
+    },
+    {
+      "hex": "#496ddb",
+      "rgb": [
+        73,
+        109,
+        219
+      ],
+      "parent_index": 1705,
+      "nearest_delta_e_2000": 4.631796778641521
+    },
+    {
+      "hex": "#556db6",
+      "rgb": [
+        85,
+        109,
+        182
+      ],
+      "parent_index": 1581,
+      "nearest_delta_e_2000": 4.907081786207096
+    },
+    {
+      "hex": "#657392",
+      "rgb": [
+        101,
+        115,
+        146
+      ],
+      "parent_index": 1622,
+      "nearest_delta_e_2000": 5.968423561950701
+    },
+    {
+      "hex": "#007f7f",
+      "rgb": [
+        0,
+        127,
+        127
+      ],
+      "parent_index": 1496,
+      "nearest_delta_e_2000": 4.483919047841468
+    },
+    {
+      "hex": "#0c816e",
+      "rgb": [
+        12,
+        129,
+        110
+      ],
+      "parent_index": 1498,
+      "nearest_delta_e_2000": 4.377182006159961
+    },
+    {
+      "hex": "#338033",
+      "rgb": [
+        51,
+        128,
+        51
+      ],
+      "parent_index": 1433,
+      "nearest_delta_e_2000": 4.6114959164439515
+    },
+    {
+      "hex": "#507c38",
+      "rgb": [
+        80,
+        124,
+        56
+      ],
+      "parent_index": 1505,
+      "nearest_delta_e_2000": 4.6114959164439515
+    },
+    {
+      "hex": "#647744",
+      "rgb": [
+        100,
+        119,
+        68
+      ],
+      "parent_index": 1508,
+      "nearest_delta_e_2000": 4.694648848523538
+    },
+    {
+      "hex": "#7b7448",
+      "rgb": [
+        123,
+        116,
+        72
+      ],
+      "parent_index": 1558,
+      "nearest_delta_e_2000": 4.777692455573365
+    },
+    {
+      "hex": "#867148",
+      "rgb": [
+        134,
+        113,
+        72
+      ],
+      "parent_index": 1640,
+      "nearest_delta_e_2000": 4.359176095487142
+    },
+    {
+      "hex": "#75716b",
+      "rgb": [
+        117,
+        113,
+        107
+      ],
+      "parent_index": 1556,
+      "nearest_delta_e_2000": 5.698317186863586
+    },
+    {
+      "hex": "#95682a",
+      "rgb": [
+        149,
+        104,
+        42
+      ],
+      "parent_index": 1554,
+      "nearest_delta_e_2000": 4.41790586957257
+    },
+    {
+      "hex": "#7e6e60",
+      "rgb": [
+        126,
+        110,
+        96
+      ],
+      "parent_index": 1552,
+      "nearest_delta_e_2000": 4.3158672569830605
+    },
+    {
+      "hex": "#aa5f00",
+      "rgb": [
+        170,
+        95,
+        0
+      ],
+      "parent_index": 1645,
+      "nearest_delta_e_2000": 4.348502041301149
+    },
+    {
+      "hex": "#ab5c1c",
+      "rgb": [
+        171,
+        92,
+        28
+      ],
+      "parent_index": 1647,
+      "nearest_delta_e_2000": 4.348502041301149
+    },
+    {
+      "hex": "#be4d00",
+      "rgb": [
+        190,
+        77,
+        0
+      ],
+      "parent_index": 1649,
+      "nearest_delta_e_2000": 4.47670827611895
+    },
+    {
+      "hex": "#a56243",
+      "rgb": [
+        165,
+        98,
+        67
+      ],
+      "parent_index": 1648,
+      "nearest_delta_e_2000": 4.708219634277695
+    },
+    {
+      "hex": "#d43f00",
+      "rgb": [
+        212,
+        63,
+        0
+      ],
+      "parent_index": 1782,
+      "nearest_delta_e_2000": 4.374203050073255
+    },
+    {
+      "hex": "#8b6969",
+      "rgb": [
+        139,
+        105,
+        105
+      ],
+      "parent_index": 1540,
+      "nearest_delta_e_2000": 4.4514271290971825
+    },
+    {
+      "hex": "#c3435c",
+      "rgb": [
+        195,
+        67,
+        92
+      ],
+      "parent_index": 1669,
+      "nearest_delta_e_2000": 4.363885154371586
+    },
+    {
+      "hex": "#a75d69",
+      "rgb": [
+        167,
+        93,
+        105
+      ],
+      "parent_index": 1666,
+      "nearest_delta_e_2000": 5.693250993092681
+    },
+    {
+      "hex": "#db246d",
+      "rgb": [
+        219,
+        36,
+        109
+      ],
+      "parent_index": 1794,
+      "nearest_delta_e_2000": 5.465422042458485
+    },
+    {
+      "hex": "#d43f55",
+      "rgb": [
+        212,
+        63,
+        85
+      ],
+      "parent_index": 1796,
+      "nearest_delta_e_2000": 4.363885154371586
+    },
+    {
+      "hex": "#cc4940",
+      "rgb": [
+        204,
+        73,
+        64
+      ],
+      "parent_index": 1798,
+      "nearest_delta_e_2000": 4.833253304467521
+    },
+    {
+      "hex": "#b85f51",
+      "rgb": [
+        184,
+        95,
+        81
+      ],
+      "parent_index": 1800,
+      "nearest_delta_e_2000": 5.911146040517034
+    },
+    {
+      "hex": "#a0695f",
+      "rgb": [
+        160,
+        105,
+        95
+      ],
+      "parent_index": 1783,
+      "nearest_delta_e_2000": 5.252777270938989
+    },
+    {
+      "hex": "#ee2222",
+      "rgb": [
+        238,
+        34,
+        34
+      ],
+      "parent_index": 1928,
+      "nearest_delta_e_2000": 4.500747278726598
+    },
+    {
+      "hex": "#cc5533",
+      "rgb": [
+        204,
+        85,
+        51
+      ],
+      "parent_index": 1911,
+      "nearest_delta_e_2000": 4.557510506673343
+    },
+    {
+      "hex": "#d25100",
+      "rgb": [
+        210,
+        81,
+        0
+      ],
+      "parent_index": 1910,
+      "nearest_delta_e_2000": 4.450362480222225
+    },
+    {
+      "hex": "#916d55",
+      "rgb": [
+        145,
+        109,
+        85
+      ],
+      "parent_index": 1646,
+      "nearest_delta_e_2000": 5.121053379737592
+    },
+    {
+      "hex": "#a36b3f",
+      "rgb": [
+        163,
+        107,
+        63
+      ],
+      "parent_index": 1778,
+      "nearest_delta_e_2000": 5.7546564085482395
+    },
+    {
+      "hex": "#aa6d24",
+      "rgb": [
+        170,
+        109,
+        36
+      ],
+      "parent_index": 1805,
+      "nearest_delta_e_2000": 5.021906450599974
+    },
+    {
+      "hex": "#8b7355",
+      "rgb": [
+        139,
+        115,
+        85
+      ],
+      "parent_index": 1683,
+      "nearest_delta_e_2000": 4.343408632661743
+    },
+    {
+      "hex": "#997333",
+      "rgb": [
+        153,
+        115,
+        51
+      ],
+      "parent_index": 1771,
+      "nearest_delta_e_2000": 4.41790586957257
+    },
+    {
+      "hex": "#996d00",
+      "rgb": [
+        153,
+        109,
+        0
+      ],
+      "parent_index": 1684,
+      "nearest_delta_e_2000": 5.32457947507905
+    },
+    {
+      "hex": "#777b2f",
+      "rgb": [
+        119,
+        123,
+        47
+      ],
+      "parent_index": 1638,
+      "nearest_delta_e_2000": 5.334411007946376
+    },
+    {
+      "hex": "#668000",
+      "rgb": [
+        102,
+        128,
+        0
+      ],
+      "parent_index": 1637,
+      "nearest_delta_e_2000": 5.496972917340366
+    },
+    {
+      "hex": "#668033",
+      "rgb": [
+        102,
+        128,
+        51
+      ],
+      "parent_index": 1636,
+      "nearest_delta_e_2000": 5.314619831607063
+    },
+    {
+      "hex": "#557f55",
+      "rgb": [
+        85,
+        127,
+        85
+      ],
+      "parent_index": 1566,
+      "nearest_delta_e_2000": 4.82881155870924
+    },
+    {
+      "hex": "#008751",
+      "rgb": [
+        0,
+        135,
+        81
+      ],
+      "parent_index": 1569,
+      "nearest_delta_e_2000": 5.287835156736879
+    },
+    {
+      "hex": "#637b7b",
+      "rgb": [
+        99,
+        123,
+        123
+      ],
+      "parent_index": 1632,
+      "nearest_delta_e_2000": 4.383428963133256
+    },
+    {
+      "hex": "#0d818b",
+      "rgb": [
+        13,
+        129,
+        139
+      ],
+      "parent_index": 1574,
+      "nearest_delta_e_2000": 4.483919047841468
+    },
+    {
+      "hex": "#338099",
+      "rgb": [
+        51,
+        128,
+        153
+      ],
+      "parent_index": 1630,
+      "nearest_delta_e_2000": 6.216089013832871
+    },
+    {
+      "hex": "#607b8b",
+      "rgb": [
+        96,
+        123,
+        139
+      ],
+      "parent_index": 1701,
+      "nearest_delta_e_2000": 4.783593079509377
+    },
+    {
+      "hex": "#6e7b8b",
+      "rgb": [
+        110,
+        123,
+        139
+      ],
+      "parent_index": 1749,
+      "nearest_delta_e_2000": 4.519250006570279
+    },
+    {
+      "hex": "#007cd7",
+      "rgb": [
+        0,
+        124,
+        215
+      ],
+      "parent_index": 1750,
+      "nearest_delta_e_2000": 4.272337422376744
+    },
+    {
+      "hex": "#7960e1",
+      "rgb": [
+        121,
+        96,
+        225
+      ],
+      "parent_index": 1744,
+      "nearest_delta_e_2000": 5.114218507668203
+    },
+    {
+      "hex": "#b624ff",
+      "rgb": [
+        182,
+        36,
+        255
+      ],
+      "parent_index": 1973,
+      "nearest_delta_e_2000": 4.450226819645659
+    },
+    {
+      "hex": "#7e737e",
+      "rgb": [
+        126,
+        115,
+        126
+      ],
+      "parent_index": 1721,
+      "nearest_delta_e_2000": 4.722738722551841
+    },
+    {
+      "hex": "#926d92",
+      "rgb": [
+        146,
+        109,
+        146
+      ],
+      "parent_index": 1847,
+      "nearest_delta_e_2000": 4.793751017159014
+    },
+    {
+      "hex": "#b649b6",
+      "rgb": [
+        182,
+        73,
+        182
+      ],
+      "parent_index": 1849,
+      "nearest_delta_e_2000": 4.926848123016631
+    },
+    {
+      "hex": "#b0589c",
+      "rgb": [
+        176,
+        88,
+        156
+      ],
+      "parent_index": 1851,
+      "nearest_delta_e_2000": 4.73929451029419
+    },
+    {
+      "hex": "#db2492",
+      "rgb": [
+        219,
+        36,
+        146
+      ],
+      "parent_index": 1858,
+      "nearest_delta_e_2000": 4.550315163970073
+    },
+    {
+      "hex": "#996d80",
+      "rgb": [
+        153,
+        109,
+        128
+      ],
+      "parent_index": 1855,
+      "nearest_delta_e_2000": 4.344672609899755
+    },
+    {
+      "hex": "#ee1289",
+      "rgb": [
+        238,
+        18,
+        137
+      ],
+      "parent_index": 2111,
+      "nearest_delta_e_2000": 4.499836570858372
+    },
+    {
+      "hex": "#c85086",
+      "rgb": [
+        200,
+        80,
+        134
+      ],
+      "parent_index": 1983,
+      "nearest_delta_e_2000": 4.500411317364113
+    },
+    {
+      "hex": "#ee00aa",
+      "rgb": [
+        238,
+        0,
+        170
+      ],
+      "parent_index": 2113,
+      "nearest_delta_e_2000": 4.68092289637321
+    },
+    {
+      "hex": "#db00db",
+      "rgb": [
+        219,
+        0,
+        219
+      ],
+      "parent_index": 2103,
+      "nearest_delta_e_2000": 4.887374935340037
+    },
+    {
+      "hex": "#b649db",
+      "rgb": [
+        182,
+        73,
+        219
+      ],
+      "parent_index": 1994,
+      "nearest_delta_e_2000": 4.976449433134708
+    },
+    {
+      "hex": "#9273a4",
+      "rgb": [
+        146,
+        115,
+        164
+      ],
+      "parent_index": 1975,
+      "nearest_delta_e_2000": 4.344222920695601
+    },
+    {
+      "hex": "#926db6",
+      "rgb": [
+        146,
+        109,
+        182
+      ],
+      "parent_index": 1868,
+      "nearest_delta_e_2000": 4.392062322675271
+    },
+    {
+      "hex": "#83769c",
+      "rgb": [
+        131,
+        118,
+        156
+      ],
+      "parent_index": 1846,
+      "nearest_delta_e_2000": 4.621092288176294
+    },
+    {
+      "hex": "#8472ad",
+      "rgb": [
+        132,
+        114,
+        173
+      ],
+      "parent_index": 1845,
+      "nearest_delta_e_2000": 4.392062322675271
+    },
+    {
+      "hex": "#556dff",
+      "rgb": [
+        85,
+        109,
+        255
+      ],
+      "parent_index": 1877,
+      "nearest_delta_e_2000": 4.296970003045019
+    },
+    {
+      "hex": "#7676ca",
+      "rgb": [
+        118,
+        118,
+        202
+      ],
+      "parent_index": 1967,
+      "nearest_delta_e_2000": 4.534921654424338
+    },
+    {
+      "hex": "#7b79a7",
+      "rgb": [
+        123,
+        121,
+        167
+      ],
+      "parent_index": 1873,
+      "nearest_delta_e_2000": 4.621092288176294
+    },
+    {
+      "hex": "#557faa",
+      "rgb": [
+        85,
+        127,
+        170
+      ],
+      "parent_index": 1834,
+      "nearest_delta_e_2000": 4.650003485837806
+    },
+    {
+      "hex": "#668099",
+      "rgb": [
+        102,
+        128,
+        153
+      ],
+      "parent_index": 1833,
+      "nearest_delta_e_2000": 4.519250006570279
+    },
+    {
+      "hex": "#2784b6",
+      "rgb": [
+        39,
+        132,
+        182
+      ],
+      "parent_index": 1831,
+      "nearest_delta_e_2000": 5.044234945663227
+    },
+    {
+      "hex": "#68838b",
+      "rgb": [
+        104,
+        131,
+        139
+      ],
+      "parent_index": 1829,
+      "nearest_delta_e_2000": 4.897064729740927
+    },
+    {
+      "hex": "#53868b",
+      "rgb": [
+        83,
+        134,
+        139
+      ],
+      "parent_index": 1828,
+      "nearest_delta_e_2000": 4.682790996004404
+    },
+    {
+      "hex": "#278a6f",
+      "rgb": [
+        39,
+        138,
+        111
+      ],
+      "parent_index": 1698,
+      "nearest_delta_e_2000": 4.404737563189183
+    },
+    {
+      "hex": "#7e7e7e",
+      "rgb": [
+        126,
+        126,
+        126
+      ],
+      "parent_index": 1903,
+      "nearest_delta_e_2000": 4.476502638553003
+    },
+    {
+      "hex": "#009240",
+      "rgb": [
+        0,
+        146,
+        64
+      ],
+      "parent_index": 1759,
+      "nearest_delta_e_2000": 5.608140679656138
+    },
+    {
+      "hex": "#099000",
+      "rgb": [
+        9,
+        144,
+        0
+      ],
+      "parent_index": 1689,
+      "nearest_delta_e_2000": 5.149172231492501
+    },
+    {
+      "hex": "#4b8c09",
+      "rgb": [
+        75,
+        140,
+        9
+      ],
+      "parent_index": 1766,
+      "nearest_delta_e_2000": 5.069032245391822
+    },
+    {
+      "hex": "#7f7f55",
+      "rgb": [
+        127,
+        127,
+        85
+      ],
+      "parent_index": 1812,
+      "nearest_delta_e_2000": 4.777692455573365
+    },
+    {
+      "hex": "#7f7f00",
+      "rgb": [
+        127,
+        127,
+        0
+      ],
+      "parent_index": 1769,
+      "nearest_delta_e_2000": 5.661494101812613
+    },
+    {
+      "hex": "#8f7e21",
+      "rgb": [
+        143,
+        126,
+        33
+      ],
+      "parent_index": 1811,
+      "nearest_delta_e_2000": 5.661494101812613
+    },
+    {
+      "hex": "#8b7d6b",
+      "rgb": [
+        139,
+        125,
+        107
+      ],
+      "parent_index": 1906,
+      "nearest_delta_e_2000": 6.133074310211803
+    },
+    {
+      "hex": "#97736b",
+      "rgb": [
+        151,
+        115,
+        107
+      ],
+      "parent_index": 1801,
+      "nearest_delta_e_2000": 5.377404549416004
+    },
+    {
+      "hex": "#e43b44",
+      "rgb": [
+        228,
+        59,
+        68
+      ],
+      "parent_index": 2042,
+      "nearest_delta_e_2000": 4.314437761023965
+    },
+    {
+      "hex": "#a26f70",
+      "rgb": [
+        162,
+        111,
+        112
+      ],
+      "parent_index": 1917,
+      "nearest_delta_e_2000": 4.964120523243443
+    },
+    {
+      "hex": "#cc5566",
+      "rgb": [
+        204,
+        85,
+        102
+      ],
+      "parent_index": 1923,
+      "nearest_delta_e_2000": 4.592477086081614
+    },
+    {
+      "hex": "#ef2064",
+      "rgb": [
+        239,
+        32,
+        100
+      ],
+      "parent_index": 2050,
+      "nearest_delta_e_2000": 4.397289233519092
+    },
+    {
+      "hex": "#c1607a",
+      "rgb": [
+        193,
+        96,
+        122
+      ],
+      "parent_index": 2047,
+      "nearest_delta_e_2000": 4.506346813250789
+    },
+    {
+      "hex": "#9e7680",
+      "rgb": [
+        158,
+        118,
+        128
+      ],
+      "parent_index": 1921,
+      "nearest_delta_e_2000": 4.344672609899755
+    },
+    {
+      "hex": "#d95280",
+      "rgb": [
+        217,
+        82,
+        128
+      ],
+      "parent_index": 2175,
+      "nearest_delta_e_2000": 4.871933029677345
+    },
+    {
+      "hex": "#ff0080",
+      "rgb": [
+        255,
+        0,
+        128
+      ],
+      "parent_index": 2303,
+      "nearest_delta_e_2000": 4.499836570858372
+    },
+    {
+      "hex": "#ff0055",
+      "rgb": [
+        255,
+        0,
+        85
+      ],
+      "parent_index": 2181,
+      "nearest_delta_e_2000": 4.4663860695069
+    },
+    {
+      "hex": "#b66d6d",
+      "rgb": [
+        182,
+        109,
+        109
+      ],
+      "parent_index": 2044,
+      "nearest_delta_e_2000": 4.238110279021534
+    },
+    {
+      "hex": "#cd5c5c",
+      "rgb": [
+        205,
+        92,
+        92
+      ],
+      "parent_index": 2043,
+      "nearest_delta_e_2000": 5.041696588593508
+    },
+    {
+      "hex": "#ff0040",
+      "rgb": [
+        255,
+        0,
+        64
+      ],
+      "parent_index": 2170,
+      "nearest_delta_e_2000": 4.314437761023965
+    },
+    {
+      "hex": "#8b7d7b",
+      "rgb": [
+        139,
+        125,
+        123
+      ],
+      "parent_index": 1927,
+      "nearest_delta_e_2000": 5.517172106967926
+    },
+    {
+      "hex": "#ff0000",
+      "rgb": [
+        255,
+        0,
+        0
+      ],
+      "parent_index": 2163,
+      "nearest_delta_e_2000": 4.5995145447500505
+    },
+    {
+      "hex": "#ee4000",
+      "rgb": [
+        238,
+        64,
+        0
+      ],
+      "parent_index": 2161,
+      "nearest_delta_e_2000": 5.2865359382676465
+    },
+    {
+      "hex": "#c06848",
+      "rgb": [
+        192,
+        104,
+        72
+      ],
+      "parent_index": 2036,
+      "nearest_delta_e_2000": 4.250171423122725
+    },
+    {
+      "hex": "#ad7757",
+      "rgb": [
+        173,
+        119,
+        87
+      ],
+      "parent_index": 2061,
+      "nearest_delta_e_2000": 5.636079647834549
+    },
+    {
+      "hex": "#cd661d",
+      "rgb": [
+        205,
+        102,
+        29
+      ],
+      "parent_index": 2060,
+      "nearest_delta_e_2000": 4.682134043544996
+    },
+    {
+      "hex": "#8b814c",
+      "rgb": [
+        139,
+        129,
+        76
+      ],
+      "parent_index": 1901,
+      "nearest_delta_e_2000": 4.807225978875616
+    },
+    {
+      "hex": "#6f874f",
+      "rgb": [
+        111,
+        135,
+        79
+      ],
+      "parent_index": 1813,
+      "nearest_delta_e_2000": 4.823448181241647
+    },
+    {
+      "hex": "#559148",
+      "rgb": [
+        85,
+        145,
+        72
+      ],
+      "parent_index": 1893,
+      "nearest_delta_e_2000": 4.489483224896705
+    },
+    {
+      "hex": "#429058",
+      "rgb": [
+        66,
+        144,
+        88
+      ],
+      "parent_index": 1820,
+      "nearest_delta_e_2000": 5.119052041871435
+    },
+    {
+      "hex": "#278f87",
+      "rgb": [
+        39,
+        143,
+        135
+      ],
+      "parent_index": 1826,
+      "nearest_delta_e_2000": 4.990058080257979
+    },
+    {
+      "hex": "#0091aa",
+      "rgb": [
+        0,
+        145,
+        170
+      ],
+      "parent_index": 1962,
+      "nearest_delta_e_2000": 6.608733381108057
+    },
+    {
+      "hex": "#4681d3",
+      "rgb": [
+        70,
+        129,
+        211
+      ],
+      "parent_index": 1964,
+      "nearest_delta_e_2000": 4.272337422376744
+    },
+    {
+      "hex": "#6680cc",
+      "rgb": [
+        102,
+        128,
+        204
+      ],
+      "parent_index": 2004,
+      "nearest_delta_e_2000": 5.462395244733565
+    },
+    {
+      "hex": "#227aff",
+      "rgb": [
+        34,
+        122,
+        255
+      ],
+      "parent_index": 1965,
+      "nearest_delta_e_2000": 4.601912112605462
+    },
+    {
+      "hex": "#767eb8",
+      "rgb": [
+        118,
+        126,
+        184
+      ],
+      "parent_index": 2003,
+      "nearest_delta_e_2000": 4.534921654424338
+    },
+    {
+      "hex": "#7c7d9b",
+      "rgb": [
+        124,
+        125,
+        155
+      ],
+      "parent_index": 1874,
+      "nearest_delta_e_2000": 4.792383996391858
+    },
+    {
+      "hex": "#7373ff",
+      "rgb": [
+        115,
+        115,
+        255
+      ],
+      "parent_index": 2126,
+      "nearest_delta_e_2000": 4.296970003045019
+    },
+    {
+      "hex": "#926ddb",
+      "rgb": [
+        146,
+        109,
+        219
+      ],
+      "parent_index": 2097,
+      "nearest_delta_e_2000": 4.73648985921233
+    },
+    {
+      "hex": "#a55be8",
+      "rgb": [
+        165,
+        91,
+        232
+      ],
+      "parent_index": 2099,
+      "nearest_delta_e_2000": 4.250084801658345
+    },
+    {
+      "hex": "#b648ff",
+      "rgb": [
+        182,
+        72,
+        255
+      ],
+      "parent_index": 2122,
+      "nearest_delta_e_2000": 4.250084801658345
+    },
+    {
+      "hex": "#db00ff",
+      "rgb": [
+        219,
+        0,
+        255
+      ],
+      "parent_index": 2246,
+      "nearest_delta_e_2000": 4.887374935340037
+    },
+    {
+      "hex": "#8b7b8b",
+      "rgb": [
+        139,
+        123,
+        139
+      ],
+      "parent_index": 1976,
+      "nearest_delta_e_2000": 4.722738722551841
+    },
+    {
+      "hex": "#bb61b1",
+      "rgb": [
+        187,
+        97,
+        177
+      ],
+      "parent_index": 2104,
+      "nearest_delta_e_2000": 4.73929451029419
+    },
+    {
+      "hex": "#aa6d91",
+      "rgb": [
+        170,
+        109,
+        145
+      ],
+      "parent_index": 1987,
+      "nearest_delta_e_2000": 5.950517183765172
+    },
+    {
+      "hex": "#cc6699",
+      "rgb": [
+        204,
+        102,
+        153
+      ],
+      "parent_index": 2240,
+      "nearest_delta_e_2000": 5.425585729555963
+    },
+    {
+      "hex": "#db49b6",
+      "rgb": [
+        219,
+        73,
+        182
+      ],
+      "parent_index": 2235,
+      "nearest_delta_e_2000": 4.548978692490371
+    },
+    {
+      "hex": "#db4ad0",
+      "rgb": [
+        219,
+        74,
+        208
+      ],
+      "parent_index": 2360,
+      "nearest_delta_e_2000": 4.548978692490371
+    },
+    {
+      "hex": "#ab73ab",
+      "rgb": [
+        171,
+        115,
+        171
+      ],
+      "parent_index": 2116,
+      "nearest_delta_e_2000": 4.823437542786166
+    },
+    {
+      "hex": "#998099",
+      "rgb": [
+        153,
+        128,
+        153
+      ],
+      "parent_index": 2117,
+      "nearest_delta_e_2000": 4.460642202590627
+    },
+    {
+      "hex": "#c25dd4",
+      "rgb": [
+        194,
+        93,
+        212
+      ],
+      "parent_index": 2245,
+      "nearest_delta_e_2000": 4.203349479638309
+    },
+    {
+      "hex": "#a070cc",
+      "rgb": [
+        160,
+        112,
+        204
+      ],
+      "parent_index": 2124,
+      "nearest_delta_e_2000": 4.482057616148818
+    },
+    {
+      "hex": "#9966ff",
+      "rgb": [
+        153,
+        102,
+        255
+      ],
+      "parent_index": 2226,
+      "nearest_delta_e_2000": 4.6608533737903075
+    },
+    {
+      "hex": "#778899",
+      "rgb": [
+        119,
+        136,
+        153
+      ],
+      "parent_index": 2092,
+      "nearest_delta_e_2000": 4.583769956060764
+    },
+    {
+      "hex": "#4f8fba",
+      "rgb": [
+        79,
+        143,
+        186
+      ],
+      "parent_index": 2091,
+      "nearest_delta_e_2000": 5.044234945663227
+    },
+    {
+      "hex": "#0092bf",
+      "rgb": [
+        0,
+        146,
+        191
+      ],
+      "parent_index": 2010,
+      "nearest_delta_e_2000": 5.486818424100414
+    },
+    {
+      "hex": "#559191",
+      "rgb": [
+        85,
+        145,
+        145
+      ],
+      "parent_index": 2013,
+      "nearest_delta_e_2000": 4.682790996004404
+    },
+    {
+      "hex": "#129880",
+      "rgb": [
+        18,
+        152,
+        128
+      ],
+      "parent_index": 1958,
+      "nearest_delta_e_2000": 5.091006350994851
+    },
+    {
+      "hex": "#009970",
+      "rgb": [
+        0,
+        153,
+        112
+      ],
+      "parent_index": 1957,
+      "nearest_delta_e_2000": 5.091006350994851
+    },
+    {
+      "hex": "#788d82",
+      "rgb": [
+        120,
+        141,
+        130
+      ],
+      "parent_index": 2081,
+      "nearest_delta_e_2000": 5.386875098461102
+    },
+    {
+      "hex": "#55916d",
+      "rgb": [
+        85,
+        145,
+        109
+      ],
+      "parent_index": 1954,
+      "nearest_delta_e_2000": 4.744712834736172
+    },
+    {
+      "hex": "#6d9249",
+      "rgb": [
+        109,
+        146,
+        73
+      ],
+      "parent_index": 2020,
+      "nearest_delta_e_2000": 4.489483224896705
+    },
+    {
+      "hex": "#689425",
+      "rgb": [
+        104,
+        148,
+        37
+      ],
+      "parent_index": 2022,
+      "nearest_delta_e_2000": 5.069032245391822
+    },
+    {
+      "hex": "#848c4c",
+      "rgb": [
+        132,
+        140,
+        76
+      ],
+      "parent_index": 2072,
+      "nearest_delta_e_2000": 5.830570368022841
+    },
+    {
+      "hex": "#a08444",
+      "rgb": [
+        160,
+        132,
+        68
+      ],
+      "parent_index": 2151,
+      "nearest_delta_e_2000": 4.660285436619075
+    },
+    {
+      "hex": "#aa7f00",
+      "rgb": [
+        170,
+        127,
+        0
+      ],
+      "parent_index": 2068,
+      "nearest_delta_e_2000": 4.539579717121248
+    },
+    {
+      "hex": "#af7b1f",
+      "rgb": [
+        175,
+        123,
+        31
+      ],
+      "parent_index": 2066,
+      "nearest_delta_e_2000": 4.539579717121248
+    },
+    {
+      "hex": "#aa7f55",
+      "rgb": [
+        170,
+        127,
+        85
+      ],
+      "parent_index": 2153,
+      "nearest_delta_e_2000": 5.338225233578188
+    },
+    {
+      "hex": "#8b8682",
+      "rgb": [
+        139,
+        134,
+        130
+      ],
+      "parent_index": 2064,
+      "nearest_delta_e_2000": 4.476502638553003
+    },
+    {
+      "hex": "#cc6d00",
+      "rgb": [
+        204,
+        109,
+        0
+      ],
+      "parent_index": 2155,
+      "nearest_delta_e_2000": 5.056102011117885
+    },
+    {
+      "hex": "#cc6d40",
+      "rgb": [
+        204,
+        109,
+        64
+      ],
+      "parent_index": 2196,
+      "nearest_delta_e_2000": 4.250171423122725
+    },
+    {
+      "hex": "#dd5e21",
+      "rgb": [
+        221,
+        94,
+        33
+      ],
+      "parent_index": 2194,
+      "nearest_delta_e_2000": 4.450362480222225
+    },
+    {
+      "hex": "#e25941",
+      "rgb": [
+        226,
+        89,
+        65
+      ],
+      "parent_index": 2189,
+      "nearest_delta_e_2000": 5.228422497232149
+    },
+    {
+      "hex": "#ff3030",
+      "rgb": [
+        255,
+        48,
+        48
+      ],
+      "parent_index": 2295,
+      "nearest_delta_e_2000": 4.338532997440363
+    },
+    {
+      "hex": "#a87d7b",
+      "rgb": [
+        168,
+        125,
+        123
+      ],
+      "parent_index": 2169,
+      "nearest_delta_e_2000": 4.964120523243443
+    },
+    {
+      "hex": "#ef4556",
+      "rgb": [
+        239,
+        69,
+        86
+      ],
+      "parent_index": 2182,
+      "nearest_delta_e_2000": 4.429636766636713
+    },
+    {
+      "hex": "#ee4466",
+      "rgb": [
+        238,
+        68,
+        102
+      ],
+      "parent_index": 2180,
+      "nearest_delta_e_2000": 4.397289233519092
+    },
+    {
+      "hex": "#ff417d",
+      "rgb": [
+        255,
+        65,
+        125
+      ],
+      "parent_index": 2433,
+      "nearest_delta_e_2000": 5.095518935748478
+    },
+    {
+      "hex": "#cc6d80",
+      "rgb": [
+        204,
+        109,
+        128
+      ],
+      "parent_index": 2302,
+      "nearest_delta_e_2000": 4.506346813250789
+    },
+    {
+      "hex": "#c07872",
+      "rgb": [
+        192,
+        120,
+        114
+      ],
+      "parent_index": 2298,
+      "nearest_delta_e_2000": 4.238110279021534
+    },
+    {
+      "hex": "#ff4949",
+      "rgb": [
+        255,
+        73,
+        73
+      ],
+      "parent_index": 2424,
+      "nearest_delta_e_2000": 4.338532997440363
+    },
+    {
+      "hex": "#d9665a",
+      "rgb": [
+        217,
+        102,
+        90
+      ],
+      "parent_index": 2294,
+      "nearest_delta_e_2000": 5.041696588593508
+    },
+    {
+      "hex": "#db6d49",
+      "rgb": [
+        219,
+        109,
+        73
+      ],
+      "parent_index": 2314,
+      "nearest_delta_e_2000": 4.369241203357156
+    },
+    {
+      "hex": "#e56500",
+      "rgb": [
+        229,
+        101,
+        0
+      ],
+      "parent_index": 2315,
+      "nearest_delta_e_2000": 4.682134043544996
+    },
+    {
+      "hex": "#a28879",
+      "rgb": [
+        162,
+        136,
+        121
+      ],
+      "parent_index": 2292,
+      "nearest_delta_e_2000": 6.066908113168366
+    },
+    {
+      "hex": "#b38343",
+      "rgb": [
+        179,
+        131,
+        67
+      ],
+      "parent_index": 2286,
+      "nearest_delta_e_2000": 5.004602405053157
+    },
+    {
+      "hex": "#a08662",
+      "rgb": [
+        160,
+        134,
+        98
+      ],
+      "parent_index": 2200,
+      "nearest_delta_e_2000": 5.5593999553994315
+    },
+    {
+      "hex": "#a58c27",
+      "rgb": [
+        165,
+        140,
+        39
+      ],
+      "parent_index": 2284,
+      "nearest_delta_e_2000": 4.4472801043253805
+    },
+    {
+      "hex": "#909030",
+      "rgb": [
+        144,
+        144,
+        48
+      ],
+      "parent_index": 2205,
+      "nearest_delta_e_2000": 4.720456260090603
+    },
+    {
+      "hex": "#8b8b7a",
+      "rgb": [
+        139,
+        139,
+        122
+      ],
+      "parent_index": 2150,
+      "nearest_delta_e_2000": 4.5984645673132585
+    },
+    {
+      "hex": "#80960f",
+      "rgb": [
+        128,
+        150,
+        15
+      ],
+      "parent_index": 2148,
+      "nearest_delta_e_2000": 5.839662765941732
+    },
+    {
+      "hex": "#14a02e",
+      "rgb": [
+        20,
+        160,
+        46
+      ],
+      "parent_index": 2018,
+      "nearest_delta_e_2000": 5.881119378112165
+    },
+    {
+      "hex": "#6d926d",
+      "rgb": [
+        109,
+        146,
+        109
+      ],
+      "parent_index": 2077,
+      "nearest_delta_e_2000": 4.744712834736172
+    },
+    {
+      "hex": "#838b83",
+      "rgb": [
+        131,
+        139,
+        131
+      ],
+      "parent_index": 2140,
+      "nearest_delta_e_2000": 4.25768383999316
+    },
+    {
+      "hex": "#669280",
+      "rgb": [
+        102,
+        146,
+        128
+      ],
+      "parent_index": 2082,
+      "nearest_delta_e_2000": 6.052435171837009
+    },
+    {
+      "hex": "#509c80",
+      "rgb": [
+        80,
+        156,
+        128
+      ],
+      "parent_index": 2215,
+      "nearest_delta_e_2000": 5.1145248490519775
+    },
+    {
+      "hex": "#339999",
+      "rgb": [
+        51,
+        153,
+        153
+      ],
+      "parent_index": 2138,
+      "nearest_delta_e_2000": 4.525402301202565
+    },
+    {
+      "hex": "#838b8b",
+      "rgb": [
+        131,
+        139,
+        139
+      ],
+      "parent_index": 2136,
+      "nearest_delta_e_2000": 4.25768383999316
+    },
+    {
+      "hex": "#6d91aa",
+      "rgb": [
+        109,
+        145,
+        170
+      ],
+      "parent_index": 2218,
+      "nearest_delta_e_2000": 4.984472025768976
+    },
+    {
+      "hex": "#008de8",
+      "rgb": [
+        0,
+        141,
+        232
+      ],
+      "parent_index": 2130,
+      "nearest_delta_e_2000": 4.259890860661442
+    },
+    {
+      "hex": "#868d9b",
+      "rgb": [
+        134,
+        141,
+        155
+      ],
+      "parent_index": 2222,
+      "nearest_delta_e_2000": 4.583769956060764
+    },
+    {
+      "hex": "#6680ff",
+      "rgb": [
+        102,
+        128,
+        255
+      ],
+      "parent_index": 2256,
+      "nearest_delta_e_2000": 5.02964268241127
+    },
+    {
+      "hex": "#8d88bc",
+      "rgb": [
+        141,
+        136,
+        188
+      ],
+      "parent_index": 2353,
+      "nearest_delta_e_2000": 4.9807456809722614
+    },
+    {
+      "hex": "#9878f8",
+      "rgb": [
+        152,
+        120,
+        248
+      ],
+      "parent_index": 2382,
+      "nearest_delta_e_2000": 4.6608533737903075
+    },
+    {
+      "hex": "#9980cc",
+      "rgb": [
+        153,
+        128,
+        204
+      ],
+      "parent_index": 2354,
+      "nearest_delta_e_2000": 4.953097443986915
+    },
+    {
+      "hex": "#b66ddb",
+      "rgb": [
+        182,
+        109,
+        219
+      ],
+      "parent_index": 2356,
+      "nearest_delta_e_2000": 4.203349479638309
+    },
+    {
+      "hex": "#a07eaf",
+      "rgb": [
+        160,
+        126,
+        175
+      ],
+      "parent_index": 2229,
+      "nearest_delta_e_2000": 4.344222920695601
+    },
+    {
+      "hex": "#cc55ff",
+      "rgb": [
+        204,
+        85,
+        255
+      ],
+      "parent_index": 2486,
+      "nearest_delta_e_2000": 5.063649344741765
+    },
+    {
+      "hex": "#ff3399",
+      "rgb": [
+        255,
+        51,
+        153
+      ],
+      "parent_index": 2368,
+      "nearest_delta_e_2000": 4.953984787606695
+    },
+    {
+      "hex": "#db6db6",
+      "rgb": [
+        219,
+        109,
+        182
+      ],
+      "parent_index": 2503,
+      "nearest_delta_e_2000": 4.425346345345601
+    },
+    {
+      "hex": "#ff33cc",
+      "rgb": [
+        255,
+        51,
+        204
+      ],
+      "parent_index": 2619,
+      "nearest_delta_e_2000": 5.304593334404113
+    },
+    {
+      "hex": "#cc72c2",
+      "rgb": [
+        204,
+        114,
+        194
+      ],
+      "parent_index": 2505,
+      "nearest_delta_e_2000": 4.425346345345601
+    },
+    {
+      "hex": "#fe00ff",
+      "rgb": [
+        254,
+        0,
+        255
+      ],
+      "parent_index": 2629,
+      "nearest_delta_e_2000": 6.44549487743063
+    },
+    {
+      "hex": "#9d8ca6",
+      "rgb": [
+        157,
+        140,
+        166
+      ],
+      "parent_index": 2379,
+      "nearest_delta_e_2000": 4.383672994538006
+    },
+    {
+      "hex": "#b66dff",
+      "rgb": [
+        182,
+        109,
+        255
+      ],
+      "parent_index": 2510,
+      "nearest_delta_e_2000": 5.1893446297864445
+    },
+    {
+      "hex": "#938b9e",
+      "rgb": [
+        147,
+        139,
+        158
+      ],
+      "parent_index": 2250,
+      "nearest_delta_e_2000": 4.383672994538006
+    },
+    {
+      "hex": "#9488e0",
+      "rgb": [
+        148,
+        136,
+        224
+      ],
+      "parent_index": 2482,
+      "nearest_delta_e_2000": 4.953097443986915
+    },
+    {
+      "hex": "#7c8ce0",
+      "rgb": [
+        124,
+        140,
+        224
+      ],
+      "parent_index": 2385,
+      "nearest_delta_e_2000": 5.462395244733565
+    },
+    {
+      "hex": "#5591da",
+      "rgb": [
+        85,
+        145,
+        218
+      ],
+      "parent_index": 2259,
+      "nearest_delta_e_2000": 4.748829275219432
+    },
+    {
+      "hex": "#0098dc",
+      "rgb": [
+        0,
+        152,
+        220
+      ],
+      "parent_index": 2265,
+      "nearest_delta_e_2000": 5.507193289663323
+    },
+    {
+      "hex": "#6498ad",
+      "rgb": [
+        100,
+        152,
+        173
+      ],
+      "parent_index": 2343,
+      "nearest_delta_e_2000": 4.914155596249813
+    },
+    {
+      "hex": "#6a969e",
+      "rgb": [
+        106,
+        150,
+        158
+      ],
+      "parent_index": 2267,
+      "nearest_delta_e_2000": 5.112747626524123
+    },
+    {
+      "hex": "#009faa",
+      "rgb": [
+        0,
+        159,
+        170
+      ],
+      "parent_index": 2216,
+      "nearest_delta_e_2000": 4.525402301202565
+    },
+    {
+      "hex": "#7e9494",
+      "rgb": [
+        126,
+        148,
+        148
+      ],
+      "parent_index": 2268,
+      "nearest_delta_e_2000": 5.861133426844228
+    },
+    {
+      "hex": "#929292",
+      "rgb": [
+        146,
+        146,
+        146
+      ],
+      "parent_index": 2322,
+      "nearest_delta_e_2000": 4.331627213300656
+    },
+    {
+      "hex": "#00aa55",
+      "rgb": [
+        0,
+        170,
+        85
+      ],
+      "parent_index": 2273,
+      "nearest_delta_e_2000": 5.881119378112165
+    },
+    {
+      "hex": "#62a16f",
+      "rgb": [
+        98,
+        161,
+        111
+      ],
+      "parent_index": 2335,
+      "nearest_delta_e_2000": 5.321346554124357
+    },
+    {
+      "hex": "#559f55",
+      "rgb": [
+        85,
+        159,
+        85
+      ],
+      "parent_index": 2211,
+      "nearest_delta_e_2000": 4.691200223946251
+    },
+    {
+      "hex": "#92926d",
+      "rgb": [
+        146,
+        146,
+        109
+      ],
+      "parent_index": 2280,
+      "nearest_delta_e_2000": 4.48869705816375
+    },
+    {
+      "hex": "#999200",
+      "rgb": [
+        153,
+        146,
+        0
+      ],
+      "parent_index": 2281,
+      "nearest_delta_e_2000": 4.720456260090603
+    },
+    {
+      "hex": "#999280",
+      "rgb": [
+        153,
+        146,
+        128
+      ],
+      "parent_index": 2321,
+      "nearest_delta_e_2000": 4.293829902364371
+    },
+    {
+      "hex": "#aa9148",
+      "rgb": [
+        170,
+        145,
+        72
+      ],
+      "parent_index": 2411,
+      "nearest_delta_e_2000": 4.230884161021444
+    },
+    {
+      "hex": "#c28900",
+      "rgb": [
+        194,
+        137,
+        0
+      ],
+      "parent_index": 2414,
+      "nearest_delta_e_2000": 5.271776248603518
+    },
+    {
+      "hex": "#cc8000",
+      "rgb": [
+        204,
+        128,
+        0
+      ],
+      "parent_index": 2416,
+      "nearest_delta_e_2000": 5.227684607953744
+    },
+    {
+      "hex": "#cc8033",
+      "rgb": [
+        204,
+        128,
+        51
+      ],
+      "parent_index": 2418,
+      "nearest_delta_e_2000": 5.227684607953744
+    },
+    {
+      "hex": "#cb7f4f",
+      "rgb": [
+        203,
+        127,
+        79
+      ],
+      "parent_index": 2420,
+      "nearest_delta_e_2000": 5.746496028343328
+    },
+    {
+      "hex": "#ff5533",
+      "rgb": [
+        255,
+        85,
+        51
+      ],
+      "parent_index": 2439,
+      "nearest_delta_e_2000": 4.693598726286983
+    },
+    {
+      "hex": "#ff5566",
+      "rgb": [
+        255,
+        85,
+        102
+      ],
+      "parent_index": 2554,
+      "nearest_delta_e_2000": 4.785938323834727
+    },
+    {
+      "hex": "#b38690",
+      "rgb": [
+        179,
+        134,
+        144
+      ],
+      "parent_index": 2430,
+      "nearest_delta_e_2000": 4.783308704176994
+    },
+    {
+      "hex": "#f45d92",
+      "rgb": [
+        244,
+        93,
+        146
+      ],
+      "parent_index": 2560,
+      "nearest_delta_e_2000": 4.590900760180945
+    },
+    {
+      "hex": "#db6d92",
+      "rgb": [
+        219,
+        109,
+        146
+      ],
+      "parent_index": 2432,
+      "nearest_delta_e_2000": 4.590900760180945
+    },
+    {
+      "hex": "#aa9191",
+      "rgb": [
+        170,
+        145,
+        145
+      ],
+      "parent_index": 2555,
+      "nearest_delta_e_2000": 6.034498499772507
+    },
+    {
+      "hex": "#cc8888",
+      "rgb": [
+        204,
+        136,
+        136
+      ],
+      "parent_index": 2563,
+      "nearest_delta_e_2000": 4.711707792427771
+    },
+    {
+      "hex": "#e17676",
+      "rgb": [
+        225,
+        118,
+        118
+      ],
+      "parent_index": 2566,
+      "nearest_delta_e_2000": 4.432430854673494
+    },
+    {
+      "hex": "#d18479",
+      "rgb": [
+        209,
+        132,
+        121
+      ],
+      "parent_index": 2568,
+      "nearest_delta_e_2000": 4.539181150827803
+    },
+    {
+      "hex": "#ff5f00",
+      "rgb": [
+        255,
+        95,
+        0
+      ],
+      "parent_index": 2546,
+      "nearest_delta_e_2000": 5.288164017704932
+    },
+    {
+      "hex": "#ee7600",
+      "rgb": [
+        238,
+        118,
+        0
+      ],
+      "parent_index": 2574,
+      "nearest_delta_e_2000": 4.376621981475443
+    },
+    {
+      "hex": "#b69100",
+      "rgb": [
+        182,
+        145,
+        0
+      ],
+      "parent_index": 2456,
+      "nearest_delta_e_2000": 4.9047570887856144
+    },
+    {
+      "hex": "#a19477",
+      "rgb": [
+        161,
+        148,
+        119
+      ],
+      "parent_index": 2412,
+      "nearest_delta_e_2000": 4.293829902364371
+    },
+    {
+      "hex": "#aa9660",
+      "rgb": [
+        170,
+        150,
+        96
+      ],
+      "parent_index": 2455,
+      "nearest_delta_e_2000": 4.230884161021444
+    },
+    {
+      "hex": "#9b9992",
+      "rgb": [
+        155,
+        153,
+        146
+      ],
+      "parent_index": 2536,
+      "nearest_delta_e_2000": 4.331627213300656
+    },
+    {
+      "hex": "#9b9662",
+      "rgb": [
+        155,
+        150,
+        98
+      ],
+      "parent_index": 2410,
+      "nearest_delta_e_2000": 4.48869705816375
+    },
+    {
+      "hex": "#979b4f",
+      "rgb": [
+        151,
+        155,
+        79
+      ],
+      "parent_index": 2407,
+      "nearest_delta_e_2000": 4.783354191705482
+    },
+    {
+      "hex": "#929c74",
+      "rgb": [
+        146,
+        156,
+        116
+      ],
+      "parent_index": 2457,
+      "nearest_delta_e_2000": 4.525884391046992
+    },
+    {
+      "hex": "#6aa805",
+      "rgb": [
+        106,
+        168,
+        5
+      ],
+      "parent_index": 2405,
+      "nearest_delta_e_2000": 4.694666724090456
+    },
+    {
+      "hex": "#44aa00",
+      "rgb": [
+        68,
+        170,
+        0
+      ],
+      "parent_index": 2333,
+      "nearest_delta_e_2000": 4.694666724090456
+    },
+    {
+      "hex": "#829c72",
+      "rgb": [
+        130,
+        156,
+        114
+      ],
+      "parent_index": 2331,
+      "nearest_delta_e_2000": 4.7873784196292695
+    },
+    {
+      "hex": "#00aa88",
+      "rgb": [
+        0,
+        170,
+        136
+      ],
+      "parent_index": 2338,
+      "nearest_delta_e_2000": 5.45928007886526
+    },
+    {
+      "hex": "#00aa99",
+      "rgb": [
+        0,
+        170,
+        153
+      ],
+      "parent_index": 2395,
+      "nearest_delta_e_2000": 5.119909002318052
+    },
+    {
+      "hex": "#559faa",
+      "rgb": [
+        85,
+        159,
+        170
+      ],
+      "parent_index": 2342,
+      "nearest_delta_e_2000": 5.146772697571039
+    },
+    {
+      "hex": "#7f9faa",
+      "rgb": [
+        127,
+        159,
+        170
+      ],
+      "parent_index": 2523,
+      "nearest_delta_e_2000": 5.368993146300168
+    },
+    {
+      "hex": "#4aa2c0",
+      "rgb": [
+        74,
+        162,
+        192
+      ],
+      "parent_index": 2475,
+      "nearest_delta_e_2000": 4.914155596249813
+    },
+    {
+      "hex": "#699dc3",
+      "rgb": [
+        105,
+        157,
+        195
+      ],
+      "parent_index": 2477,
+      "nearest_delta_e_2000": 5.221896209291712
+    },
+    {
+      "hex": "#0099ff",
+      "rgb": [
+        0,
+        153,
+        255
+      ],
+      "parent_index": 2392,
+      "nearest_delta_e_2000": 4.259890860661442
+    },
+    {
+      "hex": "#8b93af",
+      "rgb": [
+        139,
+        147,
+        175
+      ],
+      "parent_index": 2386,
+      "nearest_delta_e_2000": 4.358982108246568
+    },
+    {
+      "hex": "#6692ff",
+      "rgb": [
+        102,
+        146,
+        255
+      ],
+      "parent_index": 2518,
+      "nearest_delta_e_2000": 4.443063796034006
+    },
+    {
+      "hex": "#9292b6",
+      "rgb": [
+        146,
+        146,
+        182
+      ],
+      "parent_index": 2481,
+      "nearest_delta_e_2000": 4.358982108246568
+    },
+    {
+      "hex": "#8c88ff",
+      "rgb": [
+        140,
+        136,
+        255
+      ],
+      "parent_index": 2515,
+      "nearest_delta_e_2000": 5.37509088291529
+    },
+    {
+      "hex": "#b484dc",
+      "rgb": [
+        180,
+        132,
+        220
+      ],
+      "parent_index": 2612,
+      "nearest_delta_e_2000": 4.929372857346344
+    },
+    {
+      "hex": "#aa91b6",
+      "rgb": [
+        170,
+        145,
+        182
+      ],
+      "parent_index": 2614,
+      "nearest_delta_e_2000": 4.653524190861616
+    },
+    {
+      "hex": "#db6ddb",
+      "rgb": [
+        219,
+        109,
+        219
+      ],
+      "parent_index": 2630,
+      "nearest_delta_e_2000": 4.688629437770636
+    },
+    {
+      "hex": "#ff4ab4",
+      "rgb": [
+        255,
+        74,
+        180
+      ],
+      "parent_index": 2620,
+      "nearest_delta_e_2000": 4.992791704223089
+    },
+    {
+      "hex": "#c87da0",
+      "rgb": [
+        200,
+        125,
+        160
+      ],
+      "parent_index": 2499,
+      "nearest_delta_e_2000": 5.994769636846815
+    },
+    {
+      "hex": "#ff69b4",
+      "rgb": [
+        255,
+        105,
+        180
+      ],
+      "parent_index": 2878,
+      "nearest_delta_e_2000": 4.864356975374068
+    },
+    {
+      "hex": "#ff66cc",
+      "rgb": [
+        255,
+        102,
+        204
+      ],
+      "parent_index": 2874,
+      "nearest_delta_e_2000": 4.920780734166949
+    },
+    {
+      "hex": "#b691aa",
+      "rgb": [
+        182,
+        145,
+        170
+      ],
+      "parent_index": 2628,
+      "nearest_delta_e_2000": 5.5893230311853594
+    },
+    {
+      "hex": "#d084c0",
+      "rgb": [
+        208,
+        132,
+        192
+      ],
+      "parent_index": 2747,
+      "nearest_delta_e_2000": 5.1526329964435424
+    },
+    {
+      "hex": "#da6dff",
+      "rgb": [
+        218,
+        109,
+        255
+      ],
+      "parent_index": 2762,
+      "nearest_delta_e_2000": 4.248595073991857
+    },
+    {
+      "hex": "#ab8fc7",
+      "rgb": [
+        171,
+        143,
+        199
+      ],
+      "parent_index": 2611,
+      "nearest_delta_e_2000": 4.415512824952071
+    },
+    {
+      "hex": "#aa91da",
+      "rgb": [
+        170,
+        145,
+        218
+      ],
+      "parent_index": 2633,
+      "nearest_delta_e_2000": 4.415512824952071
+    },
+    {
+      "hex": "#9999cc",
+      "rgb": [
+        153,
+        153,
+        204
+      ],
+      "parent_index": 2636,
+      "nearest_delta_e_2000": 4.707349852075943
+    },
+    {
+      "hex": "#8b9bb4",
+      "rgb": [
+        139,
+        155,
+        180
+      ],
+      "parent_index": 2519,
+      "nearest_delta_e_2000": 4.488769027381664
+    },
+    {
+      "hex": "#71a6a1",
+      "rgb": [
+        113,
+        166,
+        161
+      ],
+      "parent_index": 2526,
+      "nearest_delta_e_2000": 5.372635774883808
+    },
+    {
+      "hex": "#66aa99",
+      "rgb": [
+        102,
+        170,
+        153
+      ],
+      "parent_index": 2599,
+      "nearest_delta_e_2000": 5.372635774883808
+    },
+    {
+      "hex": "#5daf8d",
+      "rgb": [
+        93,
+        175,
+        141
+      ],
+      "parent_index": 2597,
+      "nearest_delta_e_2000": 4.962688746311902
+    },
+    {
+      "hex": "#7ca65d",
+      "rgb": [
+        124,
+        166,
+        93
+      ],
+      "parent_index": 2460,
+      "nearest_delta_e_2000": 5.887650441576983
+    },
+    {
+      "hex": "#88aa44",
+      "rgb": [
+        136,
+        170,
+        68
+      ],
+      "parent_index": 2585,
+      "nearest_delta_e_2000": 5.5868835820214615
+    },
+    {
+      "hex": "#88aa00",
+      "rgb": [
+        136,
+        170,
+        0
+      ],
+      "parent_index": 2584,
+      "nearest_delta_e_2000": 4.676628834783054
+    },
+    {
+      "hex": "#a0a034",
+      "rgb": [
+        160,
+        160,
+        52
+      ],
+      "parent_index": 2535,
+      "nearest_delta_e_2000": 4.586262632203273
+    },
+    {
+      "hex": "#aa9f55",
+      "rgb": [
+        170,
+        159,
+        85
+      ],
+      "parent_index": 2580,
+      "nearest_delta_e_2000": 4.441959621117194
+    },
+    {
+      "hex": "#b2a02b",
+      "rgb": [
+        178,
+        160,
+        43
+      ],
+      "parent_index": 2663,
+      "nearest_delta_e_2000": 4.912891410436892
+    },
+    {
+      "hex": "#bf9757",
+      "rgb": [
+        191,
+        151,
+        87
+      ],
+      "parent_index": 2669,
+      "nearest_delta_e_2000": 5.59656656299978
+    },
+    {
+      "hex": "#ca8e3d",
+      "rgb": [
+        202,
+        142,
+        61
+      ],
+      "parent_index": 2577,
+      "nearest_delta_e_2000": 4.802228596138856
+    },
+    {
+      "hex": "#af9880",
+      "rgb": [
+        175,
+        152,
+        128
+      ],
+      "parent_index": 2576,
+      "nearest_delta_e_2000": 4.574291985733838
+    },
+    {
+      "hex": "#c09473",
+      "rgb": [
+        192,
+        148,
+        115
+      ],
+      "parent_index": 2674,
+      "nearest_delta_e_2000": 4.9584138113093
+    },
+    {
+      "hex": "#e98537",
+      "rgb": [
+        233,
+        133,
+        55
+      ],
+      "parent_index": 2704,
+      "nearest_delta_e_2000": 4.376621981475443
+    },
+    {
+      "hex": "#ee7942",
+      "rgb": [
+        238,
+        121,
+        66
+      ],
+      "parent_index": 2680,
+      "nearest_delta_e_2000": 4.91487739584577
+    },
+    {
+      "hex": "#b6988c",
+      "rgb": [
+        182,
+        152,
+        140
+      ],
+      "parent_index": 2681,
+      "nearest_delta_e_2000": 5.1780553408017065
+    },
+    {
+      "hex": "#ff6d40",
+      "rgb": [
+        255,
+        109,
+        64
+      ],
+      "parent_index": 2698,
+      "nearest_delta_e_2000": 4.693598726286983
+    },
+    {
+      "hex": "#d08a74",
+      "rgb": [
+        208,
+        138,
+        116
+      ],
+      "parent_index": 2683,
+      "nearest_delta_e_2000": 4.539181150827803
+    },
+    {
+      "hex": "#ff6d55",
+      "rgb": [
+        255,
+        109,
+        85
+      ],
+      "parent_index": 2695,
+      "nearest_delta_e_2000": 5.166423808746279
+    },
+    {
+      "hex": "#bc8f8f",
+      "rgb": [
+        188,
+        143,
+        143
+      ],
+      "parent_index": 2562,
+      "nearest_delta_e_2000": 4.783308704176994
+    },
+    {
+      "hex": "#e18289",
+      "rgb": [
+        225,
+        130,
+        137
+      ],
+      "parent_index": 2691,
+      "nearest_delta_e_2000": 4.432430854673494
+    },
+    {
+      "hex": "#ff6d80",
+      "rgb": [
+        255,
+        109,
+        128
+      ],
+      "parent_index": 2811,
+      "nearest_delta_e_2000": 4.728506457033996
+    },
+    {
+      "hex": "#ff6d91",
+      "rgb": [
+        255,
+        109,
+        145
+      ],
+      "parent_index": 2812,
+      "nearest_delta_e_2000": 4.728506457033996
+    },
+    {
+      "hex": "#e986a2",
+      "rgb": [
+        233,
+        134,
+        162
+      ],
+      "parent_index": 2816,
+      "nearest_delta_e_2000": 4.574176825472932
+    },
+    {
+      "hex": "#ff7b73",
+      "rgb": [
+        255,
+        123,
+        115
+      ],
+      "parent_index": 2822,
+      "nearest_delta_e_2000": 5.500190760865822
+    },
+    {
+      "hex": "#cf968c",
+      "rgb": [
+        207,
+        150,
+        140
+      ],
+      "parent_index": 2807,
+      "nearest_delta_e_2000": 5.075832049286042
+    },
+    {
+      "hex": "#ee8866",
+      "rgb": [
+        238,
+        136,
+        102
+      ],
+      "parent_index": 2824,
+      "nearest_delta_e_2000": 6.186199669491527
+    },
+    {
+      "hex": "#c59782",
+      "rgb": [
+        197,
+        151,
+        130
+      ],
+      "parent_index": 2702,
+      "nearest_delta_e_2000": 4.9584138113093
+    },
+    {
+      "hex": "#ff8033",
+      "rgb": [
+        255,
+        128,
+        51
+      ],
+      "parent_index": 2828,
+      "nearest_delta_e_2000": 4.91487739584577
+    },
+    {
+      "hex": "#db9249",
+      "rgb": [
+        219,
+        146,
+        73
+      ],
+      "parent_index": 2801,
+      "nearest_delta_e_2000": 4.802228596138856
+    },
+    {
+      "hex": "#ec8f06",
+      "rgb": [
+        236,
+        143,
+        6
+      ],
+      "parent_index": 2834,
+      "nearest_delta_e_2000": 4.918193490430435
+    },
+    {
+      "hex": "#cc9966",
+      "rgb": [
+        204,
+        153,
+        102
+      ],
+      "parent_index": 2800,
+      "nearest_delta_e_2000": 5.1782662712956675
+    },
+    {
+      "hex": "#da9100",
+      "rgb": [
+        218,
+        145,
+        0
+      ],
+      "parent_index": 2707,
+      "nearest_delta_e_2000": 4.9213651242142635
+    },
+    {
+      "hex": "#cc9900",
+      "rgb": [
+        204,
+        153,
+        0
+      ],
+      "parent_index": 2709,
+      "nearest_delta_e_2000": 5.012325854785646
+    },
+    {
+      "hex": "#a6a090",
+      "rgb": [
+        166,
+        160,
+        144
+      ],
+      "parent_index": 2665,
+      "nearest_delta_e_2000": 4.531193667008915
+    },
+    {
+      "hex": "#aaaa55",
+      "rgb": [
+        170,
+        170,
+        85
+      ],
+      "parent_index": 2792,
+      "nearest_delta_e_2000": 4.441959621117194
+    },
+    {
+      "hex": "#9ca864",
+      "rgb": [
+        156,
+        168,
+        100
+      ],
+      "parent_index": 2661,
+      "nearest_delta_e_2000": 4.675106808315911
+    },
+    {
+      "hex": "#40b74a",
+      "rgb": [
+        64,
+        183,
+        74
+      ],
+      "parent_index": 2593,
+      "nearest_delta_e_2000": 5.896038680346529
+    },
+    {
+      "hex": "#6db66d",
+      "rgb": [
+        109,
+        182,
+        109
+      ],
+      "parent_index": 2721,
+      "nearest_delta_e_2000": 4.563562626908597
+    },
+    {
+      "hex": "#88aa88",
+      "rgb": [
+        136,
+        170,
+        136
+      ],
+      "parent_index": 2655,
+      "nearest_delta_e_2000": 5.333368580168617
+    },
+    {
+      "hex": "#99aa99",
+      "rgb": [
+        153,
+        170,
+        153
+      ],
+      "parent_index": 2784,
+      "nearest_delta_e_2000": 4.32847789787542
+    },
+    {
+      "hex": "#66b680",
+      "rgb": [
+        102,
+        182,
+        128
+      ],
+      "parent_index": 2723,
+      "nearest_delta_e_2000": 4.563562626908597
+    },
+    {
+      "hex": "#33b680",
+      "rgb": [
+        51,
+        182,
+        128
+      ],
+      "parent_index": 2596,
+      "nearest_delta_e_2000": 4.306202983431857
+    },
+    {
+      "hex": "#48b6aa",
+      "rgb": [
+        72,
+        182,
+        170
+      ],
+      "parent_index": 2729,
+      "nearest_delta_e_2000": 4.5149604809197665
+    },
+    {
+      "hex": "#53afaf",
+      "rgb": [
+        83,
+        175,
+        175
+      ],
+      "parent_index": 2648,
+      "nearest_delta_e_2000": 4.746372661368586
+    },
+    {
+      "hex": "#00b6bf",
+      "rgb": [
+        0,
+        182,
+        191
+      ],
+      "parent_index": 2647,
+      "nearest_delta_e_2000": 4.332785440903746
+    },
+    {
+      "hex": "#99a5a7",
+      "rgb": [
+        153,
+        165,
+        167
+      ],
+      "parent_index": 2734,
+      "nearest_delta_e_2000": 4.9583300689505805
+    },
+    {
+      "hex": "#40afdd",
+      "rgb": [
+        64,
+        175,
+        221
+      ],
+      "parent_index": 2737,
+      "nearest_delta_e_2000": 4.741182655648555
+    },
+    {
+      "hex": "#33aaff",
+      "rgb": [
+        51,
+        170,
+        255
+      ],
+      "parent_index": 2739,
+      "nearest_delta_e_2000": 5.274473564066519
+    },
+    {
+      "hex": "#7f9fff",
+      "rgb": [
+        127,
+        159,
+        255
+      ],
+      "parent_index": 2770,
+      "nearest_delta_e_2000": 4.443063796034006
+    },
+    {
+      "hex": "#a0a0a4",
+      "rgb": [
+        160,
+        160,
+        164
+      ],
+      "parent_index": 2742,
+      "nearest_delta_e_2000": 4.617221620139859
+    },
+    {
+      "hex": "#aa91ff",
+      "rgb": [
+        170,
+        145,
+        255
+      ],
+      "parent_index": 2767,
+      "nearest_delta_e_2000": 5.664472357204521
+    },
+    {
+      "hex": "#cc80ff",
+      "rgb": [
+        204,
+        128,
+        255
+      ],
+      "parent_index": 2870,
+      "nearest_delta_e_2000": 4.248595073991857
+    },
+    {
+      "hex": "#ae9fae",
+      "rgb": [
+        174,
+        159,
+        174
+      ],
+      "parent_index": 2759,
+      "nearest_delta_e_2000": 6.657485503917859
+    },
+    {
+      "hex": "#ff77a8",
+      "rgb": [
+        255,
+        119,
+        168
+      ],
+      "parent_index": 2880,
+      "nearest_delta_e_2000": 4.864356975374068
+    },
+    {
+      "hex": "#db92b6",
+      "rgb": [
+        219,
+        146,
+        182
+      ],
+      "parent_index": 2885,
+      "nearest_delta_e_2000": 5.670928819760876
+    },
+    {
+      "hex": "#ff80cc",
+      "rgb": [
+        255,
+        128,
+        204
+      ],
+      "parent_index": 3008,
+      "nearest_delta_e_2000": 4.920780734166949
+    },
+    {
+      "hex": "#ff7de7",
+      "rgb": [
+        255,
+        125,
+        231
+      ],
+      "parent_index": 3133,
+      "nearest_delta_e_2000": 4.891827651947379
+    },
+    {
+      "hex": "#ff67ff",
+      "rgb": [
+        255,
+        103,
+        255
+      ],
+      "parent_index": 3006,
+      "nearest_delta_e_2000": 5.804582769915191
+    },
+    {
+      "hex": "#cc99cc",
+      "rgb": [
+        204,
+        153,
+        204
+      ],
+      "parent_index": 2891,
+      "nearest_delta_e_2000": 5.62355745940952
+    },
+    {
+      "hex": "#d591f2",
+      "rgb": [
+        213,
+        145,
+        242
+      ],
+      "parent_index": 3014,
+      "nearest_delta_e_2000": 4.952655793940371
+    },
+    {
+      "hex": "#bf9be7",
+      "rgb": [
+        191,
+        155,
+        231
+      ],
+      "parent_index": 3003,
+      "nearest_delta_e_2000": 4.466942062378587
+    },
+    {
+      "hex": "#a8a0ec",
+      "rgb": [
+        168,
+        160,
+        236
+      ],
+      "parent_index": 2895,
+      "nearest_delta_e_2000": 4.696544370743946
+    },
+    {
+      "hex": "#66aaff",
+      "rgb": [
+        102,
+        170,
+        255
+      ],
+      "parent_index": 2865,
+      "nearest_delta_e_2000": 5.416590253578625
+    },
+    {
+      "hex": "#88aacc",
+      "rgb": [
+        136,
+        170,
+        204
+      ],
+      "parent_index": 2773,
+      "nearest_delta_e_2000": 5.198726330585453
+    },
+    {
+      "hex": "#00b6ff",
+      "rgb": [
+        0,
+        182,
+        255
+      ],
+      "parent_index": 2860,
+      "nearest_delta_e_2000": 5.082227729874985
+    },
+    {
+      "hex": "#7cb4d4",
+      "rgb": [
+        124,
+        180,
+        212
+      ],
+      "parent_index": 2900,
+      "nearest_delta_e_2000": 4.591711776607862
+    },
+    {
+      "hex": "#00b6da",
+      "rgb": [
+        0,
+        182,
+        218
+      ],
+      "parent_index": 2735,
+      "nearest_delta_e_2000": 5.195571242037808
+    },
+    {
+      "hex": "#00bfaa",
+      "rgb": [
+        0,
+        191,
+        170
+      ],
+      "parent_index": 2780,
+      "nearest_delta_e_2000": 4.5149604809197665
+    },
+    {
+      "hex": "#5abda2",
+      "rgb": [
+        90,
+        189,
+        162
+      ],
+      "parent_index": 2856,
+      "nearest_delta_e_2000": 4.89597221656243
+    },
+    {
+      "hex": "#06c491",
+      "rgb": [
+        6,
+        196,
+        145
+      ],
+      "parent_index": 2855,
+      "nearest_delta_e_2000": 4.306202983431857
+    },
+    {
+      "hex": "#aeaeae",
+      "rgb": [
+        174,
+        174,
+        174
+      ],
+      "parent_index": 2966,
+      "nearest_delta_e_2000": 4.341465752151125
+    },
+    {
+      "hex": "#28c074",
+      "rgb": [
+        40,
+        192,
+        116
+      ],
+      "parent_index": 2725,
+      "nearest_delta_e_2000": 4.810537185362621
+    },
+    {
+      "hex": "#55bf00",
+      "rgb": [
+        85,
+        191,
+        0
+      ],
+      "parent_index": 2718,
+      "nearest_delta_e_2000": 5.314869953772452
+    },
+    {
+      "hex": "#99b680",
+      "rgb": [
+        153,
+        182,
+        128
+      ],
+      "parent_index": 2918,
+      "nearest_delta_e_2000": 4.40376325443489
+    },
+    {
+      "hex": "#7bbc47",
+      "rgb": [
+        123,
+        188,
+        71
+      ],
+      "parent_index": 2789,
+      "nearest_delta_e_2000": 4.575559177841095
+    },
+    {
+      "hex": "#88ba00",
+      "rgb": [
+        136,
+        186,
+        0
+      ],
+      "parent_index": 2790,
+      "nearest_delta_e_2000": 4.676628834783054
+    },
+    {
+      "hex": "#afaf00",
+      "rgb": [
+        175,
+        175,
+        0
+      ],
+      "parent_index": 2840,
+      "nearest_delta_e_2000": 5.123904962047256
+    },
+    {
+      "hex": "#ccaa33",
+      "rgb": [
+        204,
+        170,
+        51
+      ],
+      "parent_index": 2927,
+      "nearest_delta_e_2000": 4.715227884384413
+    },
+    {
+      "hex": "#de9e41",
+      "rgb": [
+        222,
+        158,
+        65
+      ],
+      "parent_index": 2931,
+      "nearest_delta_e_2000": 4.572343704145278
+    },
+    {
+      "hex": "#bfa78f",
+      "rgb": [
+        191,
+        167,
+        143
+      ],
+      "parent_index": 2934,
+      "nearest_delta_e_2000": 4.428504313251349
+    },
+    {
+      "hex": "#ff9124",
+      "rgb": [
+        255,
+        145,
+        36
+      ],
+      "parent_index": 3061,
+      "nearest_delta_e_2000": 5.150259965873844
+    },
+    {
+      "hex": "#df9c6e",
+      "rgb": [
+        223,
+        156,
+        110
+      ],
+      "parent_index": 2936,
+      "nearest_delta_e_2000": 4.305123965516019
+    },
+    {
+      "hex": "#e19b7d",
+      "rgb": [
+        225,
+        155,
+        125
+      ],
+      "parent_index": 2955,
+      "nearest_delta_e_2000": 5.323678686067239
+    },
+    {
+      "hex": "#e8988c",
+      "rgb": [
+        232,
+        152,
+        140
+      ],
+      "parent_index": 2950,
+      "nearest_delta_e_2000": 5.00251594487087
+    },
+    {
+      "hex": "#c6a5a3",
+      "rgb": [
+        198,
+        165,
+        163
+      ],
+      "parent_index": 2948,
+      "nearest_delta_e_2000": 5.113893919839662
+    },
+    {
+      "hex": "#d49faa",
+      "rgb": [
+        212,
+        159,
+        170
+      ],
+      "parent_index": 2945,
+      "nearest_delta_e_2000": 5.109681229700735
+    },
+    {
+      "hex": "#ff91aa",
+      "rgb": [
+        255,
+        145,
+        170
+      ],
+      "parent_index": 3198,
+      "nearest_delta_e_2000": 4.574176825472932
+    },
+    {
+      "hex": "#ec9ea4",
+      "rgb": [
+        236,
+        158,
+        164
+      ],
+      "parent_index": 3072,
+      "nearest_delta_e_2000": 4.697932969603832
+    },
+    {
+      "hex": "#ff9191",
+      "rgb": [
+        255,
+        145,
+        145
+      ],
+      "parent_index": 3074,
+      "nearest_delta_e_2000": 5.825091747699516
+    },
+    {
+      "hex": "#ff9280",
+      "rgb": [
+        255,
+        146,
+        128
+      ],
+      "parent_index": 3075,
+      "nearest_delta_e_2000": 5.00251594487087
+    },
+    {
+      "hex": "#ff9966",
+      "rgb": [
+        255,
+        153,
+        102
+      ],
+      "parent_index": 3077,
+      "nearest_delta_e_2000": 6.06478874794923
+    },
+    {
+      "hex": "#ccaa99",
+      "rgb": [
+        204,
+        170,
+        153
+      ],
+      "parent_index": 3064,
+      "nearest_delta_e_2000": 4.27436733417736
+    },
+    {
+      "hex": "#cdaa7d",
+      "rgb": [
+        205,
+        170,
+        125
+      ],
+      "parent_index": 2962,
+      "nearest_delta_e_2000": 5.962031291614822
+    },
+    {
+      "hex": "#e0ac3c",
+      "rgb": [
+        224,
+        172,
+        60
+      ],
+      "parent_index": 3087,
+      "nearest_delta_e_2000": 5.026620394704474
+    },
+    {
+      "hex": "#c3b13c",
+      "rgb": [
+        195,
+        177,
+        60
+      ],
+      "parent_index": 2969,
+      "nearest_delta_e_2000": 4.308924486214766
+    },
+    {
+      "hex": "#b5b572",
+      "rgb": [
+        181,
+        181,
+        114
+      ],
+      "parent_index": 2970,
+      "nearest_delta_e_2000": 4.7284529993314965
+    },
+    {
+      "hex": "#aab648",
+      "rgb": [
+        170,
+        182,
+        72
+      ],
+      "parent_index": 2923,
+      "nearest_delta_e_2000": 4.903557472872762
+    },
+    {
+      "hex": "#9fb76f",
+      "rgb": [
+        159,
+        183,
+        111
+      ],
+      "parent_index": 2921,
+      "nearest_delta_e_2000": 4.40376325443489
+    },
+    {
+      "hex": "#aab691",
+      "rgb": [
+        170,
+        182,
+        145
+      ],
+      "parent_index": 2976,
+      "nearest_delta_e_2000": 5.502166176195992
+    },
+    {
+      "hex": "#0bd000",
+      "rgb": [
+        11,
+        208,
+        0
+      ],
+      "parent_index": 2914,
+      "nearest_delta_e_2000": 4.532327311574103
+    },
+    {
+      "hex": "#00cc44",
+      "rgb": [
+        0,
+        204,
+        68
+      ],
+      "parent_index": 2852,
+      "nearest_delta_e_2000": 4.226208935267829
+    },
+    {
+      "hex": "#22cc66",
+      "rgb": [
+        34,
+        204,
+        102
+      ],
+      "parent_index": 2909,
+      "nearest_delta_e_2000": 4.309269739603965
+    },
+    {
+      "hex": "#a6b9aa",
+      "rgb": [
+        166,
+        185,
+        170
+      ],
+      "parent_index": 3036,
+      "nearest_delta_e_2000": 4.32847789787542
+    },
+    {
+      "hex": "#7fbfaa",
+      "rgb": [
+        127,
+        191,
+        170
+      ],
+      "parent_index": 2989,
+      "nearest_delta_e_2000": 4.89597221656243
+    },
+    {
+      "hex": "#91b6aa",
+      "rgb": [
+        145,
+        182,
+        170
+      ],
+      "parent_index": 2907,
+      "nearest_delta_e_2000": 5.278108501952294
+    },
+    {
+      "hex": "#92b6b6",
+      "rgb": [
+        146,
+        182,
+        182
+      ],
+      "parent_index": 2991,
+      "nearest_delta_e_2000": 5.006206987439355
+    },
+    {
+      "hex": "#aab6b6",
+      "rgb": [
+        170,
+        182,
+        182
+      ],
+      "parent_index": 3031,
+      "nearest_delta_e_2000": 4.9583300689505805
+    },
+    {
+      "hex": "#4dc1cb",
+      "rgb": [
+        77,
+        193,
+        203
+      ],
+      "parent_index": 2992,
+      "nearest_delta_e_2000": 4.332785440903746
+    },
+    {
+      "hex": "#99b6bf",
+      "rgb": [
+        153,
+        182,
+        191
+      ],
+      "parent_index": 2994,
+      "nearest_delta_e_2000": 5.307852820924901
+    },
+    {
+      "hex": "#73bed3",
+      "rgb": [
+        115,
+        190,
+        211
+      ],
+      "parent_index": 3030,
+      "nearest_delta_e_2000": 6.262926505948798
+    },
+    {
+      "hex": "#2ac0f2",
+      "rgb": [
+        42,
+        192,
+        242
+      ],
+      "parent_index": 2995,
+      "nearest_delta_e_2000": 4.741182655648555
+    },
+    {
+      "hex": "#9fb6cd",
+      "rgb": [
+        159,
+        182,
+        205
+      ],
+      "parent_index": 3025,
+      "nearest_delta_e_2000": 5.198726330585453
+    },
+    {
+      "hex": "#90b4ec",
+      "rgb": [
+        144,
+        180,
+        236
+      ],
+      "parent_index": 3020,
+      "nearest_delta_e_2000": 5.260500139078601
+    },
+    {
+      "hex": "#9eabff",
+      "rgb": [
+        158,
+        171,
+        255
+      ],
+      "parent_index": 3018,
+      "nearest_delta_e_2000": 5.68978840008293
+    },
+    {
+      "hex": "#ababdc",
+      "rgb": [
+        171,
+        171,
+        220
+      ],
+      "parent_index": 3000,
+      "nearest_delta_e_2000": 4.24763970583142
+    },
+    {
+      "hex": "#c2a5c9",
+      "rgb": [
+        194,
+        165,
+        201
+      ],
+      "parent_index": 3013,
+      "nearest_delta_e_2000": 5.440288183539894
+    },
+    {
+      "hex": "#ec99db",
+      "rgb": [
+        236,
+        153,
+        219
+      ],
+      "parent_index": 3137,
+      "nearest_delta_e_2000": 4.9061750001525635
+    },
+    {
+      "hex": "#ff92bf",
+      "rgb": [
+        255,
+        146,
+        191
+      ],
+      "parent_index": 3263,
+      "nearest_delta_e_2000": 5.053492141042202
+    },
+    {
+      "hex": "#f2a2d0",
+      "rgb": [
+        242,
+        162,
+        208
+      ],
+      "parent_index": 3266,
+      "nearest_delta_e_2000": 4.656658080880484
+    },
+    {
+      "hex": "#ff91ff",
+      "rgb": [
+        255,
+        145,
+        255
+      ],
+      "parent_index": 3388,
+      "nearest_delta_e_2000": 4.891827651947379
+    },
+    {
+      "hex": "#d7a5ff",
+      "rgb": [
+        215,
+        165,
+        255
+      ],
+      "parent_index": 3268,
+      "nearest_delta_e_2000": 4.547252345673769
+    },
+    {
+      "hex": "#bdb5c8",
+      "rgb": [
+        189,
+        181,
+        200
+      ],
+      "parent_index": 3141,
+      "nearest_delta_e_2000": 5.042063848879743
+    },
+    {
+      "hex": "#bfa9ff",
+      "rgb": [
+        191,
+        169,
+        255
+      ],
+      "parent_index": 3142,
+      "nearest_delta_e_2000": 4.696544370743946
+    },
+    {
+      "hex": "#b6b6db",
+      "rgb": [
+        182,
+        182,
+        219
+      ],
+      "parent_index": 3256,
+      "nearest_delta_e_2000": 4.24763970583142
+    },
+    {
+      "hex": "#b6b8c7",
+      "rgb": [
+        182,
+        184,
+        199
+      ],
+      "parent_index": 3143,
+      "nearest_delta_e_2000": 5.042063848879743
+    },
+    {
+      "hex": "#a8b9dc",
+      "rgb": [
+        168,
+        185,
+        220
+      ],
+      "parent_index": 3145,
+      "nearest_delta_e_2000": 5.647814695156558
+    },
+    {
+      "hex": "#66beff",
+      "rgb": [
+        102,
+        190,
+        255
+      ],
+      "parent_index": 3117,
+      "nearest_delta_e_2000": 4.507590703528356
+    },
+    {
+      "hex": "#74c2ed",
+      "rgb": [
+        116,
+        194,
+        237
+      ],
+      "parent_index": 3149,
+      "nearest_delta_e_2000": 4.507590703528356
+    },
+    {
+      "hex": "#22ccee",
+      "rgb": [
+        34,
+        204,
+        238
+      ],
+      "parent_index": 3153,
+      "nearest_delta_e_2000": 5.359789492735865
+    },
+    {
+      "hex": "#00cccc",
+      "rgb": [
+        0,
+        204,
+        204
+      ],
+      "parent_index": 3032,
+      "nearest_delta_e_2000": 5.15320985836683
+    },
+    {
+      "hex": "#66cc99",
+      "rgb": [
+        102,
+        204,
+        153
+      ],
+      "parent_index": 3110,
+      "nearest_delta_e_2000": 4.367701437944588
+    },
+    {
+      "hex": "#93c7a7",
+      "rgb": [
+        147,
+        199,
+        167
+      ],
+      "parent_index": 3159,
+      "nearest_delta_e_2000": 4.547568164216151
+    },
+    {
+      "hex": "#60cf4f",
+      "rgb": [
+        96,
+        207,
+        79
+      ],
+      "parent_index": 3041,
+      "nearest_delta_e_2000": 4.226208935267829
+    },
+    {
+      "hex": "#88cc44",
+      "rgb": [
+        136,
+        204,
+        68
+      ],
+      "parent_index": 3098,
+      "nearest_delta_e_2000": 4.286143050066684
+    },
+    {
+      "hex": "#b6b6aa",
+      "rgb": [
+        182,
+        182,
+        170
+      ],
+      "parent_index": 3093,
+      "nearest_delta_e_2000": 5.917283902596774
+    },
+    {
+      "hex": "#b6c121",
+      "rgb": [
+        182,
+        193,
+        33
+      ],
+      "parent_index": 3095,
+      "nearest_delta_e_2000": 4.784150781675625
+    },
+    {
+      "hex": "#bdbb93",
+      "rgb": [
+        189,
+        187,
+        147
+      ],
+      "parent_index": 3179,
+      "nearest_delta_e_2000": 4.916720065211379
+    },
+    {
+      "hex": "#c7b663",
+      "rgb": [
+        199,
+        182,
+        99
+      ],
+      "parent_index": 3090,
+      "nearest_delta_e_2000": 4.866746610664697
+    },
+    {
+      "hex": "#ccb600",
+      "rgb": [
+        204,
+        182,
+        0
+      ],
+      "parent_index": 3092,
+      "nearest_delta_e_2000": 4.308924486214766
+    },
+    {
+      "hex": "#ccb680",
+      "rgb": [
+        204,
+        182,
+        128
+      ],
+      "parent_index": 3182,
+      "nearest_delta_e_2000": 6.112631117803796
+    },
+    {
+      "hex": "#dab163",
+      "rgb": [
+        218,
+        177,
+        99
+      ],
+      "parent_index": 3184,
+      "nearest_delta_e_2000": 5.026620394704474
+    },
+    {
+      "hex": "#cdb79e",
+      "rgb": [
+        205,
+        183,
+        158
+      ],
+      "parent_index": 3214,
+      "nearest_delta_e_2000": 4.428504313251349
+    },
+    {
+      "hex": "#f3a833",
+      "rgb": [
+        243,
+        168,
+        51
+      ],
+      "parent_index": 3188,
+      "nearest_delta_e_2000": 4.223750921004671
+    },
+    {
+      "hex": "#ff9f00",
+      "rgb": [
+        255,
+        159,
+        0
+      ],
+      "parent_index": 3190,
+      "nearest_delta_e_2000": 4.345838724404306
+    },
+    {
+      "hex": "#eeaa66",
+      "rgb": [
+        238,
+        170,
+        102
+      ],
+      "parent_index": 3210,
+      "nearest_delta_e_2000": 5.406036696301238
+    },
+    {
+      "hex": "#e3ab83",
+      "rgb": [
+        227,
+        171,
+        131
+      ],
+      "parent_index": 3192,
+      "nearest_delta_e_2000": 4.305123965516019
+    },
+    {
+      "hex": "#ff9f55",
+      "rgb": [
+        255,
+        159,
+        85
+      ],
+      "parent_index": 3193,
+      "nearest_delta_e_2000": 5.27163874619671
+    },
+    {
+      "hex": "#c2b1a9",
+      "rgb": [
+        194,
+        177,
+        169
+      ],
+      "parent_index": 3078,
+      "nearest_delta_e_2000": 4.505220400947947
+    },
+    {
+      "hex": "#e3abab",
+      "rgb": [
+        227,
+        171,
+        171
+      ],
+      "parent_index": 3201,
+      "nearest_delta_e_2000": 4.92381449130471
+    },
+    {
+      "hex": "#eea9b8",
+      "rgb": [
+        238,
+        169,
+        184
+      ],
+      "parent_index": 3326,
+      "nearest_delta_e_2000": 4.697932969603832
+    },
+    {
+      "hex": "#dbb6b6",
+      "rgb": [
+        219,
+        182,
+        182
+      ],
+      "parent_index": 3328,
+      "nearest_delta_e_2000": 5.111874517215659
+    },
+    {
+      "hex": "#cdb7b5",
+      "rgb": [
+        205,
+        183,
+        181
+      ],
+      "parent_index": 3322,
+      "nearest_delta_e_2000": 4.505220400947947
+    },
+    {
+      "hex": "#ffa68d",
+      "rgb": [
+        255,
+        166,
+        141
+      ],
+      "parent_index": 3321,
+      "nearest_delta_e_2000": 4.446322406464137
+    },
+    {
+      "hex": "#dab6aa",
+      "rgb": [
+        218,
+        182,
+        170
+      ],
+      "parent_index": 3320,
+      "nearest_delta_e_2000": 4.27436733417736
+    },
+    {
+      "hex": "#e9b5a3",
+      "rgb": [
+        233,
+        181,
+        163
+      ],
+      "parent_index": 3330,
+      "nearest_delta_e_2000": 4.405977769325822
+    },
+    {
+      "hex": "#ffb600",
+      "rgb": [
+        255,
+        182,
+        0
+      ],
+      "parent_index": 3443,
+      "nearest_delta_e_2000": 5.676695884548791
+    },
+    {
+      "hex": "#e5ba00",
+      "rgb": [
+        229,
+        186,
+        0
+      ],
+      "parent_index": 3310,
+      "nearest_delta_e_2000": 5.158292627326854
+    },
+    {
+      "hex": "#aacc22",
+      "rgb": [
+        170,
+        204,
+        34
+      ],
+      "parent_index": 3226,
+      "nearest_delta_e_2000": 4.865351386173101
+    },
+    {
+      "hex": "#b2c960",
+      "rgb": [
+        178,
+        201,
+        96
+      ],
+      "parent_index": 3302,
+      "nearest_delta_e_2000": 4.556963128851061
+    },
+    {
+      "hex": "#8cd612",
+      "rgb": [
+        140,
+        214,
+        18
+      ],
+      "parent_index": 3296,
+      "nearest_delta_e_2000": 4.64679835089943
+    },
+    {
+      "hex": "#99cc66",
+      "rgb": [
+        153,
+        204,
+        102
+      ],
+      "parent_index": 3173,
+      "nearest_delta_e_2000": 4.286143050066684
+    },
+    {
+      "hex": "#abc78f",
+      "rgb": [
+        171,
+        199,
+        143
+      ],
+      "parent_index": 3230,
+      "nearest_delta_e_2000": 4.646322069644337
+    },
+    {
+      "hex": "#2adf55",
+      "rgb": [
+        42,
+        223,
+        85
+      ],
+      "parent_index": 3236,
+      "nearest_delta_e_2000": 4.567758309988921
+    },
+    {
+      "hex": "#99cc99",
+      "rgb": [
+        153,
+        204,
+        153
+      ],
+      "parent_index": 3288,
+      "nearest_delta_e_2000": 4.760954545545149
+    },
+    {
+      "hex": "#aaccaa",
+      "rgb": [
+        170,
+        204,
+        170
+      ],
+      "parent_index": 3362,
+      "nearest_delta_e_2000": 4.547568164216151
+    },
+    {
+      "hex": "#76d181",
+      "rgb": [
+        118,
+        209,
+        129
+      ],
+      "parent_index": 3162,
+      "nearest_delta_e_2000": 4.531686603512814
+    },
+    {
+      "hex": "#bebebe",
+      "rgb": [
+        190,
+        190,
+        190
+      ],
+      "parent_index": 3311,
+      "nearest_delta_e_2000": 4.341465752151125
+    },
+    {
+      "hex": "#00da91",
+      "rgb": [
+        0,
+        218,
+        145
+      ],
+      "parent_index": 3158,
+      "nearest_delta_e_2000": 4.532695633353764
+    },
+    {
+      "hex": "#7cd0ac",
+      "rgb": [
+        124,
+        208,
+        172
+      ],
+      "parent_index": 3240,
+      "nearest_delta_e_2000": 4.367701437944588
+    },
+    {
+      "hex": "#00dab6",
+      "rgb": [
+        0,
+        218,
+        182
+      ],
+      "parent_index": 3243,
+      "nearest_delta_e_2000": 4.465325630708071
+    },
+    {
+      "hex": "#66d4cc",
+      "rgb": [
+        102,
+        212,
+        204
+      ],
+      "parent_index": 3280,
+      "nearest_delta_e_2000": 4.320737775457972
+    },
+    {
+      "hex": "#79cdcd",
+      "rgb": [
+        121,
+        205,
+        205
+      ],
+      "parent_index": 3246,
+      "nearest_delta_e_2000": 4.320737775457972
+    },
+    {
+      "hex": "#93c6ca",
+      "rgb": [
+        147,
+        198,
+        202
+      ],
+      "parent_index": 3248,
+      "nearest_delta_e_2000": 5.006206987439355
+    },
+    {
+      "hex": "#16d0e2",
+      "rgb": [
+        22,
+        208,
+        226
+      ],
+      "parent_index": 3154,
+      "nearest_delta_e_2000": 4.618560333342558
+    },
+    {
+      "hex": "#beb9fa",
+      "rgb": [
+        190,
+        185,
+        250
+      ],
+      "parent_index": 3382,
+      "nearest_delta_e_2000": 5.243419259392083
+    },
+    {
+      "hex": "#cdb5cd",
+      "rgb": [
+        205,
+        181,
+        205
+      ],
+      "parent_index": 3267,
+      "nearest_delta_e_2000": 4.997386619742649
+    },
+    {
+      "hex": "#dbb6db",
+      "rgb": [
+        219,
+        182,
+        219
+      ],
+      "parent_index": 3387,
+      "nearest_delta_e_2000": 4.6232921630603805
+    },
+    {
+      "hex": "#ecb0e0",
+      "rgb": [
+        236,
+        176,
+        224
+      ],
+      "parent_index": 3397,
+      "nearest_delta_e_2000": 4.36762224177162
+    },
+    {
+      "hex": "#dfb2c6",
+      "rgb": [
+        223,
+        178,
+        198
+      ],
+      "parent_index": 3390,
+      "nearest_delta_e_2000": 5.960063021234089
+    },
+    {
+      "hex": "#ccb6bf",
+      "rgb": [
+        204,
+        182,
+        191
+      ],
+      "parent_index": 3264,
+      "nearest_delta_e_2000": 4.914717105305306
+    },
+    {
+      "hex": "#cdc1c5",
+      "rgb": [
+        205,
+        193,
+        197
+      ],
+      "parent_index": 3393,
+      "nearest_delta_e_2000": 4.937134203499447
+    },
+    {
+      "hex": "#ffa8c8",
+      "rgb": [
+        255,
+        168,
+        200
+      ],
+      "parent_index": 3392,
+      "nearest_delta_e_2000": 4.8562954745374425
+    },
+    {
+      "hex": "#ffaaff",
+      "rgb": [
+        255,
+        170,
+        255
+      ],
+      "parent_index": 3522,
+      "nearest_delta_e_2000": 5.19576260358411
+    },
+    {
+      "hex": "#e4b7ee",
+      "rgb": [
+        228,
+        183,
+        238
+      ],
+      "parent_index": 3515,
+      "nearest_delta_e_2000": 4.36762224177162
+    },
+    {
+      "hex": "#dbb6ff",
+      "rgb": [
+        219,
+        182,
+        255
+      ],
+      "parent_index": 3514,
+      "nearest_delta_e_2000": 4.547252345673769
+    },
+    {
+      "hex": "#c4c4e1",
+      "rgb": [
+        196,
+        196,
+        225
+      ],
+      "parent_index": 3400,
+      "nearest_delta_e_2000": 4.306430896380514
+    },
+    {
+      "hex": "#b2c5ff",
+      "rgb": [
+        178,
+        197,
+        255
+      ],
+      "parent_index": 3403,
+      "nearest_delta_e_2000": 5.647814695156558
+    },
+    {
+      "hex": "#99ccff",
+      "rgb": [
+        153,
+        204,
+        255
+      ],
+      "parent_index": 3407,
+      "nearest_delta_e_2000": 6.465531944308357
+    },
+    {
+      "hex": "#7dd7f0",
+      "rgb": [
+        125,
+        215,
+        240
+      ],
+      "parent_index": 3507,
+      "nearest_delta_e_2000": 5.210538652709615
+    },
+    {
+      "hex": "#b4cdcd",
+      "rgb": [
+        180,
+        205,
+        205
+      ],
+      "parent_index": 3415,
+      "nearest_delta_e_2000": 4.365945820289361
+    },
+    {
+      "hex": "#99d4cc",
+      "rgb": [
+        153,
+        212,
+        204
+      ],
+      "parent_index": 3417,
+      "nearest_delta_e_2000": 4.2596450233291785
+    },
+    {
+      "hex": "#66dbbf",
+      "rgb": [
+        102,
+        219,
+        191
+      ],
+      "parent_index": 3368,
+      "nearest_delta_e_2000": 4.465325630708071
+    },
+    {
+      "hex": "#2adfaa",
+      "rgb": [
+        42,
+        223,
+        170
+      ],
+      "parent_index": 3284,
+      "nearest_delta_e_2000": 4.4679863500171395
+    },
+    {
+      "hex": "#91daaa",
+      "rgb": [
+        145,
+        218,
+        170
+      ],
+      "parent_index": 3422,
+      "nearest_delta_e_2000": 4.692696192027212
+    },
+    {
+      "hex": "#13e67b",
+      "rgb": [
+        19,
+        230,
+        123
+      ],
+      "parent_index": 3363,
+      "nearest_delta_e_2000": 4.905972335026535
+    },
+    {
+      "hex": "#6ae291",
+      "rgb": [
+        106,
+        226,
+        145
+      ],
+      "parent_index": 3423,
+      "nearest_delta_e_2000": 4.531686603512814
+    },
+    {
+      "hex": "#c1cdc1",
+      "rgb": [
+        193,
+        205,
+        193
+      ],
+      "parent_index": 3492,
+      "nearest_delta_e_2000": 4.717113765200217
+    },
+    {
+      "hex": "#8bdf73",
+      "rgb": [
+        139,
+        223,
+        115
+      ],
+      "parent_index": 3430,
+      "nearest_delta_e_2000": 5.29932523814174
+    },
+    {
+      "hex": "#5ee500",
+      "rgb": [
+        94,
+        229,
+        0
+      ],
+      "parent_index": 3359,
+      "nearest_delta_e_2000": 4.267007343049575
+    },
+    {
+      "hex": "#b7cf7f",
+      "rgb": [
+        183,
+        207,
+        127
+      ],
+      "parent_index": 3351,
+      "nearest_delta_e_2000": 4.269117353581313
+    },
+    {
+      "hex": "#cccc99",
+      "rgb": [
+        204,
+        204,
+        153
+      ],
+      "parent_index": 3471,
+      "nearest_delta_e_2000": 4.916720065211379
+    },
+    {
+      "hex": "#cccc66",
+      "rgb": [
+        204,
+        204,
+        102
+      ],
+      "parent_index": 3435,
+      "nearest_delta_e_2000": 5.580229736689365
+    },
+    {
+      "hex": "#cccc00",
+      "rgb": [
+        204,
+        204,
+        0
+      ],
+      "parent_index": 3349,
+      "nearest_delta_e_2000": 4.663368857815271
+    },
+    {
+      "hex": "#d8c64e",
+      "rgb": [
+        216,
+        198,
+        78
+      ],
+      "parent_index": 3344,
+      "nearest_delta_e_2000": 5.042042691514741
+    },
+    {
+      "hex": "#e1c266",
+      "rgb": [
+        225,
+        194,
+        102
+      ],
+      "parent_index": 3438,
+      "nearest_delta_e_2000": 5.445965272248007
+    },
+    {
+      "hex": "#cfc3ab",
+      "rgb": [
+        207,
+        195,
+        171
+      ],
+      "parent_index": 3440,
+      "nearest_delta_e_2000": 5.187626628447049
+    },
+    {
+      "hex": "#ffb655",
+      "rgb": [
+        255,
+        182,
+        85
+      ],
+      "parent_index": 3446,
+      "nearest_delta_e_2000": 4.223750921004671
+    },
+    {
+      "hex": "#d6c4b4",
+      "rgb": [
+        214,
+        196,
+        180
+      ],
+      "parent_index": 3465,
+      "nearest_delta_e_2000": 4.716682229256595
+    },
+    {
+      "hex": "#cdc5bf",
+      "rgb": [
+        205,
+        197,
+        191
+      ],
+      "parent_index": 3449,
+      "nearest_delta_e_2000": 4.799703917894722
+    },
+    {
+      "hex": "#efbf97",
+      "rgb": [
+        239,
+        191,
+        151
+      ],
+      "parent_index": 3464,
+      "nearest_delta_e_2000": 4.5374894748612435
+    },
+    {
+      "hex": "#ffb680",
+      "rgb": [
+        255,
+        182,
+        128
+      ],
+      "parent_index": 3463,
+      "nearest_delta_e_2000": 5.0564409829079064
+    },
+    {
+      "hex": "#ffb79e",
+      "rgb": [
+        255,
+        183,
+        158
+      ],
+      "parent_index": 3458,
+      "nearest_delta_e_2000": 4.446322406464137
+    },
+    {
+      "hex": "#ffb6aa",
+      "rgb": [
+        255,
+        182,
+        170
+      ],
+      "parent_index": 3579,
+      "nearest_delta_e_2000": 4.4567606014037375
+    },
+    {
+      "hex": "#ffb6b6",
+      "rgb": [
+        255,
+        182,
+        182
+      ],
+      "parent_index": 3581,
+      "nearest_delta_e_2000": 4.4567606014037375
+    },
+    {
+      "hex": "#ffc0cb",
+      "rgb": [
+        255,
+        192,
+        203
+      ],
+      "parent_index": 3711,
+      "nearest_delta_e_2000": 5.111787581066656
+    },
+    {
+      "hex": "#ffbf9b",
+      "rgb": [
+        255,
+        191,
+        155
+      ],
+      "parent_index": 3588,
+      "nearest_delta_e_2000": 4.824321216838455
+    },
+    {
+      "hex": "#eecbad",
+      "rgb": [
+        238,
+        203,
+        173
+      ],
+      "parent_index": 3589,
+      "nearest_delta_e_2000": 4.5374894748612435
+    },
+    {
+      "hex": "#ffcb87",
+      "rgb": [
+        255,
+        203,
+        135
+      ],
+      "parent_index": 3699,
+      "nearest_delta_e_2000": 5.509989648746511
+    },
+    {
+      "hex": "#ffcc66",
+      "rgb": [
+        255,
+        204,
+        102
+      ],
+      "parent_index": 3697,
+      "nearest_delta_e_2000": 5.20614692087482
+    },
+    {
+      "hex": "#ffc830",
+      "rgb": [
+        255,
+        200,
+        48
+      ],
+      "parent_index": 3590,
+      "nearest_delta_e_2000": 5.158292627326854
+    },
+    {
+      "hex": "#e4d2aa",
+      "rgb": [
+        228,
+        210,
+        170
+      ],
+      "parent_index": 3694,
+      "nearest_delta_e_2000": 5.647650328696981
+    },
+    {
+      "hex": "#cdcdb4",
+      "rgb": [
+        205,
+        205,
+        180
+      ],
+      "parent_index": 3559,
+      "nearest_delta_e_2000": 4.7682975782872346
+    },
+    {
+      "hex": "#cdcdc1",
+      "rgb": [
+        205,
+        205,
+        193
+      ],
+      "parent_index": 3560,
+      "nearest_delta_e_2000": 4.945150752173911
+    },
+    {
+      "hex": "#aadf00",
+      "rgb": [
+        170,
+        223,
+        0
+      ],
+      "parent_index": 3483,
+      "nearest_delta_e_2000": 4.714072763907956
+    },
+    {
+      "hex": "#b6da55",
+      "rgb": [
+        182,
+        218,
+        85
+      ],
+      "parent_index": 3481,
+      "nearest_delta_e_2000": 4.489674601212932
+    },
+    {
+      "hex": "#9de64e",
+      "rgb": [
+        157,
+        230,
+        78
+      ],
+      "parent_index": 3551,
+      "nearest_delta_e_2000": 4.4663333123032265
+    },
+    {
+      "hex": "#b6db92",
+      "rgb": [
+        182,
+        219,
+        146
+      ],
+      "parent_index": 3552,
+      "nearest_delta_e_2000": 4.269117353581313
+    },
+    {
+      "hex": "#b6daaa",
+      "rgb": [
+        182,
+        218,
+        170
+      ],
+      "parent_index": 3546,
+      "nearest_delta_e_2000": 4.78275730807506
+    },
+    {
+      "hex": "#66ee66",
+      "rgb": [
+        102,
+        238,
+        102
+      ],
+      "parent_index": 3543,
+      "nearest_delta_e_2000": 4.256132504835426
+    },
+    {
+      "hex": "#6ae6aa",
+      "rgb": [
+        106,
+        230,
+        170
+      ],
+      "parent_index": 3496,
+      "nearest_delta_e_2000": 4.518864794383296
+    },
+    {
+      "hex": "#afdbc3",
+      "rgb": [
+        175,
+        219,
+        195
+      ],
+      "parent_index": 3539,
+      "nearest_delta_e_2000": 4.22474245683777
+    },
+    {
+      "hex": "#99dbbf",
+      "rgb": [
+        153,
+        219,
+        191
+      ],
+      "parent_index": 3498,
+      "nearest_delta_e_2000": 4.22474245683777
+    },
+    {
+      "hex": "#c7cfcc",
+      "rgb": [
+        199,
+        207,
+        204
+      ],
+      "parent_index": 3537,
+      "nearest_delta_e_2000": 4.717113765200217
+    },
+    {
+      "hex": "#8cdbcb",
+      "rgb": [
+        140,
+        219,
+        203
+      ],
+      "parent_index": 3500,
+      "nearest_delta_e_2000": 4.2596450233291785
+    },
+    {
+      "hex": "#00e8d8",
+      "rgb": [
+        0,
+        232,
+        216
+      ],
+      "parent_index": 3501,
+      "nearest_delta_e_2000": 5.1470400449171025
+    },
+    {
+      "hex": "#b6dbdb",
+      "rgb": [
+        182,
+        219,
+        219
+      ],
+      "parent_index": 3626,
+      "nearest_delta_e_2000": 4.365945820289361
+    },
+    {
+      "hex": "#00e5ee",
+      "rgb": [
+        0,
+        229,
+        238
+      ],
+      "parent_index": 3503,
+      "nearest_delta_e_2000": 5.859410920347492
+    },
+    {
+      "hex": "#55e6ff",
+      "rgb": [
+        85,
+        230,
+        255
+      ],
+      "parent_index": 3627,
+      "nearest_delta_e_2000": 5.330488000811617
+    },
+    {
+      "hex": "#80d6ff",
+      "rgb": [
+        128,
+        214,
+        255
+      ],
+      "parent_index": 3511,
+      "nearest_delta_e_2000": 5.029518226370766
+    },
+    {
+      "hex": "#a4d3ee",
+      "rgb": [
+        164,
+        211,
+        238
+      ],
+      "parent_index": 3529,
+      "nearest_delta_e_2000": 5.530022246418678
+    },
+    {
+      "hex": "#b9d3ee",
+      "rgb": [
+        185,
+        211,
+        238
+      ],
+      "parent_index": 3634,
+      "nearest_delta_e_2000": 5.2655499716531855
+    },
+    {
+      "hex": "#c7cfdd",
+      "rgb": [
+        199,
+        207,
+        221
+      ],
+      "parent_index": 3527,
+      "nearest_delta_e_2000": 4.340503123267887
+    },
+    {
+      "hex": "#d0ccff",
+      "rgb": [
+        208,
+        204,
+        255
+      ],
+      "parent_index": 3638,
+      "nearest_delta_e_2000": 5.375850373906651
+    },
+    {
+      "hex": "#e2c9ff",
+      "rgb": [
+        226,
+        201,
+        255
+      ],
+      "parent_index": 3650,
+      "nearest_delta_e_2000": 5.52010012767716
+    },
+    {
+      "hex": "#decbde",
+      "rgb": [
+        222,
+        203,
+        222
+      ],
+      "parent_index": 3641,
+      "nearest_delta_e_2000": 4.254252795780023
+    },
+    {
+      "hex": "#ffbfff",
+      "rgb": [
+        255,
+        191,
+        255
+      ],
+      "parent_index": 3775,
+      "nearest_delta_e_2000": 4.565417192310209
+    },
+    {
+      "hex": "#f9d1ea",
+      "rgb": [
+        249,
+        209,
+        234
+      ],
+      "parent_index": 3777,
+      "nearest_delta_e_2000": 4.496680329805365
+    },
+    {
+      "hex": "#ffcfff",
+      "rgb": [
+        255,
+        207,
+        255
+      ],
+      "parent_index": 3901,
+      "nearest_delta_e_2000": 4.565417192310209
+    },
+    {
+      "hex": "#deceed",
+      "rgb": [
+        222,
+        206,
+        237
+      ],
+      "parent_index": 3649,
+      "nearest_delta_e_2000": 4.254252795780023
+    },
+    {
+      "hex": "#ccdbff",
+      "rgb": [
+        204,
+        219,
+        255
+      ],
+      "parent_index": 3781,
+      "nearest_delta_e_2000": 5.3810674109786145
+    },
+    {
+      "hex": "#cddbe0",
+      "rgb": [
+        205,
+        219,
+        224
+      ],
+      "parent_index": 3769,
+      "nearest_delta_e_2000": 4.972094096076793
+    },
+    {
+      "hex": "#8ee5ee",
+      "rgb": [
+        142,
+        229,
+        238
+      ],
+      "parent_index": 3663,
+      "nearest_delta_e_2000": 4.692989332294311
+    },
+    {
+      "hex": "#abe7e7",
+      "rgb": [
+        171,
+        231,
+        231
+      ],
+      "parent_index": 3765,
+      "nearest_delta_e_2000": 4.692989332294311
+    },
+    {
+      "hex": "#65f1d6",
+      "rgb": [
+        101,
+        241,
+        214
+      ],
+      "parent_index": 3667,
+      "nearest_delta_e_2000": 4.404286794530264
+    },
+    {
+      "hex": "#76eec6",
+      "rgb": [
+        118,
+        238,
+        198
+      ],
+      "parent_index": 3669,
+      "nearest_delta_e_2000": 4.404286794530264
+    },
+    {
+      "hex": "#d8d8d8",
+      "rgb": [
+        216,
+        216,
+        216
+      ],
+      "parent_index": 3724,
+      "nearest_delta_e_2000": 4.703384333173925
+    },
+    {
+      "hex": "#33ff66",
+      "rgb": [
+        51,
+        255,
+        102
+      ],
+      "parent_index": 3676,
+      "nearest_delta_e_2000": 4.256132504835426
+    },
+    {
+      "hex": "#a4e4a4",
+      "rgb": [
+        164,
+        228,
+        164
+      ],
+      "parent_index": 3613,
+      "nearest_delta_e_2000": 4.560843766183816
+    },
+    {
+      "hex": "#00ff00",
+      "rgb": [
+        0,
+        255,
+        0
+      ],
+      "parent_index": 3611,
+      "nearest_delta_e_2000": 5.625398466004856
+    },
+    {
+      "hex": "#cce1bb",
+      "rgb": [
+        204,
+        225,
+        187
+      ],
+      "parent_index": 3742,
+      "nearest_delta_e_2000": 4.763673779777907
+    },
+    {
+      "hex": "#88ee00",
+      "rgb": [
+        136,
+        238,
+        0
+      ],
+      "parent_index": 3550,
+      "nearest_delta_e_2000": 4.267007343049575
+    },
+    {
+      "hex": "#beeb71",
+      "rgb": [
+        190,
+        235,
+        113
+      ],
+      "parent_index": 3738,
+      "nearest_delta_e_2000": 4.489674601212932
+    },
+    {
+      "hex": "#d4dfaa",
+      "rgb": [
+        212,
+        223,
+        170
+      ],
+      "parent_index": 3735,
+      "nearest_delta_e_2000": 5.082847450131024
+    },
+    {
+      "hex": "#d8e580",
+      "rgb": [
+        216,
+        229,
+        128
+      ],
+      "parent_index": 3820,
+      "nearest_delta_e_2000": 5.106615821209549
+    },
+    {
+      "hex": "#dbdbb6",
+      "rgb": [
+        219,
+        219,
+        182
+      ],
+      "parent_index": 3733,
+      "nearest_delta_e_2000": 4.7682975782872346
+    },
+    {
+      "hex": "#d4df55",
+      "rgb": [
+        212,
+        223,
+        85
+      ],
+      "parent_index": 3688,
+      "nearest_delta_e_2000": 4.627460411466583
+    },
+    {
+      "hex": "#dbdb92",
+      "rgb": [
+        219,
+        219,
+        146
+      ],
+      "parent_index": 3690,
+      "nearest_delta_e_2000": 5.266514035024057
+    },
+    {
+      "hex": "#d4df00",
+      "rgb": [
+        212,
+        223,
+        0
+      ],
+      "parent_index": 3600,
+      "nearest_delta_e_2000": 4.663368857815271
+    },
+    {
+      "hex": "#ebdb57",
+      "rgb": [
+        235,
+        219,
+        87
+      ],
+      "parent_index": 3732,
+      "nearest_delta_e_2000": 4.915780690849175
+    },
+    {
+      "hex": "#e7d494",
+      "rgb": [
+        231,
+        212,
+        148
+      ],
+      "parent_index": 3693,
+      "nearest_delta_e_2000": 5.586937708862168
+    },
+    {
+      "hex": "#f6dd7a",
+      "rgb": [
+        246,
+        221,
+        122
+      ],
+      "parent_index": 3826,
+      "nearest_delta_e_2000": 4.837672241605354
+    },
+    {
+      "hex": "#ffd819",
+      "rgb": [
+        255,
+        216,
+        25
+      ],
+      "parent_index": 3729,
+      "nearest_delta_e_2000": 5.990144052711096
+    },
+    {
+      "hex": "#ffd3bb",
+      "rgb": [
+        255,
+        211,
+        187
+      ],
+      "parent_index": 3835,
+      "nearest_delta_e_2000": 5.030572629678388
+    },
+    {
+      "hex": "#e2d3cf",
+      "rgb": [
+        226,
+        211,
+        207
+      ],
+      "parent_index": 3707,
+      "nearest_delta_e_2000": 4.33309474122473
+    },
+    {
+      "hex": "#eacfc9",
+      "rgb": [
+        234,
+        207,
+        201
+      ],
+      "parent_index": 3708,
+      "nearest_delta_e_2000": 4.33309474122473
+    },
+    {
+      "hex": "#ffd4cc",
+      "rgb": [
+        255,
+        212,
+        204
+      ],
+      "parent_index": 3842,
+      "nearest_delta_e_2000": 4.972016710068114
+    },
+    {
+      "hex": "#ffd1d5",
+      "rgb": [
+        255,
+        209,
+        213
+      ],
+      "parent_index": 3838,
+      "nearest_delta_e_2000": 4.972016710068114
+    },
+    {
+      "hex": "#edd1d6",
+      "rgb": [
+        237,
+        209,
+        214
+      ],
+      "parent_index": 3712,
+      "nearest_delta_e_2000": 4.983949027308073
+    },
+    {
+      "hex": "#eee9e9",
+      "rgb": [
+        238,
+        233,
+        233
+      ],
+      "parent_index": 3968,
+      "nearest_delta_e_2000": 4.63152195852233
+    },
+    {
+      "hex": "#ffe5da",
+      "rgb": [
+        255,
+        229,
+        218
+      ],
+      "parent_index": 3970,
+      "nearest_delta_e_2000": 5.3967893341497515
+    },
+    {
+      "hex": "#eedfcc",
+      "rgb": [
+        238,
+        223,
+        204
+      ],
+      "parent_index": 3847,
+      "nearest_delta_e_2000": 5.135824752800876
+    },
+    {
+      "hex": "#ffdead",
+      "rgb": [
+        255,
+        222,
+        173
+      ],
+      "parent_index": 3848,
+      "nearest_delta_e_2000": 4.633006780211942
+    },
+    {
+      "hex": "#ffe9c5",
+      "rgb": [
+        255,
+        233,
+        197
+      ],
+      "parent_index": 3975,
+      "nearest_delta_e_2000": 4.633006780211942
+    },
+    {
+      "hex": "#ffda91",
+      "rgb": [
+        255,
+        218,
+        145
+      ],
+      "parent_index": 3832,
+      "nearest_delta_e_2000": 5.212858170152225
+    },
+    {
+      "hex": "#eee8cd",
+      "rgb": [
+        238,
+        232,
+        205
+      ],
+      "parent_index": 3957,
+      "nearest_delta_e_2000": 5.416765208627746
+    },
+    {
+      "hex": "#eee685",
+      "rgb": [
+        238,
+        230,
+        133
+      ],
+      "parent_index": 3860,
+      "nearest_delta_e_2000": 4.508459273381299
+    },
+    {
+      "hex": "#eaf257",
+      "rgb": [
+        234,
+        242,
+        87
+      ],
+      "parent_index": 3946,
+      "nearest_delta_e_2000": 4.627460411466583
+    },
+    {
+      "hex": "#ccee00",
+      "rgb": [
+        204,
+        238,
+        0
+      ],
+      "parent_index": 3819,
+      "nearest_delta_e_2000": 4.36895232649033
+    },
+    {
+      "hex": "#aaff24",
+      "rgb": [
+        170,
+        255,
+        36
+      ],
+      "parent_index": 3867,
+      "nearest_delta_e_2000": 4.582303724476479
+    },
+    {
+      "hex": "#c0ff6d",
+      "rgb": [
+        192,
+        255,
+        109
+      ],
+      "parent_index": 3936,
+      "nearest_delta_e_2000": 4.595134772169531
+    },
+    {
+      "hex": "#92ff6d",
+      "rgb": [
+        146,
+        255,
+        109
+      ],
+      "parent_index": 3871,
+      "nearest_delta_e_2000": 4.924350210407696
+    },
+    {
+      "hex": "#92ff92",
+      "rgb": [
+        146,
+        255,
+        146
+      ],
+      "parent_index": 3874,
+      "nearest_delta_e_2000": 4.755384077004379
+    },
+    {
+      "hex": "#d3eed3",
+      "rgb": [
+        211,
+        238,
+        211
+      ],
+      "parent_index": 3927,
+      "nearest_delta_e_2000": 4.416658730164604
+    },
+    {
+      "hex": "#e0eee0",
+      "rgb": [
+        224,
+        238,
+        224
+      ],
+      "parent_index": 3926,
+      "nearest_delta_e_2000": 5.778929709558886
+    },
+    {
+      "hex": "#98f3a3",
+      "rgb": [
+        152,
+        243,
+        163
+      ],
+      "parent_index": 3754,
+      "nearest_delta_e_2000": 4.560843766183816
+    },
+    {
+      "hex": "#00ff91",
+      "rgb": [
+        0,
+        255,
+        145
+      ],
+      "parent_index": 3672,
+      "nearest_delta_e_2000": 5.383401761165617
+    },
+    {
+      "hex": "#6dffb6",
+      "rgb": [
+        109,
+        255,
+        182
+      ],
+      "parent_index": 3797,
+      "nearest_delta_e_2000": 4.6192674844161825
+    },
+    {
+      "hex": "#99ffcc",
+      "rgb": [
+        153,
+        255,
+        204
+      ],
+      "parent_index": 3924,
+      "nearest_delta_e_2000": 5.167692744211152
+    },
+    {
+      "hex": "#b8f8d8",
+      "rgb": [
+        184,
+        248,
+        216
+      ],
+      "parent_index": 3922,
+      "nearest_delta_e_2000": 5.403261190343038
+    },
+    {
+      "hex": "#00ffbf",
+      "rgb": [
+        0,
+        255,
+        191
+      ],
+      "parent_index": 3761,
+      "nearest_delta_e_2000": 4.6192674844161825
+    },
+    {
+      "hex": "#00ffda",
+      "rgb": [
+        0,
+        255,
+        218
+      ],
+      "parent_index": 3790,
+      "nearest_delta_e_2000": 4.646911129830364
+    },
+    {
+      "hex": "#00ffff",
+      "rgb": [
+        0,
+        255,
+        255
+      ],
+      "parent_index": 3886,
+      "nearest_delta_e_2000": 4.593277261852837
+    },
+    {
+      "hex": "#7fffff",
+      "rgb": [
+        127,
+        255,
+        255
+      ],
+      "parent_index": 3916,
+      "nearest_delta_e_2000": 4.432966142232022
+    },
+    {
+      "hex": "#c7ebf3",
+      "rgb": [
+        199,
+        235,
+        243
+      ],
+      "parent_index": 3891,
+      "nearest_delta_e_2000": 4.49803268220296
+    },
+    {
+      "hex": "#afe7fb",
+      "rgb": [
+        175,
+        231,
+        251
+      ],
+      "parent_index": 3785,
+      "nearest_delta_e_2000": 5.198853545601003
+    },
+    {
+      "hex": "#d4e7ff",
+      "rgb": [
+        212,
+        231,
+        255
+      ],
+      "parent_index": 3893,
+      "nearest_delta_e_2000": 5.2655499716531855
+    },
+    {
+      "hex": "#dae0ea",
+      "rgb": [
+        218,
+        224,
+        234
+      ],
+      "parent_index": 3894,
+      "nearest_delta_e_2000": 4.314991113620399
+    },
+    {
+      "hex": "#e3e3ff",
+      "rgb": [
+        227,
+        227,
+        255
+      ],
+      "parent_index": 3907,
+      "nearest_delta_e_2000": 4.977804888583956
+    },
+    {
+      "hex": "#e1dee7",
+      "rgb": [
+        225,
+        222,
+        231
+      ],
+      "parent_index": 3897,
+      "nearest_delta_e_2000": 4.314991113620399
+    },
+    {
+      "hex": "#ffe1ff",
+      "rgb": [
+        255,
+        225,
+        255
+      ],
+      "parent_index": 4030,
+      "nearest_delta_e_2000": 4.496680329805365
+    },
+    {
+      "hex": "#fff0f5",
+      "rgb": [
+        255,
+        240,
+        245
+      ],
+      "parent_index": 4032,
+      "nearest_delta_e_2000": 5.452636159628661
+    },
+    {
+      "hex": "#ffe8f8",
+      "rgb": [
+        255,
+        232,
+        248
+      ],
+      "parent_index": 4031,
+      "nearest_delta_e_2000": 5.009345406672316
+    },
+    {
+      "hex": "#efefff",
+      "rgb": [
+        239,
+        239,
+        255
+      ],
+      "parent_index": 4026,
+      "nearest_delta_e_2000": 4.699266679836091
+    },
+    {
+      "hex": "#f0f8ff",
+      "rgb": [
+        240,
+        248,
+        255
+      ],
+      "parent_index": 4034,
+      "nearest_delta_e_2000": 4.56812681540719
+    },
+    {
+      "hex": "#d5f1ff",
+      "rgb": [
+        213,
+        241,
+        255
+      ],
+      "parent_index": 4023,
+      "nearest_delta_e_2000": 4.49803268220296
+    },
+    {
+      "hex": "#bdf8ff",
+      "rgb": [
+        189,
+        248,
+        255
+      ],
+      "parent_index": 4021,
+      "nearest_delta_e_2000": 4.815476182157565
+    },
+    {
+      "hex": "#e1f8fa",
+      "rgb": [
+        225,
+        248,
+        250
+      ],
+      "parent_index": 4036,
+      "nearest_delta_e_2000": 4.387629956619783
+    },
+    {
+      "hex": "#daffff",
+      "rgb": [
+        218,
+        255,
+        255
+      ],
+      "parent_index": 4041,
+      "nearest_delta_e_2000": 4.387629956619783
+    },
+    {
+      "hex": "#aaffff",
+      "rgb": [
+        170,
+        255,
+        255
+      ],
+      "parent_index": 4017,
+      "nearest_delta_e_2000": 4.432966142232022
+    },
+    {
+      "hex": "#affff1",
+      "rgb": [
+        175,
+        255,
+        241
+      ],
+      "parent_index": 4016,
+      "nearest_delta_e_2000": 4.276769816829207
+    },
+    {
+      "hex": "#d1fbf0",
+      "rgb": [
+        209,
+        251,
+        240
+      ],
+      "parent_index": 4015,
+      "nearest_delta_e_2000": 4.974069569369973
+    },
+    {
+      "hex": "#9effe5",
+      "rgb": [
+        158,
+        255,
+        229
+      ],
+      "parent_index": 3918,
+      "nearest_delta_e_2000": 4.276769816829207
+    },
+    {
+      "hex": "#f5fffa",
+      "rgb": [
+        245,
+        255,
+        250
+      ],
+      "parent_index": 4045,
+      "nearest_delta_e_2000": 4.898632032365992
+    },
+    {
+      "hex": "#ffffff",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "parent_index": 4085,
+      "nearest_delta_e_2000": 4.56812681540719
+    },
+    {
+      "hex": "#bdffca",
+      "rgb": [
+        189,
+        255,
+        202
+      ],
+      "parent_index": 4010,
+      "nearest_delta_e_2000": 5.167692744211152
+    },
+    {
+      "hex": "#dbffdb",
+      "rgb": [
+        219,
+        255,
+        219
+      ],
+      "parent_index": 4047,
+      "nearest_delta_e_2000": 4.416658730164604
+    },
+    {
+      "hex": "#c3ffb3",
+      "rgb": [
+        195,
+        255,
+        179
+      ],
+      "parent_index": 4006,
+      "nearest_delta_e_2000": 4.481975852457669
+    },
+    {
+      "hex": "#c1ff99",
+      "rgb": [
+        193,
+        255,
+        153
+      ],
+      "parent_index": 3932,
+      "nearest_delta_e_2000": 4.481975852457669
+    },
+    {
+      "hex": "#ebede9",
+      "rgb": [
+        235,
+        237,
+        233
+      ],
+      "parent_index": 4003,
+      "nearest_delta_e_2000": 4.583438648197683
+    },
+    {
+      "hex": "#e1ffa3",
+      "rgb": [
+        225,
+        255,
+        163
+      ],
+      "parent_index": 4048,
+      "nearest_delta_e_2000": 4.332592637353233
+    },
+    {
+      "hex": "#eafac5",
+      "rgb": [
+        234,
+        250,
+        197
+      ],
+      "parent_index": 4049,
+      "nearest_delta_e_2000": 5.805698229452928
+    },
+    {
+      "hex": "#dbff6d",
+      "rgb": [
+        219,
+        255,
+        109
+      ],
+      "parent_index": 3994,
+      "nearest_delta_e_2000": 4.307074653581402
+    },
+    {
+      "hex": "#ccff33",
+      "rgb": [
+        204,
+        255,
+        51
+      ],
+      "parent_index": 3940,
+      "nearest_delta_e_2000": 4.36895232649033
+    },
+    {
+      "hex": "#ebff8e",
+      "rgb": [
+        235,
+        255,
+        142
+      ],
+      "parent_index": 4051,
+      "nearest_delta_e_2000": 4.307074653581402
+    },
+    {
+      "hex": "#ffffef",
+      "rgb": [
+        255,
+        255,
+        239
+      ],
+      "parent_index": 4070,
+      "nearest_delta_e_2000": 5.75909434120753
+    },
+    {
+      "hex": "#ffffdb",
+      "rgb": [
+        255,
+        255,
+        219
+      ],
+      "parent_index": 4067,
+      "nearest_delta_e_2000": 5.654636514756147
+    },
+    {
+      "hex": "#ffffb6",
+      "rgb": [
+        255,
+        255,
+        182
+      ],
+      "parent_index": 4063,
+      "nearest_delta_e_2000": 5.820428313018546
+    },
+    {
+      "hex": "#eeff00",
+      "rgb": [
+        238,
+        255,
+        0
+      ],
+      "parent_index": 3990,
+      "nearest_delta_e_2000": 5.1833119888348955
+    },
+    {
+      "hex": "#fffb8f",
+      "rgb": [
+        255,
+        251,
+        143
+      ],
+      "parent_index": 4071,
+      "nearest_delta_e_2000": 4.508459273381299
+    },
+    {
+      "hex": "#fff540",
+      "rgb": [
+        255,
+        245,
+        64
+      ],
+      "parent_index": 3985,
+      "nearest_delta_e_2000": 4.98736421427941
+    },
+    {
+      "hex": "#fef3c0",
+      "rgb": [
+        254,
+        243,
+        192
+      ],
+      "parent_index": 4081,
+      "nearest_delta_e_2000": 5.654636514756147
+    },
+    {
+      "hex": "#faf0e6",
+      "rgb": [
+        250,
+        240,
+        230
+      ],
+      "parent_index": 4091,
+      "nearest_delta_e_2000": 5.079077076934683
+    }
+  ]
+}

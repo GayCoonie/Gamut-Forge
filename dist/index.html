@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Quantize images to arbitrary fixed palettes with perceptual OKLab matching and linear-light dithering.">
+  <meta name="description" content="Quantize images to fixed palettes with exact OKLab or CIEDE2000 matching and optional dithering.">
   <meta name="theme-color" content="#130d1c">
   <title>Gamut Forge — perceptual palette quantizer</title>
   <link rel="stylesheet" href="./styles.css">
@@ -15,7 +15,7 @@
       <div><h1>Gamut Forge</h1><p>Fixed-palette image quantizer</p></div>
     </div>
     <div class="badges" aria-label="Application properties">
-      <span><b></b> Local only</span><span>1024+ colors</span><span>OKLab</span>
+      <span><b></b> Local only</span><span>1024+ colors</span><span>OKLab / ΔE00</span>
     </div>
   </header>
 
@@ -35,6 +35,7 @@
         <div class="section-head"><span>02</span><h2>Target palette</h2></div>
         <label class="field-label" for="paletteSelect">Built-in palette</label>
         <select id="paletteSelect">
+          <option value="retroSourceUnion1024">Retro source union · distance-first · 1,024 colors</option>
           <option value="retroSourceUnion4096">Retro source union · 29 palettes · 4,096 colors</option>
           <option value="maxCoverage">Maximum coverage · 48 vivid anchors</option>
           <option value="rgb9Hybrid">RGB9 hybrid · 512 cube + 512 coverage</option>
@@ -60,6 +61,12 @@
 
       <section>
         <div class="section-head"><span>03</span><h2>Mapping</h2></div>
+        <label class="field-label" for="engineSelect">Color matching engine</label>
+        <select id="engineSelect" aria-describedby="engineHint">
+          <option value="oklab">OKLab · exact · fast</option>
+          <option value="ciede2000">CIEDE2000 · exact · slower</option>
+        </select>
+        <p class="hint" id="engineHint">Fast perceptual nearest-neighbor matching. Use no dithering for clean color regions.</p>
         <label class="field-label" for="ditherSelect">Dithering</label>
         <select id="ditherSelect">
           <option value="none">None · clean regions</option>
@@ -70,7 +77,7 @@
           <input id="strength" type="range" min="0" max="100" value="80">
         </div>
         <label class="check-row"><input id="preserveAlpha" type="checkbox" checked><span>Preserve original transparency</span></label>
-        <p class="hint">Matching is exact nearest-neighbor in OKLab. Dither error is diffused through linear-light RGB.</p>
+        <p class="hint">Both engines measure perceptual distance, not raw RGB distance. Optional dither error is diffused through linear-light RGB.</p>
       </section>
 
       <button id="processButton" class="primary" disabled><span>Quantize image</span><span aria-hidden="true">→</span></button>
@@ -100,8 +107,8 @@
 
       <div class="metrics" id="metrics" aria-live="polite">
         <div><span>Used colors</span><strong>—</strong></div>
-        <div><span>Mean ΔE<sub>OK</sub></span><strong>—</strong></div>
-        <div><span>Maximum ΔE<sub>OK</sub></span><strong>—</strong></div>
+        <div><span>Mean ΔE<sub class="metric-unit">OK</sub></span><strong>—</strong></div>
+        <div><span>Maximum ΔE<sub class="metric-unit">OK</sub></span><strong>—</strong></div>
         <div><span>Off-palette pixels</span><strong>—</strong></div>
         <div><span>Elapsed</span><strong>—</strong></div>
       </div>
@@ -109,9 +116,11 @@
       <details class="method">
         <summary>What this method does—and what it deliberately does not do</summary>
         <div>
-          <p>Every visible source pixel is converted from sRGB to linear light and then OKLab. A balanced k-d tree finds the mathematically nearest palette entry in that perceptual space. The output is written as an RGBA PNG, so palettes larger than the 256-entry indexed-PNG limit remain intact.</p>
+          <p>OKLab uses an exact k-d-tree search. CIEDE2000 converts sRGB into CIELAB (D65 white, 2° observer) and finds the exact minimum ΔE00, with kL = kC = kH = 1. It considers the full palette, skipping only entries ruled out by rigorous distance bounds—not an approximate shortlist. Repeated source colors reuse exact results. CIEDE2000 can be much slower, especially with dithering; processing can be cancelled.</p>
+          <p>Decoding sRGB into linear light is an intermediate conversion, not the distance metric. Both engines then apply nonlinear perceptual transformations. Output is RGBA PNG, so palettes larger than the 256-entry indexed-PNG limit remain intact.</p>
           <p>Floyd–Steinberg mode snakes across alternating rows and diffuses RGB error in linear light. This is more physically sensible than diffusing gamma-encoded sRGB values, although any error diffusion trades local accuracy for a better area-average impression.</p>
-          <p>OKLab is a strong practical metric, not a perfect visual observer. It does not model viewing conditions, spatial adaptation, or individual color-vision differences. The report above measures direct OKLab error against the original pixels; a dithered image may look smoother even when that number rises.</p>
+          <p>Neither engine models pixel arrangement, local contrast, or individual vision. Statistics measure the selected engine's distance against the original, uncorrected pixels (not the dither-adjusted input). ΔEOK and ΔE00 use different scales: compare results within the same metric, not their raw numbers against each other. No dithering preserves clean pixel-art regions.</p>
+          <p>The distance-first 1,024-color profile is a strict subset of the 4,096-color source union. Farthest-point selection and bottleneck-improving swaps prioritize color separation; black and white are retained. <a href="./palettes/retro-source-union-1024-package.zip" download>Download TXT, GPL, KPL, JSON and swatches</a>.</p>
         </div>
       </details>
     </section>
@@ -120,6 +129,7 @@
   <footer><span>Runs entirely in your browser.</span><span>No uploads. No palette-size downgrade.</span></footer>
   <script src="./palettes.js"></script>
   <script src="./retro-source-union-4096.js"></script>
+  <script src="./retro-source-union-1024.js"></script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>

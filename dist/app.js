@@ -4,6 +4,7 @@ const els = {
   imageDrop: $('#imageDrop'), imageInput: $('#imageInput'), imagePrompt: $('#imagePrompt'), imageMeta: $('#imageMeta'),
   paletteSelect: $('#paletteSelect'), paletteInput: $('#paletteInput'), paletteCanvas: $('#paletteCanvas'), paletteName: $('#paletteName'), paletteCount: $('#paletteCount'),
   dither: $('#ditherSelect'), strength: $('#strength'), strengthOut: $('#strengthOut'), strengthRow: $('#strengthRow'), alpha: $('#preserveAlpha'),
+  engine: $('#engineSelect'), engineHint: $('#engineHint'),
   process: $('#processButton'), progressWrap: $('#progressWrap'), progressBar: $('#progressBar'), progressText: $('#progressText'),
   sourceCanvas: $('#sourceCanvas'), resultCanvas: $('#resultCanvas'), sourceWrap: $('#sourceWrap'), resultWrap: $('#resultWrap'),
   sourceCaption: $('#sourceCaption'), resultCaption: $('#resultCaption'), previewGrid: $('#previewGrid'), download: $('#downloadButton'), metrics: $('#metrics')
@@ -11,7 +12,7 @@ const els = {
 
 let imageData = null;
 let imageName = 'image';
-let currentPalette = { name: builtins.maxCoverage.name, colors: builtins.maxCoverage.colors };
+let currentPalette = { ...builtins[els.paletteSelect.value] };
 let worker = null;
 
 function uniqueColors(colors) {
@@ -39,6 +40,7 @@ function drawPalette() {
 }
 
 async function loadImage(file) {
+  if (worker) return;
   if (!file?.type.startsWith('image/')) throw new Error('Choose an image file.');
   const bitmap = await createImageBitmap(file);
   const canvas = els.sourceCanvas;
@@ -64,6 +66,22 @@ function formatBytes(n) {
 }
 
 function parseTextPalette(text) {
+  // Palette JSON can contain hex-valued seeds and audits outside its actual
+  // colors array. Those are metadata, not extra colors to import.
+  let json;
+  try { json=JSON.parse(text); } catch (_) { /* GPL / plain hex text */ }
+  const entries=Array.isArray(json)?json:json?.colors;
+  if (Array.isArray(entries)) {
+    const hexes=entries.map(entry=> {
+      if (typeof entry==='string') return entry;
+      if (typeof entry?.hex==='string') return entry.hex;
+      const rgb=Array.isArray(entry)?entry:entry?.rgb;
+      if (Array.isArray(rgb) && rgb.length===3 && rgb.every(v=>Number.isInteger(v)&&v>=0&&v<=255))
+        return '#'+rgb.map(v=>v.toString(16).padStart(2,'0')).join('');
+      return null;
+    }).filter(hex=>typeof hex==='string' && /^#[0-9a-f]{6}$/i.test(hex));
+    return uniqueColors(hexes);
+  }
   const colors = [];
   const gplLines = text.split(/\r?\n/);
   for (const line of gplLines) {
@@ -100,13 +118,20 @@ async function importPalette(file) {
 }
 
 function run() {
+  if (worker) {
+    worker.terminate(); worker=null; setBusy(false);
+    els.progressWrap.hidden=false; setProgress(0,'Cancelled');
+    return;
+  }
   if (!imageData || !currentPalette.colors.length) return;
-  if (worker) worker.terminate();
-  worker = new Worker('./quantize-worker.js');
+  worker = new Worker('./quantize-worker.js?v=ciede2000-1');
   const copy = new Uint8ClampedArray(imageData.data);
-  els.process.disabled = true; els.download.disabled = true;
+  setBusy(true); els.download.disabled = true;
+  const activeWorker=worker, runPalette=currentPalette;
+  resetMetrics();
   els.progressWrap.hidden = false; setProgress(1, 'Preparing palette…');
   worker.onmessage = ({ data }) => {
+    if (worker !== activeWorker) return;
     if (data.type === 'progress') return setProgress(data.value, data.label);
     if (data.type === 'error') { finishError(data.message); return; }
     if (data.type === 'done') {
@@ -115,26 +140,32 @@ function run() {
       els.resultCanvas.width = data.width; els.resultCanvas.height = data.height;
       els.resultCanvas.getContext('2d').putImageData(out, 0, 0);
       els.resultWrap.classList.remove('empty');
-      els.resultCaption.textContent = `${data.width} × ${data.height} · ${currentPalette.name}`;
+      els.resultCaption.textContent = `${data.width} × ${data.height} · ${runPalette.name} · ${data.stats.engine==='ciede2000'?'CIEDE2000':'OKLab'}`;
       renderMetrics(data.stats);
       setProgress(100, 'Complete');
-      setTimeout(() => { els.progressWrap.hidden = true; }, 900);
-      els.process.disabled = false; els.download.disabled = false;
+      setBusy(false); els.download.disabled = false;
       worker.terminate(); worker = null;
     }
   };
-  worker.onerror = e => finishError(e.message || 'The quantizer stopped unexpectedly.');
+  worker.onerror = e => { if (worker === activeWorker) finishError(e.message || 'The quantizer stopped unexpectedly.'); };
   worker.postMessage({
     type: 'quantize', buffer: copy.buffer, width: imageData.width, height: imageData.height,
     palette: currentPalette.colors, dither: els.dither.value, strength: +els.strength.value / 100,
+    engine: els.engine.value,
     preserveAlpha: els.alpha.checked
   }, [copy.buffer]);
 }
 
 function setProgress(value, label) { els.progressBar.style.width = `${value}%`; els.progressText.textContent = label; }
-function finishError(message) { els.progressWrap.hidden = false; setProgress(0, message); els.process.disabled = false; worker?.terminate(); worker = null; }
+function setBusy(busy) {
+  document.querySelectorAll('.controls input, .controls select').forEach(el=>el.disabled=busy);
+  els.process.disabled = !imageData;
+  els.process.querySelector('span').textContent=busy?'Cancel processing':'Quantize image';
+}
+function finishError(message) { els.progressWrap.hidden = false; setProgress(0, message); worker?.terminate(); worker = null; setBusy(false); }
 function resetMetrics() { [...els.metrics.querySelectorAll('strong')].forEach(x => x.textContent = '—'); }
 function renderMetrics(s) {
+  document.querySelectorAll('.metric-unit').forEach(x=>x.textContent=s.metric);
   const vals = [`${s.used.toLocaleString()} / ${currentPalette.colors.length.toLocaleString()}`, s.mean.toFixed(4), s.max.toFixed(4), '0', `${s.elapsed.toFixed(0)} ms`];
   [...els.metrics.querySelectorAll('strong')].forEach((x, i) => x.textContent = vals[i]);
 }
@@ -146,6 +177,11 @@ els.imageDrop.addEventListener('drop', e => loadImage(e.dataTransfer.files[0]).c
 els.paletteSelect.addEventListener('change', () => { const p = builtins[els.paletteSelect.value]; if (!p) return; currentPalette = { name:p.name, colors:p.colors }; drawPalette(); resetMetrics(); });
 els.paletteInput.addEventListener('change', () => importPalette(els.paletteInput.files[0]).catch(e => finishError(e.message)));
 els.dither.addEventListener('change', () => { els.strengthRow.hidden = els.dither.value === 'none'; });
+els.engine.addEventListener('change', () => {
+  els.engineHint.textContent=els.engine.value==='ciede2000'
+    ? 'Exact ΔE00 matching, including nonlinear hue/chroma weighting. Much slower on detailed images; dithering adds more work.'
+    : 'Fast perceptual nearest-neighbor matching. Use no dithering for clean color regions.';
+});
 els.strength.addEventListener('input', () => { els.strengthOut.value = `${els.strength.value}%`; });
 els.process.addEventListener('click', run);
 document.querySelectorAll('[data-view]').forEach(btn => btn.addEventListener('click', () => {

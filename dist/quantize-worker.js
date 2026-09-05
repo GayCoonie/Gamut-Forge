@@ -1,4 +1,5 @@
-function srgbByteToLinear(v) { const c = v / 255; return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4; }
+importScripts('./color-math.js');
+const {srgbByteToLinear,linearToLab,prepareLab,deltaE00,makeCiedeIndex,nearestCiede2000} = GamutColor;
 function hexToRgb(hex) { const n = parseInt(hex.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; }
 function linearToOklab(r, g, b) {
   const l = .4122214708*r + .5363325363*g + .0514459929*b;
@@ -39,13 +40,25 @@ self.onmessage = ({data}) => {
   if (data.type !== 'quantize') return;
   try {
     const started = performance.now();
+    const engine = data.engine || 'oklab';
+    if (!['oklab','ciede2000'].includes(engine)) throw new Error('Unknown matching engine.');
+    const useCiede = engine === 'ciede2000';
     const input = new Uint8ClampedArray(data.buffer);
     const output = new Uint8ClampedArray(input.length);
     const palette = data.palette.map((hex, id) => {
-      const rgb=hexToRgb(hex), lin=rgb.map(srgbByteToLinear); return { id, rgb, lin, lab:linearToOklab(...lin) };
+      const rgb=hexToRgb(hex), lin=rgb.map(srgbByteToLinear);
+      return { id, rgb, lin, lab:linearToOklab(...lin), cie:prepareLab(linearToLab(...lin)) };
     });
     if (!palette.length) throw new Error('The palette is empty.');
     const tree = makeTree(palette, palette.map((_,i)=>i));
+    const cieIndex = useCiede ? makeCiedeIndex(palette) : null;
+    const exact = new Map(palette.map(p=>[(p.rgb[0]<<16)|(p.rgb[1]<<8)|p.rgb[2],p]));
+    const sourceSpace = useCiede ? linearToLab : linearToOklab;
+    const match = lin => {
+      const [seed] = nearest(tree,palette,linearToOklab(...lin));
+      // The OKLab neighbor is an initial upper bound, NOT a candidate shortlist.
+      return useCiede ? nearestCiede2000(palette,linearToLab(...lin),seed,cieIndex)[0] : seed;
+    };
     self.postMessage({type:'progress',value:7,label:'Mapping pixels…'});
     let errorSum=0,errorMax=0,visible=0; const used=new Set();
     const w=data.width,h=data.height;
@@ -55,7 +68,14 @@ self.onmessage = ({data}) => {
       output[i+3]=data.preserveAlpha ? input[i+3] : 255;
       used.add(p.id); visible++;
       const dl=sourceLab[0]-p.lab[0], da=sourceLab[1]-p.lab[1], db=sourceLab[2]-p.lab[2];
-      const e=Math.sqrt(dl*dl+da*da+db*db); errorSum+=e; if(e>errorMax) errorMax=e;
+      const e=useCiede ? deltaE00(sourceLab,p.cie) : Math.sqrt(dl*dl+da*da+db*db);
+      errorSum+=e; if(e>errorMax) errorMax=e;
+    };
+    let lastProgress=performance.now();
+    const progress = (i,label) => {
+      if (performance.now()-lastProgress < 120) return;
+      lastProgress=performance.now();
+      self.postMessage({type:'progress',value:7+Math.round(90*i/(w*h)),label});
     };
 
     if (data.dither === 'floyd') {
@@ -66,12 +86,13 @@ self.onmessage = ({data}) => {
           const x=reverse?w-1-step:step, i=(y*w+x)*4, ep=(x+1)*3;
           if(input[i+3]===0 && data.preserveAlpha) { output.set(input.subarray(i,i+4),i); continue; }
           const base=[srgbByteToLinear(input[i]),srgbByteToLinear(input[i+1]),srgbByteToLinear(input[i+2])];
-          const sourceLab=linearToOklab(...base);
+          const sourceLab=sourceSpace(...base);
           const corrected=[clamp(base[0]+curr[ep]),clamp(base[1]+curr[ep+1]),clamp(base[2]+curr[ep+2])];
-          const [id]=nearest(tree,palette,linearToOklab(...corrected)); const p=palette[id]; writePixel(i,p,sourceLab);
+          const id=match(corrected); const p=palette[id]; writePixel(i,p,sourceLab);
           const strength=data.strength, er=(corrected[0]-p.lin[0])*strength, eg=(corrected[1]-p.lin[1])*strength, eb=(corrected[2]-p.lin[2])*strength;
           if(!reverse) { addError(curr,ep+3,er,eg,eb,7/16); addError(next,ep-3,er,eg,eb,3/16); addError(next,ep,er,eg,eb,5/16); addError(next,ep+3,er,eg,eb,1/16); }
           else { addError(curr,ep-3,er,eg,eb,7/16); addError(next,ep+3,er,eg,eb,3/16); addError(next,ep,er,eg,eb,5/16); addError(next,ep-3,er,eg,eb,1/16); }
+          if (step%32===0) progress(y*w+step,`Dithering row ${y+1} of ${h}`);
         }
         const tmp=curr; curr=next; next=tmp; next.fill(0);
         if(y%24===0) self.postMessage({type:'progress',value:7+Math.round(90*y/h),label:`Dithering row ${y.toLocaleString()} of ${h.toLocaleString()}`});
@@ -82,14 +103,21 @@ self.onmessage = ({data}) => {
         for(let x=0;x<w;x++) {
           const i=(y*w+x)*4;
           if(input[i+3]===0 && data.preserveAlpha) { output.set(input.subarray(i,i+4),i); continue; }
-          const key=(input[i]<<16)|(input[i+1]<<8)|input[i+2]; let hit=cache.get(key);
-          const sourceLab=linearToOklab(srgbByteToLinear(input[i]),srgbByteToLinear(input[i+1]),srgbByteToLinear(input[i+2]));
-          if(!hit) { const [id]=nearest(tree,palette,sourceLab); hit=palette[id]; cache.set(key,hit); }
+          const key=(input[i]<<16)|(input[i+1]<<8)|input[i+2]; let hit=cache.get(key) || exact.get(key);
+          const lin=[srgbByteToLinear(input[i]),srgbByteToLinear(input[i+1]),srgbByteToLinear(input[i+2])];
+          const sourceLab=sourceSpace(...lin);
+          if(!hit) {
+            hit=palette[match(lin)];
+            // Bounded cache; clearing it affects speed only, never matching.
+            if (cache.size >= 262144) cache.clear();
+            cache.set(key,hit);
+          }
           writePixel(i,hit,sourceLab);
+          if (x%32===0) progress(y*w+x,`Matching row ${y+1} of ${h} · ${useCiede?'CIEDE2000':'OKLab'}`);
         }
         if(y%32===0) self.postMessage({type:'progress',value:7+Math.round(90*y/h),label:`Matching row ${y.toLocaleString()} of ${h.toLocaleString()}`});
       }
     }
-    self.postMessage({type:'done',buffer:output.buffer,width:w,height:h,stats:{used:used.size,mean:visible?errorSum/visible:0,max:errorMax,elapsed:performance.now()-started}},[output.buffer]);
+    self.postMessage({type:'done',buffer:output.buffer,width:w,height:h,stats:{engine,metric:useCiede?'00':'OK',used:used.size,mean:visible?errorSum/visible:0,max:errorMax,elapsed:performance.now()-started}},[output.buffer]);
   } catch (error) { self.postMessage({type:'error',message:error.message || String(error)}); }
 };
