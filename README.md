@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes fifteen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, and the retro source unions
+- Includes seventeen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, two HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -97,6 +97,20 @@ Explore the [single-page atlas](dist/palette-guide.html), or download [Static Bl
 **RGB343** means 3 bits of red, 4 bits of green, and 3 bits of blue: **8×16×8 = 1024** colors. Its red/blue levels are `[0,36,73,109,146,182,219,255]`; green uses multiples of 17. This is rounded full-range code expansion, not a simulation of any particular display's analog DAC. All cube entries are retained for the control, so perceptual pruning does not apply; it has 342 pairs below 2 ΔE00.
 
 Rebuild from the committed aggregate manifest with `python3 scripts/build-critter-palettes.py` (NumPy, Pillow). To relearn the manifest from the owner's v11.1.0 archive, add `--source-zip PATH`. `scripts/evaluate-critter-palettes.py --source-zip PATH --review-dir PRIVATE_DIRECTORY` writes the aggregate evaluation and private visual comparisons. Run `node tests/critter-palettes.test.cjs` to verify every pair, nesting, full cube membership and export equality; run the existing quantizer suite to check both engines.
+
+## HSV three-tier redesign and 10% grid comparison
+
+Both new profiles have **64 hues at 5.625° spacing**. The 64/32/16 subsets are nested: indices 0–63, every second index, and every fourth index. Each active tier contributes nine colors, giving **576 + 288 + 144 = 1008 chromatic colors**, followed by **16 true grays**, evenly spaced in HSV value (RGB 0,17,…,255). Both contain exactly 1024 unique RGB triplets; no duplicate removal or filler colors are needed.
+
+The primary **HSV three-tier 64/32/16** follows the requested bounds: the core is the Cartesian 3×3 product of S,V = 2/3, 5/6, 1. Each added band has **three nested three-point Ls**. For a previous boundary b and new boundary a, levels are q = b + (a−b)k/3 for k=1,2,3; each L contains (S,V) = (q,1), (q,q), (1,q). The middle band's levels are 5/9, 4/9, 1/3; the outer band's are approximately 26.8889%, 20.4444%, 14%. This includes both ends and the bend of every L, with equal level spacing and no repeated previous boundary. The two added areas are disjoint from their preceding squares. The exact coordinates are supplied for inspection.
+
+The **10% grid comparison** retains those hue/sample counts and the gray ramp, but every chromatic S and V coordinate belongs to {0.1,0.2,…,1}. Its core is the exact 80/90/100% Cartesian grid. The remaining seven levels are split between a middle band with min(S,V) = 40–70%, and an outer band with min(S,V) = 10–30%. Each band retains three extreme corners and chooses six more points by deterministic Euclidean farthest-point initialization and uniform-lattice medoid refinement. The 80/40/10% bounds are an explicit implementation choice to retain a three-level core and use all ten allowed levels across the available domains. The grayscale is still 16 levels, not restricted to the ten-percent lattice.
+
+All placement uses **HSV geometry**, with conventional HSV→sRGB code conversion and nearest-integer rounding (half up, resolving floating-point ties). Neither version applies perceptual weighting, pruning or a ΔE floor. Their audited minimum ΔE00 values are approximately **0.295** and **0.219**, respectively; dense fully saturated hue regions naturally include very close perceptual neighbors. These are structural HSV experiments alongside the distance-first profiles.
+
+Open the [sample diagrams and downloads](dist/hsv-three-tier.html), or get the [thirds/14% package](dist/palettes/hsv-three-tier-64-package.zip) and [10% grid package](dist/palettes/hsv-three-tier-10-package.zip). Each includes TXT, GPL, KPL, JSON audit, exact HSV coordinates and a swatch PNG. The interactive diagrams show the true square/L boundaries, numbered points and hue-subset membership on identical S/V axes.
+
+Rebuild both with `python3 scripts/build-hsv-three-tier.py` (NumPy, Pillow); verify them independently with `node tests/hsv-three-tier.test.cjs`.
 
 ## License
 

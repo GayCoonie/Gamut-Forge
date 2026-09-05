@@ -35,6 +35,8 @@
         <div class="section-head"><span>02</span><h2>Target palette</h2></div>
         <label class="field-label" for="paletteSelect">Built-in palette</label>
         <select id="paletteSelect">
+          <option value="hsvThreeTier64">HSV three-tier · 64/32/16 hues · 1,024 colors</option>
+          <option value="hsvThreeTier10">HSV three-tier · 10% grid comparison · 1,024 colors</option>
           <option value="staticBloom1024">Static Bloom · material ramps · 1,024 colors</option>
           <option value="staticBloom4096">Static Bloom · material ramps · 4,096 colors</option>
           <option value="rgb343Control">RGB343 · 10-bit control · 1,024 colors</option>
@@ -60,6 +62,7 @@
           <div><strong id="paletteName">Maximum coverage</strong><span id="paletteCount">1024 colors</span></div>
         </div>
         <p class="hint">Reads GPL, hex text, JSON, or a flat-color palette image. Duplicate colors are removed.</p>
+        <p class="hint"><a href="./hsv-three-tier.html">New HSV three-tier: sample diagram and palette downloads</a></p>
       </section>
 
       <section>
@@ -135,6 +138,8 @@
   <script src="./retro-source-union-4096.js"></script>
   <script src="./retro-source-union-1024.js"></script>
   <script src="./critter-palettes.js"></script>
+  <script src="./hsv-three-tier-64.js"></script>
+  <script src="./hsv-three-tier-10.js"></script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
