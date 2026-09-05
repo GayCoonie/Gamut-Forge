@@ -1,5 +1,45 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "randomStrataTry5",
+    "stem": "random-strata-try5",
+    "group": "Random Strata v2",
+    "name": "Random Strata v2 \u00b7 Try 5 \u00b7 1024",
+    "count": 1024,
+    "description": "Try 5, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances."
+  },
+  {
+    "key": "randomStrataTry6",
+    "stem": "random-strata-try6",
+    "group": "Random Strata v2",
+    "name": "Random Strata v2 \u00b7 Try 6 \u00b7 1024",
+    "count": 1024,
+    "description": "Try 6, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances."
+  },
+  {
+    "key": "randomStrataTry7",
+    "stem": "random-strata-try7",
+    "group": "Random Strata v2",
+    "name": "Random Strata v2 \u00b7 Try 7 \u00b7 1024",
+    "count": 1024,
+    "description": "Try 7, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances."
+  },
+  {
+    "key": "randomStrataTry8",
+    "stem": "random-strata-try8",
+    "group": "Random Strata v2",
+    "name": "Random Strata v2 \u00b7 Try 8 \u00b7 1024",
+    "count": 1024,
+    "description": "Try 8, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances."
+  },
+  {
+    "key": "randomStrataV2Combined4096",
+    "stem": "random-strata-v2-combined-4096",
+    "group": "Random Strata v2",
+    "name": "Random Strata v2 \u00b7 combined 5\u20138 \u00b7 4096",
+    "count": 4096,
+    "description": "All 4,001 unique colors from Try 5\u20138, six missing 3-bit gray levels replacing repeated black/white entries, and 89 well-separated fillers chosen only from Try 1\u20134. The complete eight-level ramp is included. Existing close cross-trial pairs remain; individual trial thresholds do not carry over to the union."
+  },
+  {
     "key": "randomStrataTry1",
     "stem": "random-strata-try1",
     "group": "Random Strata Beta",

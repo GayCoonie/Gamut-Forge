@@ -6,11 +6,17 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]; DIST=ROOT/'dist'; OUT=DIST/'palettes'
-scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js','random-strata.js']
+scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js','random-strata.js','random-strata-v2-trials.js']
 js="const fs=require('fs'),vm=require('vm'),c={window:{}};vm.createContext(c);for(const f of "+json.dumps(scripts)+")vm.runInContext(fs.readFileSync('dist/'+f,'utf8'),c);process.stdout.write(JSON.stringify(c.window.GAMUT_PALETTES));"
 palettes=json.loads(subprocess.check_output(['node','-e',js],cwd=ROOT))
 # Descriptions document the shipped profiles, not a regeneration of their colors.
 rows=[
+('randomStrataTry5', 'random-strata-try5', 'Random Strata v2', 'Try 5, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances.', None),
+('randomStrataTry6', 'random-strata-try6', 'Random Strata v2', 'Try 6, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances.', None),
+('randomStrataTry7', 'random-strata-try7', 'Random Strata v2', 'Try 7, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances.', None),
+('randomStrataTry8', 'random-strata-try8', 'Random Strata v2', 'Try 8, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances.', None),
+('randomStrataV2Combined4096', 'random-strata-v2-combined-4096', 'Random Strata v2', 'All 4,001 unique colors from Try 5–8, six missing 3-bit gray levels replacing repeated black/white entries, and 89 well-separated fillers chosen only from Try 1–4. The complete eight-level ramp is included. Existing close cross-trial pairs remain; individual trial thresholds do not carry over to the union.', None),
+
 ('randomStrataTry1', 'random-strata-try1', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 1. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
 ('randomStrataTry2', 'random-strata-try2', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 2. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
 ('randomStrataTry3', 'random-strata-try3', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 3. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
@@ -69,9 +75,9 @@ for key,stem,group,description,diagram in rows:
 (DIST/'palette-catalog.js').write_text('window.GAMUT_CATALOG='+json.dumps(catalog,indent=2)+';\n')
 # The catalog is static HTML: descriptions and downloads work without JavaScript.
 esc=html.escape
-parts=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all 25 Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
+parts=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all __COUNT__ Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
 <header class="topbar"><a class="site-name" href="./">Gamut Forge</a><nav aria-label="Main navigation"><a href="./">Image quantizer</a><a href="./palette-library.html" aria-current="page">Palette library</a></nav></header>
-<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All 25 built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">22 palettes of 1,024 colors · 3 palettes of 4,096 colors</p>
+<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All __COUNT__ built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">__COUNTS__</p>
 <p class="format-note">Every palette includes Krita (KPL), GIMP (GPL), hex text, JSON and a swatch PNG. ZIP packages gather those formats; audited profiles also retain their reports. Downloads contain the exact colors used by the quantizer.</p><nav class="jump-links" aria-label="Palette families">''']
 groups=list(dict.fromkeys(r[2] for r in rows));slug=lambda s:s.lower().replace(' ','-')
 for g in groups:parts.append(f'<a href="#{slug(g)}">{esc(g)}</a>')
@@ -87,8 +93,9 @@ for g in groups:
    suffix=ext if ext.startswith('-') else '.'+ext
    parts.append(f'<a href="./palettes/{stem}{suffix}" download>{label}</a>')
   parts.append('</div></div></article>')
+ if g=='Random Strata v2':parts.append('<p class="format-note"><a href="./random-strata.html#v2-trials">Try 5–8 reports and combination details →</a></p>')
  if g=='Random Strata Beta':parts.append('<p class="format-note"><a href="./random-strata.html">Beta audit, overlap counts and corrected generator →</a></p>')
  parts.append('</div></section>')
 parts.append('<p class="format-note">Color-space plots share CIELAB lightness/chroma axes for comparison. Construction and perceptual separation are different properties: a regular HSV or RGB grid does not promise a minimum ΔE00. Choose an info page for the available audit and construction details.</p></main><footer><a href="./">Back to image quantizer</a><span>Gamut Forge · Palette library</span></footer></body></html>')
-(DIST/'palette-library.html').write_text('\n'.join(parts)+'\n')
+(DIST/'palette-library.html').write_text(('\n'.join(parts)+'\n').replace('__COUNT__',str(len(catalog))).replace('__COUNTS__',f'{sum(p["count"]==1024 for p in catalog)} palettes of 1,024 colors · {sum(p["count"]==4096 for p in catalog)} palettes of 4,096 colors'))
 print(f'Built library: {len(catalog)} palettes, all downloads present.')

@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes twenty-two 1024-color palettes and three 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
+- Includes twenty-six 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -16,7 +16,7 @@ Everything runs in the browser. No image or palette is uploaded.
 
 ## Palette library
 
-The home page links to [the complete palette library](dist/palette-library.html). All 25 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+The home page links to [the complete palette library](dist/palette-library.html). All 30 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
 
 ## GitHub Pages
 
@@ -147,3 +147,9 @@ MIT
 Four user-supplied Gemini-assisted trials retain their exact 1,024 RGB colors and original order. Their minima are 0.238, 0.306, 0.270 and 0.300 ΔE00: the requested global 2.5 rule was not met. The combined beta preserves all 3,777 unique colored entries, includes all 256 grays, and adds 63 deterministic farthest-point samples (minimum added separation 4.669 ΔE00). The raw deduplicated source union is 3,949 colors. The combined profile is deliberately not globally separated. See [the beta report and corrected generator](dist/random-strata.html).
 
 `python scripts/build-random-strata.py /path/to/gpl/files` rebuilds from try1.gpl through try4.gpl; original source hashes are recorded without publishing local source paths. `python scripts/build-palette-library.py` refreshes the catalog. The standalone `scripts/generate-random-strata.py` (v2) uses only the standard library. It samples 64 near-grays from the 15,436 RGB colors with max(channel) - min(channel) <= 4, forcing black and white, and excludes that pool from all hue blocks. Each vivid row gets an adaptive target from an exact eight-clique feasibility search over all byte RGB vivid candidates, capped at the global target and otherwise given a 0.2 margin (at most half the capacity). Capacities are conditional on previously selected vivid rows, not globally optimal joint allocations. Cross-sector vivid pairs use the smaller target; other pairs retain the global 2.5 default. Fresh random seeds are recorded unless `--seed` is given. Retries are finite and a final all-pairs audit checks all configured constraints. The seed-42 example succeeds with 64 near-grays at least 2.5045 apart, every other non-vivid pair class above 2.5, and zero configured violations. Source and download copies are identical. Run `python tests/random-strata.test.py` for reference, exact-search, geometry, anchor and reproducibility checks.
+
+## Random Strata v2: Try 5–8
+
+Four user-supplied 1,024-color runs are preserved exactly, including Try 8’s different exported ordering. All contain 64 near-grays, 120 vivid entries and 840 quadrant samples. Independent audits find every non-vivid–vivid pair at least 2.5 ΔE00 apart. Seeds and per-sector configured targets were not supplied.
+
+The combined 4,096 palette retains their 4,001-color exact union, replaces six duplicate black/white occurrences with missing full-range RGB3 gray levels (36, 73, 109, 146, 182, 219), and fills 89 other duplicates using only Try 1–4 colors, chosen by deterministic CIEDE2000 farthest-point selection. Minimum borrowed-color separation is 3.698572 ΔE00. Existing close cross-trial pairs remain: the combined global minimum is 0.007470. The JSON replacement ledger preserves all provenance. Rebuild with `python scripts/build-random-strata-v2-trials.py /path/to/uploads`, then refresh the palette library.

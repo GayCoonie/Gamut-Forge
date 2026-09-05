@@ -39,6 +39,21 @@ class RandomStrataTests(unittest.TestCase):
    h,s,v=colorsys.rgb_to_hsv(*(c/255 for c in c));self.assertEqual(int(h*15),block-1)
    if cell<8:self.assertEqual((s,v),(1,1))
    else:self.assertEqual((int(s>=.5),int(v>=.5)),((1,1),(0,1),(1,0),(0,0))[(cell-8)//14])
+ def test_v2_trial_merge(self):
+  load=lambda stem:json.loads((ROOT/f'dist/palettes/{stem}.json').read_text())
+  sources=[load(f'random-strata-try{i}')['colors'] for i in range(5,9)];data=load('random-strata-v2-combined-4096');combined=data['colors'];report=data['report'];union=set().union(*map(set,sources));old=set().union(*(set(load(f'random-strata-try{i}')['colors']) for i in range(1,5)))
+  self.assertEqual(len(union),4001);self.assertEqual(len(combined),4096);self.assertEqual(len(set(combined)),4096);self.assertTrue(union<=set(combined))
+  gray={'#'+bytes([int(i*255/7+.5)]*3).hex() for i in range(8)};self.assertTrue(gray<=set(combined));self.assertTrue(set(combined)-union<=old|gray)
+  self.assertEqual(len(report['replacements']),95);self.assertEqual(report['added_grays'],6);self.assertEqual(report['earlier_random_fillers'],89)
+  blocks=[a.copy() for a in sources]
+  for r in report['replacements']:
+   b=r['trial']-5;i=r['source_index'];self.assertEqual(blocks[b][i],r['original']);blocks[b][i]=r['replacement']
+   if r['kind']=='3-bit gray':self.assertIn(r['original'],('#000000','#ffffff'));self.assertIn(r['replacement'],gray)
+   else:self.assertIn(r['replacement'],old)
+  reconstructed=[]
+  for y in range(64):
+   for x in range(64):reconstructed.append(blocks[y//32*2+x//32][y%32*32+x%32])
+  self.assertEqual(reconstructed,combined)
  def test_beta_union(self):
   load=lambda stem:json.loads((ROOT/f'dist/palettes/{stem}.json').read_text())['colors']
   source=set().union(*(set(load(f'random-strata-try{i}')) for i in range(1,5)));combined=set(load('random-strata-combined-4096'))
