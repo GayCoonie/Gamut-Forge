@@ -6,11 +6,17 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]; DIST=ROOT/'dist'; OUT=DIST/'palettes'
-scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js']
+scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js','random-strata.js']
 js="const fs=require('fs'),vm=require('vm'),c={window:{}};vm.createContext(c);for(const f of "+json.dumps(scripts)+")vm.runInContext(fs.readFileSync('dist/'+f,'utf8'),c);process.stdout.write(JSON.stringify(c.window.GAMUT_PALETTES));"
 palettes=json.loads(subprocess.check_output(['node','-e',js],cwd=ROOT))
 # Descriptions document the shipped profiles, not a regeneration of their colors.
 rows=[
+('randomStrataTry1', 'random-strata-try1', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 1. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
+('randomStrataTry2', 'random-strata-try2', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 2. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
+('randomStrataTry3', 'random-strata-try3', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 3. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
+('randomStrataTry4', 'random-strata-try4', 'Random Strata Beta', 'User/Gemini random HSV experiment, Try 4. The 1,024 supplied RGB colors and their 32×32 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 ΔE00 separation; the JSON contains the measured audit.', None),
+('randomStrataCombined4096', 'random-strata-combined-4096', 'Random Strata Beta', 'All 3,777 unique colored entries from the four trials, all 256 true sRGB grays, and 63 gap-filling colors. The added colored samples are at least 4.669 ΔE00 from every other final color. Existing close pairs are preserved; this beta does not promise global separation. The four source grids occupy four quadrants; only duplicate occurrences are replaced.', None),
+
 ('hsvThreeTierSketch','hsv-three-tier-sketch','HSV experiments','A 64-hue bright 3×3 core, with 32-hue middle rows and 16-hue outer rows spread through the square. The green 3×3, purple 2/2/5 and yellow 3/2/4 sketch becomes 1,008 colors plus 16 grays. HSV geometry is retained without perceptual pruning.','hsv-three-tier.html?version=sketch'),
 ('hsvThreeTier64','hsv-three-tier-64','HSV experiments','64 hues at 5.625° intervals. A bright 3×3 core is extended by three three-point Ls for 32 hues, then three more for 16 hues. The bands reach 14% saturation/value; 16 grays complete the palette. No perceptual pruning.','hsv-three-tier.html?version=thirds'),
 ('hsvThreeTier10','hsv-three-tier-10','HSV experiments','The 64/32/16 hue comparison on a 10% saturation/value lattice. A bright 80/90/100% core is extended through the middle and outer bands down to 10%. Sixteen grays retain their separate, evenly spaced HSV values.','hsv-three-tier.html?version=grid'),
@@ -63,9 +69,9 @@ for key,stem,group,description,diagram in rows:
 (DIST/'palette-catalog.js').write_text('window.GAMUT_CATALOG='+json.dumps(catalog,indent=2)+';\n')
 # The catalog is static HTML: descriptions and downloads work without JavaScript.
 esc=html.escape
-parts=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all 20 Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
+parts=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all 25 Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
 <header class="topbar"><a class="site-name" href="./">Gamut Forge</a><nav aria-label="Main navigation"><a href="./">Image quantizer</a><a href="./palette-library.html" aria-current="page">Palette library</a></nav></header>
-<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All 20 built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">18 palettes of 1,024 colors · 2 palettes of 4,096 colors</p>
+<main class="library"><p class="eyebrow">THE FULL COLLECTION</p><h1>Find your color vocabulary.</h1><p class="intro">All 25 built-in palettes, from machine cubes to game-derived material ramps and HSV experiments. Explore their construction, inspect every color, or take them into your editor.</p><p class="library-stats">22 palettes of 1,024 colors · 3 palettes of 4,096 colors</p>
 <p class="format-note">Every palette includes Krita (KPL), GIMP (GPL), hex text, JSON and a swatch PNG. ZIP packages gather those formats; audited profiles also retain their reports. Downloads contain the exact colors used by the quantizer.</p><nav class="jump-links" aria-label="Palette families">''']
 groups=list(dict.fromkeys(r[2] for r in rows));slug=lambda s:s.lower().replace(' ','-')
 for g in groups:parts.append(f'<a href="#{slug(g)}">{esc(g)}</a>')
@@ -81,6 +87,7 @@ for g in groups:
    suffix=ext if ext.startswith('-') else '.'+ext
    parts.append(f'<a href="./palettes/{stem}{suffix}" download>{label}</a>')
   parts.append('</div></div></article>')
+ if g=='Random Strata Beta':parts.append('<p class="format-note"><a href="./random-strata.html">Beta audit, overlap counts and corrected generator →</a></p>')
  parts.append('</div></section>')
 parts.append('<p class="format-note">Color-space plots share CIELAB lightness/chroma axes for comparison. Construction and perceptual separation are different properties: a regular HSV or RGB grid does not promise a minimum ΔE00. Choose an info page for the available audit and construction details.</p></main><footer><a href="./">Back to image quantizer</a><span>Gamut Forge · Palette library</span></footer></body></html>')
 (DIST/'palette-library.html').write_text('\n'.join(parts)+'\n')

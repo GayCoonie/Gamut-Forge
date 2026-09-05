@@ -1,5 +1,45 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "randomStrataTry1",
+    "stem": "random-strata-try1",
+    "group": "Random Strata Beta",
+    "name": "Random Strata Beta \u00b7 Try 1 \u00b7 1024",
+    "count": 1024,
+    "description": "User/Gemini random HSV experiment, Try 1. The 1,024 supplied RGB colors and their 32\u00d732 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 \u0394E00 separation; the JSON contains the measured audit."
+  },
+  {
+    "key": "randomStrataTry2",
+    "stem": "random-strata-try2",
+    "group": "Random Strata Beta",
+    "name": "Random Strata Beta \u00b7 Try 2 \u00b7 1024",
+    "count": 1024,
+    "description": "User/Gemini random HSV experiment, Try 2. The 1,024 supplied RGB colors and their 32\u00d732 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 \u0394E00 separation; the JSON contains the measured audit."
+  },
+  {
+    "key": "randomStrataTry3",
+    "stem": "random-strata-try3",
+    "group": "Random Strata Beta",
+    "name": "Random Strata Beta \u00b7 Try 3 \u00b7 1024",
+    "count": 1024,
+    "description": "User/Gemini random HSV experiment, Try 3. The 1,024 supplied RGB colors and their 32\u00d732 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 \u0394E00 separation; the JSON contains the measured audit."
+  },
+  {
+    "key": "randomStrataTry4",
+    "stem": "random-strata-try4",
+    "group": "Random Strata Beta",
+    "name": "Random Strata Beta \u00b7 Try 4 \u00b7 1024",
+    "count": 1024,
+    "description": "User/Gemini random HSV experiment, Try 4. The 1,024 supplied RGB colors and their 32\u00d732 order are preserved exactly. Intended design: fifteen hue sectors with vivid rows and four S/V quadrants, plus 64 grays. Beta: the files do not meet the requested global 2.5 \u0394E00 separation; the JSON contains the measured audit."
+  },
+  {
+    "key": "randomStrataCombined4096",
+    "stem": "random-strata-combined-4096",
+    "group": "Random Strata Beta",
+    "name": "Random Strata Beta \u00b7 combined + gap fill \u00b7 4096",
+    "count": 4096,
+    "description": "All 3,777 unique colored entries from the four trials, all 256 true sRGB grays, and 63 gap-filling colors. The added colored samples are at least 4.669 \u0394E00 from every other final color. Existing close pairs are preserved; this beta does not promise global separation. The four source grids occupy four quadrants; only duplicate occurrences are replaced."
+  },
+  {
     "key": "hsvThreeTierSketch",
     "stem": "hsv-three-tier-sketch",
     "group": "HSV experiments",

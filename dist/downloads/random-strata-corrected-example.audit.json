@@ -1,0 +1,32 @@
+{
+  "count": 1024,
+  "unique_colors": 1024,
+  "minimum_delta_e_2000": 0.1582478343048715,
+  "closest_pair_indices": [
+    229,
+    35
+  ],
+  "pairs_below_requested_global_distance": 305,
+  "configured_constraint_violations": 0,
+  "minimum_by_pair_class": {
+    "gray / gray": 0.1582478343048715,
+    "gray / vivid": 23.08429745824974,
+    "vivid / vivid": 0.2504885672658008,
+    "gray / quadrant": 2.7240608081811675,
+    "quadrant / vivid": 2.567403160035545,
+    "quadrant / quadrant": 2.507559296792552
+  },
+  "search": {
+    "restart": 0,
+    "candidates_tested_in_successful_restart": 1415
+  },
+  "seed": 42,
+  "thresholds": {
+    "global_distance": 2.5,
+    "gray_gray": 0.0,
+    "vivid_vivid": 0.25
+  },
+  "metric": "CIEDE2000, CIELAB D65/2 degrees, kL=kC=kH=1",
+  "layout": "32x32 grid, 4x4 blocks of 8x8; first block gray, remaining blocks hue sectors 0\u201324 through 336\u2013360 degrees",
+  "notes": "Exact duplicates are always rejected. Exceptions affect only the named pair class; all other pairs retain the global threshold."
+}

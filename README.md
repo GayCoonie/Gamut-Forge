@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes eighteen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
+- Includes twenty-two 1024-color palettes and three 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -16,7 +16,7 @@ Everything runs in the browser. No image or palette is uploaded.
 
 ## Palette library
 
-The home page links to [the complete palette library](dist/palette-library.html). All 20 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+The home page links to [the complete palette library](dist/palette-library.html). All 25 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
 
 ## GitHub Pages
 
@@ -141,3 +141,9 @@ The [interactive sampling page](dist/hsv-three-tier.html?version=sketch) now inc
 ## License
 
 MIT
+
+## Random Strata Beta
+
+Four user-supplied Gemini-assisted trials retain their exact 1,024 RGB colors and original order. Their minima are 0.238, 0.306, 0.270 and 0.300 ΔE00: the requested global 2.5 rule was not met. The combined beta preserves all 3,777 unique colored entries, includes all 256 grays, and adds 63 deterministic farthest-point samples (minimum added separation 4.669 ΔE00). The raw deduplicated source union is 3,949 colors. The combined profile is deliberately not globally separated. See [the beta report and corrected generator](dist/random-strata.html).
+
+`python scripts/build-random-strata.py /path/to/gpl/files` rebuilds from try1.gpl through try4.gpl; original source hashes are recorded without publishing local source paths. `python scripts/build-palette-library.py` refreshes the catalog. The standalone `scripts/generate-random-strata.py` uses only the standard library and has strict defaults, proven infeasibility checks, explicit pair-class exceptions, bounded retries, final-byte geometry validation and a full all-pairs audit. Its tested example uses `--seed 42 --gray-distance 0 --vivid-distance 0.25`; all other pairs retain 2.5. Source and download copies are identical.
