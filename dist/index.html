@@ -35,6 +35,9 @@
         <div class="section-head"><span>02</span><h2>Target palette</h2></div>
         <label class="field-label" for="paletteSelect">Built-in palette</label>
         <select id="paletteSelect">
+          <option value="staticBloom1024">Static Bloom · material ramps · 1,024 colors</option>
+          <option value="staticBloom4096">Static Bloom · material ramps · 4,096 colors</option>
+          <option value="rgb343Control">RGB343 · 10-bit control · 1,024 colors</option>
           <option value="retroSourceUnion1024">Retro source union · distance-first · 1,024 colors</option>
           <option value="retroSourceUnion4096">Retro source union · 29 palettes · 4,096 colors</option>
           <option value="maxCoverage">Maximum coverage · 48 vivid anchors</option>
@@ -121,6 +124,7 @@
           <p>Floyd–Steinberg mode snakes across alternating rows and diffuses RGB error in linear light. This is more physically sensible than diffusing gamma-encoded sRGB values, although any error diffusion trades local accuracy for a better area-average impression.</p>
           <p>Neither engine models pixel arrangement, local contrast, or individual vision. Statistics measure the selected engine's distance against the original, uncorrected pixels (not the dither-adjusted input). ΔEOK and ΔE00 use different scales: compare results within the same metric, not their raw numbers against each other. No dithering preserves clean pixel-art regions.</p>
           <p>The distance-first 1,024-color profile is a strict subset of the 4,096-color source union. Farthest-point selection and bottleneck-improving swaps prioritize color separation; black and white are retained. <a href="./palettes/retro-source-union-1024-package.zip" download>Download TXT, GPL, KPL, JSON and swatches</a>.</p>
+          <p>Static Bloom uses stepped lightness and hue-shifting material ramps informed by Coonie Critters’ terrain and sprite atlases. Its 4,096-color version contains every color in the 1,024-color version. Both keep all pairs above 2 ΔE00. RGB343 is the complete 8 red × 16 green × 8 blue cube, expanded to full-range sRGB. <a href="./palette-guide.html">Explore these palettes and download Krita/GIMP files</a>.</p>
         </div>
       </details>
     </section>
@@ -130,6 +134,7 @@
   <script src="./palettes.js"></script>
   <script src="./retro-source-union-4096.js"></script>
   <script src="./retro-source-union-1024.js"></script>
+  <script src="./critter-palettes.js"></script>
   <script type="module" src="./app.js"></script>
 </body>
 </html>

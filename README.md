@@ -7,10 +7,10 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes thirteen 1024-color palettes plus a 4096-color retro source union assembled from 29 supplied artist/game palettes, historical hardware and software palettes, low-bit RGB arrangements, and deweighted X11 colors
+- Includes fifteen 1024-color palettes and two 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
-- Cancelable processing and downloadable TXT/GPL/KPL/JSON exports of the distance-first 1024 profile
+- Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
 
 Everything runs in the browser. No image or palette is uploaded.
 
@@ -63,6 +63,40 @@ The new **Retro source union · distance-first · 1024** uses only unchanged col
 - This maximin heuristic is audited, but **not a proof of globally optimal separation**.
 
 Download [the package](dist/palettes/retro-source-union-1024-package.zip) or individual [TXT](dist/palettes/retro-source-union-1024.txt), [GPL](dist/palettes/retro-source-union-1024.gpl), [KPL](dist/palettes/retro-source-union-1024.kpl), [JSON/audit](dist/palettes/retro-source-union-1024.json), and [swatches](dist/palettes/retro-source-union-1024.png). Rebuild with `python scripts/build-retro-1024.py` (NumPy and Pillow). The JSON records the parent file's SHA-256, all trial scores, closest pair, and each color's parent index.
+
+## Static Bloom: game-derived material palettes
+
+The **Static Bloom 1024** and **Static Bloom 4096** profiles are designed for palette crushing Coonie Critters' varied terrain, creatures, fabric, wood, stone and bright technology. They use new colors derived from a compact material design, not a subset of the historical pool. The 1024 profile is nested verbatim inside the 4096 profile. Neither profile relaxes the minimum 2 ΔE00 requirement.
+
+| Profile | Colors | Minimum pairwise ΔE00 | Median nearest-neighbor ΔE00 |
+| --- | ---: | ---: | ---: |
+| Static Bloom 1024 | 1024 | 4.565380239 | 5.062758382 |
+| Static Bloom 4096 | 4096 | 2.787773732 | 3.111116405 |
+| RGB343 control | 1024 | 0.367331153 | 2.534393949 |
+
+The design learns from **42 of the game's 52 runtime atlases**, holding back ten complete atlases, including the snow/ground bank, interior-material bank and one Critter atlas. It samples foreground pixels with alpha ≥192, balances six asset categories equally, and then balances atlases within each category. This prevents large terrain sheets from overwhelming characters, creatures or items. Source images remain private; the repository contains only an aggregate design manifest, the generated colors and evaluation statistics.
+
+Nineteen shared OKLab lightness steps blend 65% regular spacing with 35% category-balanced source-lightness quantiles. The design has 64 learned hue/chroma material families alongside 48 general hue directions. Ramps bend gently toward indigo in shadows and gold in highlights. Chroma falls toward the lightness endpoints; out-of-gamut candidates reduce chroma at fixed lightness and hue before 8-bit rounding. A single neutral spine supplies true grays. This applies the artistic idea of connected, hue-shifting ramps described by [Raymond Schlitter](https://www.slynyrd.com/blog/2018/1/10/pixelblog-1-color-palettes), with [OKLab](https://bottosson.github.io/posts/oklab/) controlling the ramp geometry instead of HSV.
+
+After exact RGB deduplication, pure CIEDE2000 farthest-point selection chooses 1024 colors from 8625 coarse candidates, starting with black and white. The 4096 extension starts with those 1024 colors and adds 3072 from a 53,252-color refined candidate pool: 55 lightness steps, 96 general hue directions and additional chroma levels. Asset weights shape the candidate vocabulary; they **never multiply the selection distances** or override separation. The stated minima are exhaustive pairwise measurements, independently cross-checked by the JavaScript implementation. This is a deterministic design/maximin heuristic, not a proof of the globally best palette or an image-specific error optimum.
+
+The same ten held-out atlases supply 5120 evaluation pixels, mapped by exact CIEDE2000 without dithering:
+
+| Profile | Mean ΔE00 | 95th-percentile ΔE00 | Maximum ΔE00 |
+| --- | ---: | ---: | ---: |
+| Static Bloom 1024 | 2.692 | 4.108 | 6.090 |
+| Previous retro 1024 | 2.722 | 4.316 | 7.117 |
+| Static Bloom 4096 | 1.696 | 2.570 | 4.585 |
+| Previous retro 4096 | 1.861 | 3.536 | 6.908 |
+| RGB343 control | 3.487 | 6.464 | 9.344 |
+
+These are sample fidelity measurements, not a pixel-art aesthetic score or a guarantee for every game image. The palette supplies shared steps and distinct alternatives; nearest-color mapping still cannot enforce spatial clusters or remove detail by itself. The 1024 profile favors stronger simplification; 4096 supplies more material distinctions. Both matching engines remain available, with no dithering recommended for the cleanest regions.
+
+Explore the [single-page atlas](dist/palette-guide.html), or download [Static Bloom 1024](dist/palettes/static-bloom-1024-package.zip), [Static Bloom 4096](dist/palettes/static-bloom-4096-package.zip), and [RGB343](dist/palettes/rgb343-control-package.zip). Each ZIP contains TXT, GIMP GPL, Krita KPL, JSON audit and an exact swatch PNG. The atlas places actual colors on twelve CIELAB lightness/chroma hue pages and also offers a view of every swatch.
+
+**RGB343** means 3 bits of red, 4 bits of green, and 3 bits of blue: **8×16×8 = 1024** colors. Its red/blue levels are `[0,36,73,109,146,182,219,255]`; green uses multiples of 17. This is rounded full-range code expansion, not a simulation of any particular display's analog DAC. All cube entries are retained for the control, so perceptual pruning does not apply; it has 342 pairs below 2 ΔE00.
+
+Rebuild from the committed aggregate manifest with `python3 scripts/build-critter-palettes.py` (NumPy, Pillow). To relearn the manifest from the owner's v11.1.0 archive, add `--source-zip PATH`. `scripts/evaluate-critter-palettes.py --source-zip PATH --review-dir PRIVATE_DIRECTORY` writes the aggregate evaluation and private visual comparisons. Run `node tests/critter-palettes.test.cjs` to verify every pair, nesting, full cube membership and export equality; run the existing quantizer suite to check both engines.
 
 ## License
 

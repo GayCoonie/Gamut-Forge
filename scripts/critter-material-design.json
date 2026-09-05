@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "source": "Coonie Critters: Static Bloom v11.1.0 runtime atlases",
+  "archive_sha256": "e72e776f78cf931986bf4b5e04596ff21e91a8e3c87a160eeb28a3b2577301d8",
+  "training_atlases": 42,
+  "holdout_atlases": 10,
+  "training_samples": 172032,
+  "sample_rule": "Up to 4096 pixels with alpha >= 192 per atlas; RNG 343000 + sorted atlas index.",
+  "category_balance": "Equal total weight per category, then equal per atlas within category.",
+  "categories": [
+    "buildings",
+    "characters",
+    "critters",
+    "items",
+    "overworld-objects",
+    "tiles"
+  ],
+  "coarse_oklab_lightness": [
+    0.035,
+    0.10406217330818607,
+    0.1551032854634336,
+    0.20508240778192466,
+    0.25359377140565165,
+    0.30063571182480336,
+    0.3472969115184249,
+    0.3937960950351411,
+    0.4403844677283752,
+    0.487350112008725,
+    0.5349715877565784,
+    0.5836546103729373,
+    0.6336968282651507,
+    0.684698110998062,
+    0.735421108879582,
+    0.7878993808945158,
+    0.8468732829634724,
+    0.91398068404573,
+    0.985
+  ],
+  "material_families": [
+    {
+      "hue": 265.425582,
+      "chroma": 0.037596,
+      "balanced_mass": 0.01170247
+    },
+    {
+      "hue": 265.799134,
+      "chroma": 0.062132,
+      "balanced_mass": 0.0114655
+    },
+    {
+      "hue": 273.690004,
+      "chroma": 0.062125,
+      "balanced_mass": 0.00979605
+    },
+    {
+      "hue": 48.517131,
+      "chroma": 0.11231,
+      "balanced_mass": 0.00959705
+    },
+    {
+      "hue": 41.431427,
+      "chroma": 0.08812,
+      "balanced_mass": 0.00887054
+    },
+    {
+      "hue": 259.357656,
+      "chroma": 0.035184,
+      "balanced_mass": 0.00825932
+    },
+    {
+      "hue": 280.883592,
+      "chroma": 0.039008,
+      "balanced_mass": 0.00805945
+    },
+    {
+      "hue": 281.090501,
+      "chroma": 0.061693,
+      "balanced_mass": 0.00789398
+    },
+    {
+      "hue": 273.890284,
+      "chroma": 0.039041,
+      "balanced_mass": 0.00782529
+    },
+    {
+      "hue": 48.384077,
+      "chroma": 0.08825,
+      "balanced_mass": 0.0076323
+    },
+    {
+      "hue": 41.536203,
+      "chroma": 0.111562,
+      "balanced_mass": 0.00751159
+    },
+    {
+      "hue": 288.709095,
+      "chroma": 0.038297,
+      "balanced_mass": 0.00732015
+    },
+    {
+      "hue": 259.024343,
+      "chroma": 0.06227,
+      "balanced_mass": 0.00671028
+    },
+    {
+      "hue": 288.497404,
+      "chroma": 0.061667,
+      "balanced_mass": 0.00661185
+    },
+    {
+      "hue": 296.228313,
+      "chroma": 0.03836,
+      "balanced_mass": 0.00636258
+    },
+    {
+      "hue": 56.045182,
+      "chroma": 0.112974,
+      "balanced_mass": 0.00629408
+    },
+    {
+      "hue": 138.527223,
+      "chroma": 0.187824,
+      "balanced_mass": 0.00608181
+    },
+    {
+      "hue": 34.126988,
+      "chroma": 0.086742,
+      "balanced_mass": 0.00597466
+    },
+    {
+      "hue": 56.188521,
+      "chroma": 0.136273,
+      "balanced_mass": 0.00586015
+    },
+    {
+      "hue": 78.671606,
+      "chroma": 0.038168,
+      "balanced_mass": 0.00546662
+    },
+    {
+      "hue": 33.906897,
+      "chroma": 0.06294,
+      "balanced_mass": 0.00542922
+    },
+    {
+      "hue": 251.482084,
+      "chroma": 0.062531,
+      "balanced_mass": 0.00539066
+    },
+    {
+      "hue": 303.468095,
+      "chroma": 0.037762,
+      "balanced_mass": 0.00521492
+    },
+    {
+      "hue": 63.491506,
+      "chroma": 0.087252,
+      "balanced_mass": 0.0050945
+    },
+    {
+      "hue": 296.020831,
+      "chroma": 0.061207,
+      "balanced_mass": 0.00484048
+    },
+    {
+      "hue": 71.362411,
+      "chroma": 0.038125,
+      "balanced_mass": 0.00468682
+    },
+    {
+      "hue": 63.408647,
+      "chroma": 0.136325,
+      "balanced_mass": 0.00465359
+    },
+    {
+      "hue": 251.396932,
+      "chroma": 0.038141,
+      "balanced_mass": 0.00452367
+    },
+    {
+      "hue": 71.136676,
+      "chroma": 0.061881,
+      "balanced_mass": 0.004408
+    },
+    {
+      "hue": 26.473947,
+      "chroma": 0.037687,
+      "balanced_mass": 0.00427924
+    },
+    {
+      "hue": 311.197872,
+      "chroma": 0.037115,
+      "balanced_mass": 0.00424562
+    },
+    {
+      "hue": 26.42526,
+      "chroma": 0.06215,
+      "balanced_mass": 0.00419176
+    },
+    {
+      "hue": 78.608765,
+      "chroma": 0.060894,
+      "balanced_mass": 0.00410689
+    },
+    {
+      "hue": 303.523368,
+      "chroma": 0.061232,
+      "balanced_mass": 0.0039327
+    },
+    {
+      "hue": 139.229091,
+      "chroma": 0.16267,
+      "balanced_mass": 0.00386856
+    },
+    {
+      "hue": 243.91107,
+      "chroma": 0.061985,
+      "balanced_mass": 0.00383853
+    },
+    {
+      "hue": 318.609646,
+      "chroma": 0.037444,
+      "balanced_mass": 0.00382187
+    },
+    {
+      "hue": 243.838002,
+      "chroma": 0.086802,
+      "balanced_mass": 0.00373768
+    },
+    {
+      "hue": 145.834173,
+      "chroma": 0.112384,
+      "balanced_mass": 0.00369205
+    },
+    {
+      "hue": 85.982179,
+      "chroma": 0.037087,
+      "balanced_mass": 0.0035755
+    },
+    {
+      "hue": 221.350472,
+      "chroma": 0.08783,
+      "balanced_mass": 0.00356261
+    },
+    {
+      "hue": 145.236614,
+      "chroma": 0.136773,
+      "balanced_mass": 0.00346748
+    },
+    {
+      "hue": 236.424682,
+      "chroma": 0.0631,
+      "balanced_mass": 0.00345595
+    },
+    {
+      "hue": 213.814045,
+      "chroma": 0.087434,
+      "balanced_mass": 0.0033797
+    },
+    {
+      "hue": 236.226506,
+      "chroma": 0.086743,
+      "balanced_mass": 0.00332099
+    },
+    {
+      "hue": 326.339191,
+      "chroma": 0.03823,
+      "balanced_mass": 0.00330578
+    },
+    {
+      "hue": 18.914901,
+      "chroma": 0.03771,
+      "balanced_mass": 0.00322149
+    },
+    {
+      "hue": 206.463001,
+      "chroma": 0.087847,
+      "balanced_mass": 0.00319204
+    },
+    {
+      "hue": 18.872669,
+      "chroma": 0.061927,
+      "balanced_mass": 0.00314874
+    },
+    {
+      "hue": 311.097283,
+      "chroma": 0.061446,
+      "balanced_mass": 0.00313246
+    },
+    {
+      "hue": 228.939688,
+      "chroma": 0.062882,
+      "balanced_mass": 0.00312442
+    },
+    {
+      "hue": 228.806779,
+      "chroma": 0.087299,
+      "balanced_mass": 0.00308034
+    },
+    {
+      "hue": 221.328403,
+      "chroma": 0.063113,
+      "balanced_mass": 0.00302889
+    },
+    {
+      "hue": 198.9556,
+      "chroma": 0.062414,
+      "balanced_mass": 0.00299973
+    },
+    {
+      "hue": 206.027217,
+      "chroma": 0.063237,
+      "balanced_mass": 0.00294829
+    },
+    {
+      "hue": 85.381613,
+      "chroma": 0.114989,
+      "balanced_mass": 0.0028671
+    },
+    {
+      "hue": 11.239236,
+      "chroma": 0.037223,
+      "balanced_mass": 0.00284511
+    },
+    {
+      "hue": 93.418713,
+      "chroma": 0.037428,
+      "balanced_mass": 0.00274406
+    },
+    {
+      "hue": 213.775212,
+      "chroma": 0.063287,
+      "balanced_mass": 0.00272478
+    },
+    {
+      "hue": 198.989956,
+      "chroma": 0.087861,
+      "balanced_mass": 0.00271403
+    },
+    {
+      "hue": 318.926393,
+      "chroma": 0.061097,
+      "balanced_mass": 0.0027118
+    },
+    {
+      "hue": 153.621658,
+      "chroma": 0.087536,
+      "balanced_mass": 0.00269514
+    },
+    {
+      "hue": 191.560215,
+      "chroma": 0.06221,
+      "balanced_mass": 0.00263924
+    },
+    {
+      "hue": 333.686927,
+      "chroma": 0.037247,
+      "balanced_mass": 0.0026248
+    }
+  ],
+  "holdout_names": [
+    "sprites/buildings/class-04--288x288.png",
+    "sprites/critters/class-02--160x160.png",
+    "sprites/critters/class-05--240x192.png",
+    "sprites/items/class-03--144x160.png",
+    "sprites/overworld-objects/class-05--192x304.png",
+    "tiles/06-plush-country-toybox-routes.png",
+    "tiles/13-late-ecology-toy-worlds.png",
+    "tiles/20-forest-objects-paths.png",
+    "tiles/25-interiors-objects-materials.png",
+    "tiles/26-snow-fall-strange-grounds.png"
+  ],
+  "artistic_intent": "Shared lightness steps; warm highlights and cool shadows; muted material ramps alongside vivid full-hue accents. Separation takes priority over coverage."
+}

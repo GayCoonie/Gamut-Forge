@@ -1,0 +1,43 @@
+{
+  "metric": "Exact nearest CIEDE2000, no dithering",
+  "holdout_atlases": 10,
+  "sample_pixels": 5120,
+  "interpretation": "Lower error is fidelity, not a pixel-art quality score. No palette can guarantee coherent spatial clusters.",
+  "results": [
+    {
+      "palette": "static-bloom-1024",
+      "mean_delta_e_2000": 2.6918827500511773,
+      "p95_delta_e_2000": 4.10811927046484,
+      "maximum_delta_e_2000": 6.0904273505291595,
+      "category_balanced_mean_delta_e_2000": 2.691118640232886
+    },
+    {
+      "palette": "static-bloom-4096",
+      "mean_delta_e_2000": 1.69573751991637,
+      "p95_delta_e_2000": 2.570047976268781,
+      "maximum_delta_e_2000": 4.58465970677017,
+      "category_balanced_mean_delta_e_2000": 1.6832551704976062
+    },
+    {
+      "palette": "rgb343-control",
+      "mean_delta_e_2000": 3.486736278301552,
+      "p95_delta_e_2000": 6.46437849477926,
+      "maximum_delta_e_2000": 9.34384356486291,
+      "category_balanced_mean_delta_e_2000": 3.4858707612820936
+    },
+    {
+      "palette": "retro-source-union-1024",
+      "mean_delta_e_2000": 2.722423580990179,
+      "p95_delta_e_2000": 4.316497369097232,
+      "maximum_delta_e_2000": 7.117123336635653,
+      "category_balanced_mean_delta_e_2000": 2.710218160765484
+    },
+    {
+      "palette": "retro-source-union-4096",
+      "mean_delta_e_2000": 1.8608987767802732,
+      "p95_delta_e_2000": 3.536041481033349,
+      "maximum_delta_e_2000": 6.908315481643071,
+      "category_balanced_mean_delta_e_2000": 1.8418072177194538
+    }
+  ]
+}
