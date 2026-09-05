@@ -1,32 +1,334 @@
 {
   "count": 1024,
   "unique_colors": 1024,
-  "minimum_delta_e_2000": 0.1582478343048715,
+  "minimum_delta_e_2000": 0.19369895056864037,
   "closest_pair_indices": [
-    229,
-    35
+    269,
+    264
   ],
-  "pairs_below_requested_global_distance": 305,
+  "pairs_below_requested_global_distance": 132,
   "configured_constraint_violations": 0,
   "minimum_by_pair_class": {
-    "gray / gray": 0.1582478343048715,
-    "gray / vivid": 23.08429745824974,
-    "vivid / vivid": 0.2504885672658008,
-    "gray / quadrant": 2.7240608081811675,
-    "quadrant / vivid": 2.567403160035545,
-    "quadrant / quadrant": 2.507559296792552
+    "gray / gray": 2.504544982763034,
+    "gray / vivid": 17.9483681168102,
+    "vivid / vivid": 0.19369895056864037,
+    "gray / quadrant": 2.6491866928838714,
+    "quadrant / vivid": 2.556500302178991,
+    "quadrant / quadrant": 2.5027844223320037
   },
+  "near_gray_count": 64,
+  "black_present": true,
+  "white_present": true,
+  "generator_version": 2,
+  "sector_plans": [
+    {
+      "target": 1.636482070863528,
+      "maximum_eight_point_distance": 1.8364820708635279,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 0,
+      "hue_start": 0,
+      "hue_end": 24,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 1,
+      "hue_start": 24,
+      "hue_end": 48,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10,
+        2,
+        11,
+        12
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 2,
+      "hue_start": 48,
+      "hue_end": 72,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10
+      ]
+    },
+    {
+      "target": 1.358595111718451,
+      "maximum_eight_point_distance": 1.5585951117184509,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 3,
+      "hue_start": 72,
+      "hue_end": 96,
+      "conditional_on_preceding_sectors": []
+    },
+    {
+      "target": 0.18082383230594104,
+      "maximum_eight_point_distance": 0.3616476646118821,
+      "maximum_computed": true,
+      "variation_margin": 0.18082383230594104,
+      "sector": 4,
+      "hue_start": 96,
+      "hue_end": 120,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0
+      ]
+    },
+    {
+      "target": 0.5292091172961413,
+      "maximum_eight_point_distance": 0.7292091172961412,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 5,
+      "hue_start": 120,
+      "hue_end": 144,
+      "conditional_on_preceding_sectors": [
+        3,
+        6
+      ]
+    },
+    {
+      "target": 2.019968111798372,
+      "maximum_eight_point_distance": 2.219968111798372,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 6,
+      "hue_start": 144,
+      "hue_end": 168,
+      "conditional_on_preceding_sectors": [
+        3
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 7,
+      "hue_start": 168,
+      "hue_end": 192,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10,
+        2,
+        11,
+        12,
+        1
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 8,
+      "hue_start": 192,
+      "hue_end": 216,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 9,
+      "hue_start": 216,
+      "hue_end": 240,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10,
+        2,
+        11,
+        12,
+        1,
+        7
+      ]
+    },
+    {
+      "target": 0.5980143539858105,
+      "maximum_eight_point_distance": 0.7980143539858106,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 10,
+      "hue_start": 240,
+      "hue_end": 264,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14
+      ]
+    },
+    {
+      "target": 2.0129595831077176,
+      "maximum_eight_point_distance": 2.212959583107718,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 11,
+      "hue_start": 264,
+      "hue_end": 288,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10,
+        2
+      ]
+    },
+    {
+      "target": 1.5843382626683307,
+      "maximum_eight_point_distance": 1.7843382626683306,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 12,
+      "hue_start": 288,
+      "hue_end": 312,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13,
+        14,
+        10,
+        2,
+        11
+      ]
+    },
+    {
+      "target": 2.5,
+      "capacity_at_least": 2.5,
+      "maximum_computed": false,
+      "sector": 13,
+      "hue_start": 312,
+      "hue_end": 336,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4
+      ]
+    },
+    {
+      "target": 2.0524040849358984,
+      "maximum_eight_point_distance": 2.2524040849358986,
+      "maximum_computed": true,
+      "variation_margin": 0.2,
+      "sector": 14,
+      "hue_start": 336,
+      "hue_end": 360,
+      "conditional_on_preceding_sectors": [
+        3,
+        6,
+        5,
+        8,
+        0,
+        4,
+        13
+      ]
+    }
+  ],
   "search": {
     "restart": 0,
-    "candidates_tested_in_successful_restart": 1415
+    "candidates_tested_in_successful_restart": 1574
   },
   "seed": 42,
   "thresholds": {
     "global_distance": 2.5,
-    "gray_gray": 0.0,
-    "vivid_vivid": 0.25
+    "gray_gray": 2.5,
+    "vivid_sector_targets": [
+      1.636482070863528,
+      2.5,
+      2.5,
+      1.358595111718451,
+      0.18082383230594104,
+      0.5292091172961413,
+      2.019968111798372,
+      2.5,
+      2.5,
+      2.5,
+      0.5980143539858105,
+      2.0129595831077176,
+      1.5843382626683307,
+      2.5,
+      2.0524040849358984
+    ]
   },
   "metric": "CIEDE2000, CIELAB D65/2 degrees, kL=kC=kH=1",
   "layout": "32x32 grid, 4x4 blocks of 8x8; first block gray, remaining blocks hue sectors 0\u201324 through 336\u2013360 degrees",
-  "notes": "Exact duplicates are always rejected. Exceptions affect only the named pair class; all other pairs retain the global threshold."
+  "notes": "Near-gray means max(R,G,B)-min(R,G,B)<=4; exactly 64 including black and white occupy the first block and none enter hue blocks. Vivid pairs use the smaller of their two sector targets, including across sector boundaries; all other pairs use the global target except an explicitly configured gray-gray target. Sector maxima are exact when computed, conditional on already selected vivid colors. Processing order and witnesses are seeded random; this is not a globally optimal joint allocation. Other stages use bounded restarts.",
+  "vivid_sector_minima": {
+    "0": 1.6542946173397048,
+    "1": 2.5862857526587666,
+    "2": 2.510439461473658,
+    "3": 1.362279327544117,
+    "4": 0.19369895056864037,
+    "5": 0.5762053315530932,
+    "6": 2.134217686753548,
+    "7": 2.6599857780652707,
+    "8": 2.5148686357019523,
+    "9": 2.507160729362631,
+    "10": 0.5985363903502453,
+    "11": 2.03620072950283,
+    "12": 1.6388365063785824,
+    "13": 2.5095413594711595,
+    "14": 2.1770780563418417
+  }
 }
