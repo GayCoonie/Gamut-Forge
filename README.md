@@ -7,7 +7,7 @@ A static, client-side image quantizer for arbitrary fixed palettes—including p
 - Two selectable exact matching engines: fast OKLab k-d tree and CIEDE2000
 - Optional serpentine Floyd–Steinberg dithering in linear-light RGB
 - Imports GIMP `.gpl`, hex text, JSON containing hex colors, and flat-color palette images
-- Includes twenty-eight 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
+- Includes twenty-nine 1024-color palettes and four 4096-color palettes, including game-derived Static Bloom material ramps, a complete RGB343 control, three HSV three-tier experiments, and the retro source unions
 - Preserves transparency and exports an RGBA PNG
 - Reports used colors, mean and maximum error in the chosen metric, processing time, and palette conformance
 - Cancelable processing, downloadable TXT/GPL/KPL/JSON palettes, and an interactive lightness/chroma atlas
@@ -16,7 +16,7 @@ Everything runs in the browser. No image or palette is uploaded.
 
 ## Palette library
 
-The home page links to [the complete palette library](dist/palette-library.html). All 32 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
+The home page links to [the complete palette library](dist/palette-library.html). All 33 built-ins have descriptions, a shared CIELAB atlas, direct quantizer links and TXT/GPL/KPL/JSON/PNG/ZIP downloads. The three HSV variants also link to their construction diagrams. Existing audited exports are preserved; missing legacy exports are copied from the exact shipped color arrays, without resampling or reordering. Rebuild the catalog with `python scripts/build-palette-library.py` (Node and Pillow required).
 
 ## GitHub Pages
 
@@ -167,3 +167,9 @@ Build with `python scripts/build-okhsv-sketch.py` then `python scripts/build-pal
 The 1,344 positions collapse to 1,133 exact RGB colors. Black and white are fixed first. Deterministic CIEDE2000 farthest-point selection retains 837 grid colors at a hard ΔE00 ≥ 2, then fills with 187 OKHSV-only colors including black. The 186 post-grid fillers each enter at least 4.351789 ΔE00 from the already selected palette. Final all-pairs minimum: 2.00139556, with zero pairs below 2. No threshold relaxation, centroids, or RGB edits. Source priority applies only among colors that satisfy separation. No global optimality claim.
 
 Rebuild: `python scripts/build-oklab-rings.py` then `python scripts/build-palette-library.py`. The wheel atlas at `dist/oklab-rings.html` shows selected/omitted candidates, optional out-of-gamut markers, and requested versus actual coordinates. Downloads include the final palette and the full 1,133-color grid union.
+
+## Regular OKHWB triangles
+
+`okhwbTriangle1024` samples H = k*7.5°, W = i/6, B = j/6 for nonnegative integers i+j<6. Each of 48 hues contributes 21 colors. A single shared boundary ramp of 16 grays (W=i/15, B=1-i/15) completes 1,024 unique colors. The user explicitly prioritizes the regular geometry over equal perceptual separation for this profile: no pruning, fitting, fillers, or individual RGB adjustments. Ordinary nearest-byte rounding gives minimum separation 0.997015 ΔE00, reported descriptively.
+
+Conversion uses Ottosson’s vendored OKHSV reference through V=1-B and S=1-W/(1-B), with black handled explicitly. Rebuild using `python scripts/build-okhwb-triangle.py` and `python scripts/build-palette-library.py`. The responsive single-page atlas at `dist/okhwb-triangle.html` and downloadable `okhwb-triangle-1024-atlas.svg` show all 48 coordinate triangles. Exact clipped Voronoi cells tile each drawn triangle; their areas are diagram regions, not perceptual distance or gamut volume. Shared grays repeat only in diagrams. The SVG is included in the all-formats ZIP.

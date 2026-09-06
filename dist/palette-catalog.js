@@ -1,5 +1,14 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "okhwbTriangle1024",
+    "stem": "okhwb-triangle-1024",
+    "group": "OKHWB experiments",
+    "name": "OKHWB \u00b7 regular triangles \u00b7 1024",
+    "count": 1024,
+    "description": "48 hue slices at 7.5\u00b0 intervals, with 21 regularly spaced white/black pairs per hue and 16 shared grays. All 1,024 colors are distinct after ordinary sRGB rounding. The triangular lattice is preserved exactly, with no perceptual pruning or fillers. Includes a vector triangle atlas.",
+    "diagram": "okhwb-triangle.html"
+  },
+  {
     "key": "oklabRings1024",
     "stem": "oklab-rings-1024",
     "group": "Oklab experiments",

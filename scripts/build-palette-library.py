@@ -6,11 +6,12 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]; DIST=ROOT/'dist'; OUT=DIST/'palettes'
-scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js','random-strata.js','random-strata-v2-trials.js','okhsv-sketch.js','oklab-rings.js']
+scripts=['palettes.js','retro-source-union-4096.js','retro-source-union-1024.js','critter-palettes.js','hsv-three-tier-64.js','hsv-three-tier-10.js','hsv-three-tier-sketch.js','random-strata.js','random-strata-v2-trials.js','okhsv-sketch.js','oklab-rings.js','okhwb-triangle.js']
 js="const fs=require('fs'),vm=require('vm'),c={window:{}};vm.createContext(c);for(const f of "+json.dumps(scripts)+")vm.runInContext(fs.readFileSync('dist/'+f,'utf8'),c);process.stdout.write(JSON.stringify(c.window.GAMUT_PALETTES));"
 palettes=json.loads(subprocess.check_output(['node','-e',js],cwd=ROOT))
 # Descriptions document the shipped profiles, not a regeneration of their colors.
 rows=[
+('okhwbTriangle1024','okhwb-triangle-1024','OKHWB experiments','48 hue slices at 7.5° intervals, with 21 regularly spaced white/black pairs per hue and 16 shared grays. All 1,024 colors are distinct after ordinary sRGB rounding. The triangular lattice is preserved exactly, with no perceptual pruning or fillers. Includes a vector triangle atlas.','okhwb-triangle.html'),
 ('oklabRings1024','oklab-rings-1024','Oklab experiments','Seven Oklab lightness slices, 24 hue angles and eight chroma rings produce 1,133 unique clipped sRGB colors. A hard CIEDE2000 separation filter retains 837; 187 unchanged colors from OKHSV Sketch, including black, complete the palette. All 1,024 colors are mutually at least 2 ΔE00 apart. Requested Oklab coordinates change where RGB channels are clipped.','oklab-rings.html'),
 ('okhsvSketch1024', 'okhsv-sketch-1024', 'OKHSV experiments', '48 Oklab hue angles at 7.5° intervals, each using the same 20-point OKHSV pattern bowed toward high saturation and value. Sixteen evenly spaced OKHSV grays and four tinted samples at each 30° hue mark complete 1,024 distinct colors. Uses Ottosson’s reference conversion, with no individual RGB nudges or perceptual pruning.', 'okhsv-sketch.html'),
 ('randomStrataTry5', 'random-strata-try5', 'Random Strata v2', 'Try 5, supplied from the adaptive generator. All 1,024 RGB entries and their grid positions are preserved. Includes 64 near-grays with black and white, 120 vivid entries and 840 quadrant samples. Per-hue vivid spacing varies; the download JSON records measured pair-class distances.', None),
