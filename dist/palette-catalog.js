@@ -1,5 +1,14 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "okhwbWalks1024",
+    "stem": "okhwb-walks-1024",
+    "group": "OKHWB experiments",
+    "name": "OKHWB v3 \u00b7 chiral hue walks \u00b7 1024",
+    "count": 1024,
+    "description": "Version 3 assigns one continuous 21-step hue walk to each regular W/B triangle. The three sketch traversals and their W/B mirrors cycle every six source hues. Only the 48 vivid tips keep their source hue; 960 other samples advance toward the next hue, and the original 16 grays remain. Includes numbered paths and a v1/v2/v3 comparison.",
+    "diagram": "okhwb-walks.html"
+  },
+  {
     "key": "okhwbStaggered1024",
     "stem": "okhwb-staggered-1024",
     "group": "OKHWB experiments",
