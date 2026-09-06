@@ -9,7 +9,7 @@
  const atlas=document.querySelector('#atlas');atlas.append(document.importNode(xml.documentElement,true));
  function inspect(index){
   const p=data.samples[index],family=p.family===null?'Shared gray':data.families[p.family].label;
-  document.querySelector('#inspect').textContent=`${p.hex} · ${family} · ${p.source_name?'Warren Mars anchor: '+p.source_name:p.kind.replaceAll('-',' ')}${p.hsv?' · HSV '+p.hsv.map((v,i)=>(i?v*100:v).toFixed(2)+(i?'%':'°')).join(' / '):''}`;
+  document.querySelector('#inspect').textContent=`${p.hex} · ${family} · ${p.source_name?'Warren Mars anchor: '+p.source_name:p.kind.replaceAll('-',' ')}${p.hsluv?' · HSLuv '+p.hsluv.map((v,i)=>v.toFixed(2)+(i?'%':'°')).join(' / '):''}`;
  }
  atlas.addEventListener('pointerover',e=>{const p=e.target.closest('[data-index]');if(p)inspect(Number(p.dataset.index));});
  atlas.addEventListener('click',e=>{const p=e.target.closest('[data-index]');if(p)inspect(Number(p.dataset.index));});

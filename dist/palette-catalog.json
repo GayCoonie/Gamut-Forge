@@ -3,9 +3,9 @@
     "key": "martianExpansion1024",
     "stem": "martian-expansion-1024",
     "group": "Artist-derived wheels",
-    "name": "Martian expansion \u00b7 artist-corrected ramps \u00b7 1024",
+    "name": "Martian expansion v2 \u00b7 HSLuv ramps \u00b7 1024",
     "count": 1024,
-    "description": "An independent expansion of Warren Mars\u2019s final Martian wheel. All 120 published RGB anchors remain intact; ring-specific hue interpolation expands 24 source families to 48. Thirteen shade/tint samples and eight equal-luminance muted companions per family, plus 16 grays, yield 1,024 colors. The added rules are Gamut Forge\u2019s, with full source attribution.",
+    "description": "An independent expansion of Warren Mars\u2019s final Martian wheel. All 120 published RGB anchors remain intact; HSLuv interpolation expands 24 source families to 48. Version 2 relocates an outer tint into the inner shades and uses perceptual lightness throughout. Thirteen shade/tint samples and eight equal-luminance muted companions per family, plus 16 grays, yield 1,024 colors. The added rules are Gamut Forge\u2019s, with full source attribution.",
     "diagram": "martian-expansion.html"
   },
   {
