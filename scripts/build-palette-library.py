@@ -76,6 +76,7 @@ for key,stem,group,description,diagram in rows:
  for ext in ('txt','gpl','kpl','json','png'):assert (OUT/f'{stem}.{ext}').exists()
  assert [c if isinstance(c,str) else c['hex'] for c in json.loads((OUT/f'{stem}.json').read_text())['colors']]==colors
 (DIST/'palette-catalog.js').write_text('window.GAMUT_CATALOG='+json.dumps(catalog,indent=2)+';\n')
+(DIST/'palette-catalog.json').write_text(json.dumps(catalog,indent=2)+'\n')
 # The catalog is static HTML: descriptions and downloads work without JavaScript.
 esc=html.escape
 parts=['''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette library · Gamut Forge</title><meta name="description" content="Explore all __COUNT__ Gamut Forge palettes: information, color-space atlases, sampling diagrams and Krita, GIMP, hex, JSON and PNG downloads."><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./palette-library.css"></head><body>
