@@ -1,0 +1,1810 @@
+{
+  "author": "Warren Mars",
+  "source": "https://warrenmars.com/visual_art/theory/colour_wheel/evolution/evolution.htm",
+  "source_section": "Step 7 \u2014 Reinstate the full brightness and final adjustments",
+  "retrieved": "2026-09-06",
+  "source_html_sha256": "1eb69840abf779dc2effe0283bb752007c035c29e77670e77b26eab56d560c53",
+  "value_policy": "Published RGB triples are authoritative for this expansion; rounded or inconsistent printed HSV values are retained as source metadata, not recomputed over the RGB.",
+  "colors": [
+    {
+      "name": "Chicken Breast",
+      "published_hsv": [
+        10.0,
+        30.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        191,
+        178
+      ],
+      "hex": "#ffbfb2",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pale Raspberry",
+      "published_hsv": [
+        10.0,
+        52.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        144,
+        122
+      ],
+      "hex": "#ff907a",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Red",
+      "published_hsv": [
+        0.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        0,
+        0
+      ],
+      "hex": "#ff0000",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Red",
+      "published_hsv": [
+        0.0,
+        100.0,
+        63.0
+      ],
+      "rgb": [
+        161,
+        0,
+        0
+      ],
+      "hex": "#a10000",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Maroon",
+      "published_hsv": [
+        0.0,
+        100.0,
+        40.0
+      ],
+      "rgb": [
+        102,
+        0,
+        0
+      ],
+      "hex": "#660000",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Parmesan Cheese",
+      "published_hsv": [
+        30.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        210,
+        166
+      ],
+      "hex": "#ffd2a6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Peanut Butter",
+      "published_hsv": [
+        30.0,
+        60.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        178,
+        102
+      ],
+      "hex": "#ffb266",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Orange",
+      "published_hsv": [
+        30.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        128,
+        0
+      ],
+      "hex": "#ff8000",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Brown",
+      "published_hsv": [
+        30.0,
+        100.0,
+        65.0
+      ],
+      "rgb": [
+        166,
+        83,
+        0
+      ],
+      "hex": "#a65300",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dark Brown",
+      "published_hsv": [
+        30.0,
+        100.0,
+        37.0
+      ],
+      "rgb": [
+        95,
+        47,
+        0
+      ],
+      "hex": "#5f2f00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Buff",
+      "published_hsv": [
+        39.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        224,
+        166
+      ],
+      "hex": "#ffe0a6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Turmeric",
+      "published_hsv": [
+        44.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        187,
+        0
+      ],
+      "hex": "#ffbb00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Yellow Ochre",
+      "published_hsv": [
+        44.0,
+        100.0,
+        85.0
+      ],
+      "rgb": [
+        217,
+        159,
+        0
+      ],
+      "hex": "#d99f00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Tan",
+      "published_hsv": [
+        44.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        153,
+        112,
+        0
+      ],
+      "hex": "#997000",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Milk Chocolate",
+      "published_hsv": [
+        44.0,
+        100.0,
+        32.0
+      ],
+      "rgb": [
+        82,
+        60,
+        0
+      ],
+      "hex": "#523c00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Wheat Ear",
+      "published_hsv": [
+        45.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        233,
+        166
+      ],
+      "hex": "#ffe9a6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Yellow Cheese",
+      "published_hsv": [
+        50.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        212,
+        0
+      ],
+      "hex": "#ffd400",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Olive Oil",
+      "published_hsv": [
+        50.0,
+        100.0,
+        80.0
+      ],
+      "rgb": [
+        204,
+        170,
+        0
+      ],
+      "hex": "#ccaa00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Cane Toad",
+      "published_hsv": [
+        50.0,
+        100.0,
+        55.0
+      ],
+      "rgb": [
+        140,
+        116,
+        0
+      ],
+      "hex": "#8c7400",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Cow Dung",
+      "published_hsv": [
+        50.0,
+        100.0,
+        28.0
+      ],
+      "rgb": [
+        71,
+        60,
+        0
+      ],
+      "hex": "#473c00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Butter",
+      "published_hsv": [
+        60.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        255,
+        166
+      ],
+      "hex": "#ffffa6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Yellow",
+      "published_hsv": [
+        60.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        255,
+        0
+      ],
+      "hex": "#ffff00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Wasabi",
+      "published_hsv": [
+        60.0,
+        100.0,
+        77.0
+      ],
+      "rgb": [
+        196,
+        196,
+        0
+      ],
+      "hex": "#c4c400",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Olive",
+      "published_hsv": [
+        60.0,
+        100.0,
+        54.0
+      ],
+      "rgb": [
+        138,
+        138,
+        0
+      ],
+      "hex": "#8a8a00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Olive Drab",
+      "published_hsv": [
+        60.0,
+        100.0,
+        27.0
+      ],
+      "rgb": [
+        69,
+        69,
+        0
+      ],
+      "hex": "#454500",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Champagne",
+      "published_hsv": [
+        73.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        236,
+        255,
+        166
+      ],
+      "hex": "#ecffa6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Golden Delicious",
+      "published_hsv": [
+        65.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        221,
+        255,
+        0
+      ],
+      "hex": "#ddff00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Green Grape",
+      "published_hsv": [
+        65.0,
+        100.0,
+        78.0
+      ],
+      "rgb": [
+        182,
+        199,
+        0
+      ],
+      "hex": "#b6c700",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Light Kelp",
+      "published_hsv": [
+        65.0,
+        100.0,
+        52.0
+      ],
+      "rgb": [
+        122,
+        133,
+        0
+      ],
+      "hex": "#7a8500",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dark Kelp",
+      "published_hsv": [
+        65.0,
+        100.0,
+        26.0
+      ],
+      "rgb": [
+        60,
+        66,
+        0
+      ],
+      "hex": "#3c4200",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Avocado Flesh",
+      "published_hsv": [
+        82.0,
+        38.0,
+        100.0
+      ],
+      "rgb": [
+        219,
+        255,
+        158
+      ],
+      "hex": "#dbff9e",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Chartreuse",
+      "published_hsv": [
+        76.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        187,
+        255,
+        0
+      ],
+      "hex": "#bbff00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Celery",
+      "published_hsv": [
+        76.0,
+        100.0,
+        80.0
+      ],
+      "rgb": [
+        150,
+        204,
+        0
+      ],
+      "hex": "#96cc00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Sage",
+      "published_hsv": [
+        76.0,
+        100.0,
+        57.0
+      ],
+      "rgb": [
+        106,
+        145,
+        0
+      ],
+      "hex": "#6a9100",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Oak Leaf",
+      "published_hsv": [
+        76.0,
+        100.0,
+        27.0
+      ],
+      "rgb": [
+        51,
+        69,
+        0
+      ],
+      "hex": "#334500",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Green Cabbage",
+      "published_hsv": [
+        90.0,
+        38.0,
+        100.0
+      ],
+      "rgb": [
+        207,
+        255,
+        158
+      ],
+      "hex": "#cfff9e",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Green Pea",
+      "published_hsv": [
+        83.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        157,
+        255,
+        0
+      ],
+      "hex": "#9dff00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Basil",
+      "published_hsv": [
+        83.0,
+        100.0,
+        77.0
+      ],
+      "rgb": [
+        121,
+        196,
+        0
+      ],
+      "hex": "#79c400",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Spinach",
+      "published_hsv": [
+        83.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        94,
+        153,
+        0
+      ],
+      "hex": "#5e9900",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Rhubarb Leaf",
+      "published_hsv": [
+        83.0,
+        100.0,
+        29.0
+      ],
+      "rgb": [
+        46,
+        74,
+        0
+      ],
+      "hex": "#2e4a00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Green Hellebore",
+      "published_hsv": [
+        110.0,
+        36.0,
+        100.0
+      ],
+      "rgb": [
+        178,
+        255,
+        163
+      ],
+      "hex": "#b2ffa3",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Granny Smith",
+      "published_hsv": [
+        120.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        255,
+        0
+      ],
+      "hex": "#00ff00",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Green",
+      "published_hsv": [
+        120.0,
+        100.0,
+        75.0
+      ],
+      "rgb": [
+        0,
+        191,
+        0
+      ],
+      "hex": "#00bf00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Green Grass",
+      "published_hsv": [
+        120.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        0,
+        153,
+        0
+      ],
+      "hex": "#009900",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Zucchini",
+      "published_hsv": [
+        120.0,
+        100.0,
+        31.0
+      ],
+      "rgb": [
+        0,
+        79,
+        0
+      ],
+      "hex": "#004f00",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Horned Spurge",
+      "published_hsv": [
+        125.0,
+        34.0,
+        100.0
+      ],
+      "rgb": [
+        168,
+        255,
+        175
+      ],
+      "hex": "#a8ffaf",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Iceberg Lettuce",
+      "published_hsv": [
+        147.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        255,
+        115
+      ],
+      "hex": "#00ff73",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Clover",
+      "published_hsv": [
+        147.0,
+        100.0,
+        71.0
+      ],
+      "rgb": [
+        0,
+        181,
+        81
+      ],
+      "hex": "#00b551",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Shaded Fern",
+      "published_hsv": [
+        147.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        0,
+        153,
+        69
+      ],
+      "hex": "#009945",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Cucumber",
+      "published_hsv": [
+        147.0,
+        100.0,
+        31.0
+      ],
+      "rgb": [
+        0,
+        79,
+        36
+      ],
+      "hex": "#004f24",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Celadon",
+      "published_hsv": [
+        139.0,
+        33.0,
+        100.0
+      ],
+      "rgb": [
+        171,
+        255,
+        198
+      ],
+      "hex": "#abffc6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Chrysolite",
+      "published_hsv": [
+        158.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        255,
+        161
+      ],
+      "hex": "#00ffa1",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Light Emerald",
+      "published_hsv": [
+        160.0,
+        100.0,
+        70.0
+      ],
+      "rgb": [
+        0,
+        178,
+        119
+      ],
+      "hex": "#00b277",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Emerald",
+      "published_hsv": [
+        160.0,
+        100.0,
+        58.0
+      ],
+      "rgb": [
+        0,
+        148,
+        99
+      ],
+      "hex": "#009463",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Brunswick Green",
+      "published_hsv": [
+        160.0,
+        100.0,
+        30.0
+      ],
+      "rgb": [
+        0,
+        76,
+        51
+      ],
+      "hex": "#004c33",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Aquamarine",
+      "published_hsv": [
+        152.0,
+        31.0,
+        100.0
+      ],
+      "rgb": [
+        176,
+        255,
+        218
+      ],
+      "hex": "#b0ffda",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Verdigris",
+      "published_hsv": [
+        166.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        255,
+        196
+      ],
+      "hex": "#00ffc4",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Shallow Sea Green",
+      "published_hsv": [
+        172.0,
+        100.0,
+        72.0
+      ],
+      "rgb": [
+        0,
+        184,
+        159
+      ],
+      "hex": "#00b89f",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Broccoli",
+      "published_hsv": [
+        172.0,
+        100.0,
+        57.0
+      ],
+      "rgb": [
+        0,
+        145,
+        126
+      ],
+      "hex": "#00917e",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Malachite",
+      "published_hsv": [
+        172.0,
+        100.0,
+        30.0
+      ],
+      "rgb": [
+        0,
+        76,
+        66
+      ],
+      "hex": "#004c42",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Blue Spruce Light",
+      "published_hsv": [
+        180.0,
+        31.0,
+        100.0
+      ],
+      "rgb": [
+        176,
+        255,
+        255
+      ],
+      "hex": "#b0ffff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Cyan",
+      "published_hsv": [
+        180.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        255,
+        255
+      ],
+      "hex": "#00ffff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Cyan",
+      "published_hsv": [
+        178.0,
+        100.0,
+        70.0
+      ],
+      "rgb": [
+        0,
+        178,
+        178
+      ],
+      "hex": "#00b2b2",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Blue Spruce Dark",
+      "published_hsv": [
+        180.0,
+        100.0,
+        55.0
+      ],
+      "rgb": [
+        0,
+        140,
+        140
+      ],
+      "hex": "#008c8c",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pthalo Green",
+      "published_hsv": [
+        180.0,
+        100.0,
+        29.0
+      ],
+      "rgb": [
+        0,
+        74,
+        74
+      ],
+      "hex": "#004a4a",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Uranus",
+      "published_hsv": [
+        200.0,
+        36.0,
+        100.0
+      ],
+      "rgb": [
+        163,
+        224,
+        255
+      ],
+      "hex": "#a3e0ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Turquoise",
+      "published_hsv": [
+        194.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        195,
+        255
+      ],
+      "hex": "#00c3ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Blue Topaz",
+      "published_hsv": [
+        190.0,
+        100.0,
+        72.0
+      ],
+      "rgb": [
+        0,
+        153,
+        184
+      ],
+      "hex": "#0099b8",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Sea Green",
+      "published_hsv": [
+        190.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        0,
+        127,
+        153
+      ],
+      "hex": "#007f99",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dark Sea Green",
+      "published_hsv": [
+        190.0,
+        100.0,
+        31.0
+      ],
+      "rgb": [
+        0,
+        66,
+        79
+      ],
+      "hex": "#00424f",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Powder Blue",
+      "published_hsv": [
+        210.0,
+        41.0,
+        100.0
+      ],
+      "rgb": [
+        150,
+        203,
+        255
+      ],
+      "hex": "#96cbff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Azure",
+      "published_hsv": [
+        200.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        170,
+        255
+      ],
+      "hex": "#00aaff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Azure",
+      "published_hsv": [
+        200.0,
+        100.0,
+        70.0
+      ],
+      "rgb": [
+        0,
+        119,
+        178
+      ],
+      "hex": "#0077b2",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Cobalt Blue",
+      "published_hsv": [
+        200.0,
+        100.0,
+        53.0
+      ],
+      "rgb": [
+        0,
+        90,
+        135
+      ],
+      "hex": "#005a87",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Prussian Blue",
+      "published_hsv": [
+        200.0,
+        100.0,
+        34.0
+      ],
+      "rgb": [
+        0,
+        57,
+        87
+      ],
+      "hex": "#003957",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pale Sky Blue",
+      "published_hsv": [
+        220.0,
+        35.0,
+        100.0
+      ],
+      "rgb": [
+        166,
+        195,
+        255
+      ],
+      "hex": "#a6c3ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Sky Blue",
+      "published_hsv": [
+        220.0,
+        55.0,
+        100.0
+      ],
+      "rgb": [
+        115,
+        162,
+        255
+      ],
+      "hex": "#73a2ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Delphinium Blue",
+      "published_hsv": [
+        214.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        110,
+        255
+      ],
+      "hex": "#006eff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Royal Blue",
+      "published_hsv": [
+        214.0,
+        100.0,
+        60.0
+      ],
+      "rgb": [
+        0,
+        66,
+        153
+      ],
+      "hex": "#004299",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dark Royal Blue",
+      "published_hsv": [
+        214.0,
+        100.0,
+        40.0
+      ],
+      "rgb": [
+        0,
+        44,
+        102
+      ],
+      "hex": "#002c66",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Forget-Me-Not",
+      "published_hsv": [
+        235.0,
+        30.0,
+        100.0
+      ],
+      "rgb": [
+        179,
+        185,
+        255
+      ],
+      "hex": "#b3b9ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Corn Flower",
+      "published_hsv": [
+        235.0,
+        48.0,
+        100.0
+      ],
+      "rgb": [
+        133,
+        143,
+        255
+      ],
+      "hex": "#858fff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Light Blue",
+      "published_hsv": [
+        240.0,
+        65.0,
+        100.0
+      ],
+      "rgb": [
+        89,
+        89,
+        255
+      ],
+      "hex": "#5959ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Blue",
+      "published_hsv": [
+        240.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        0,
+        0,
+        255
+      ],
+      "hex": "#0000ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Blue",
+      "published_hsv": [
+        240.0,
+        100.0,
+        48.0
+      ],
+      "rgb": [
+        0,
+        0,
+        122
+      ],
+      "hex": "#00007a",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Rose De France",
+      "published_hsv": [
+        255.0,
+        30.0,
+        100.0
+      ],
+      "rgb": [
+        197,
+        178,
+        255
+      ],
+      "hex": "#c5b2ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Lavender",
+      "published_hsv": [
+        255.0,
+        48.0,
+        100.0
+      ],
+      "rgb": [
+        165,
+        135,
+        255
+      ],
+      "hex": "#a587ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dark Lavender",
+      "published_hsv": [
+        256.0,
+        68.0,
+        100.0
+      ],
+      "rgb": [
+        128,
+        82,
+        255
+      ],
+      "hex": "#8052ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Han Purple",
+      "published_hsv": [
+        264.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        102,
+        0,
+        255
+      ],
+      "hex": "#6600ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dioxazine",
+      "published_hsv": [
+        264.0,
+        100.0,
+        45.0
+      ],
+      "rgb": [
+        46,
+        0,
+        115
+      ],
+      "hex": "#2e0073",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Mauve",
+      "published_hsv": [
+        268.0,
+        36.0,
+        100.0
+      ],
+      "rgb": [
+        206,
+        163,
+        255
+      ],
+      "hex": "#cea3ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Kunzite",
+      "published_hsv": [
+        268.0,
+        58.0,
+        100.0
+      ],
+      "rgb": [
+        176,
+        107,
+        255
+      ],
+      "hex": "#b06bff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Violet",
+      "published_hsv": [
+        273.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        140,
+        0,
+        255
+      ],
+      "hex": "#8c00ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Violet",
+      "published_hsv": [
+        280.0,
+        100.0,
+        61.0
+      ],
+      "rgb": [
+        103,
+        0,
+        156
+      ],
+      "hex": "#67009c",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Spectral Violet",
+      "published_hsv": [
+        280.0,
+        100.0,
+        43.0
+      ],
+      "rgb": [
+        72,
+        0,
+        110
+      ],
+      "hex": "#48006e",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Lilac",
+      "published_hsv": [
+        284.0,
+        36.0,
+        100.0
+      ],
+      "rgb": [
+        230,
+        163,
+        255
+      ],
+      "hex": "#e6a3ff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Rose Of Sharon",
+      "published_hsv": [
+        286.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        196,
+        0,
+        255
+      ],
+      "hex": "#c400ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Purple Daisy",
+      "published_hsv": [
+        290.0,
+        100.0,
+        73.0
+      ],
+      "rgb": [
+        155,
+        0,
+        186
+      ],
+      "hex": "#9b00ba",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Aniline",
+      "published_hsv": [
+        290.0,
+        100.0,
+        59.0
+      ],
+      "rgb": [
+        124,
+        0,
+        150
+      ],
+      "hex": "#7c0096",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Amethyst",
+      "published_hsv": [
+        290.0,
+        100.0,
+        40.0
+      ],
+      "rgb": [
+        86,
+        0,
+        102
+      ],
+      "hex": "#560066",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Light Magenta",
+      "published_hsv": [
+        300.0,
+        27.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        186,
+        255
+      ],
+      "hex": "#ffbaff",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Magenta",
+      "published_hsv": [
+        300.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        0,
+        255
+      ],
+      "hex": "#ff00ff",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Magenta",
+      "published_hsv": [
+        300.0,
+        100.0,
+        67.0
+      ],
+      "rgb": [
+        171,
+        0,
+        171
+      ],
+      "hex": "#ab00ab",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Light Purple",
+      "published_hsv": [
+        300.0,
+        100.0,
+        54.0
+      ],
+      "rgb": [
+        138,
+        0,
+        138
+      ],
+      "hex": "#8a008a",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Purple",
+      "published_hsv": [
+        300.0,
+        100.0,
+        33.0
+      ],
+      "rgb": [
+        84,
+        0,
+        84
+      ],
+      "hex": "#540054",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Light Pink",
+      "published_hsv": [
+        321.0,
+        32.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        173,
+        226
+      ],
+      "hex": "#ffade2",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pink",
+      "published_hsv": [
+        316.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        0,
+        187
+      ],
+      "hex": "#ff00bb",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Dark Pink",
+      "published_hsv": [
+        310.0,
+        100.0,
+        71.0
+      ],
+      "rgb": [
+        181,
+        0,
+        152
+      ],
+      "hex": "#b50098",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Purple Bougainvillea",
+      "published_hsv": [
+        310.0,
+        100.0,
+        55.0
+      ],
+      "rgb": [
+        140,
+        0,
+        117
+      ],
+      "hex": "#8c0075",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Purple Bean",
+      "published_hsv": [
+        310.0,
+        100.0,
+        35.0
+      ],
+      "rgb": [
+        89,
+        0,
+        75
+      ],
+      "hex": "#59004b",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pink Cherry Blossom",
+      "published_hsv": [
+        338.0,
+        28.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        191,
+        214
+      ],
+      "hex": "#ffbfd6",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Pink Hydrangea",
+      "published_hsv": [
+        334.0,
+        45.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        140,
+        190
+      ],
+      "hex": "#ff8cbe",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Beauty Berry",
+      "published_hsv": [
+        324.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        0,
+        153
+      ],
+      "hex": "#ff0099",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Prickly Pear",
+      "published_hsv": [
+        320.0,
+        100.0,
+        62.0
+      ],
+      "rgb": [
+        158,
+        0,
+        106
+      ],
+      "hex": "#9e006a",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Elderberry",
+      "published_hsv": [
+        320.0,
+        100.0,
+        40.0
+      ],
+      "rgb": [
+        102,
+        0,
+        68
+      ],
+      "hex": "#660044",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Baby Pink",
+      "published_hsv": [
+        352.0,
+        25.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        191,
+        200
+      ],
+      "hex": "#ffbfc8",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Rhodochrosite",
+      "published_hsv": [
+        348.0,
+        44.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        143,
+        165
+      ],
+      "hex": "#ff8fa5",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Dragon Fruit",
+      "published_hsv": [
+        333.0,
+        100.0,
+        100.0
+      ],
+      "rgb": [
+        255,
+        0,
+        115
+      ],
+      "hex": "#ff0073",
+      "primary_exemplar": true
+    },
+    {
+      "name": "Chinese Strawberry",
+      "published_hsv": [
+        333.0,
+        100.0,
+        65.0
+      ],
+      "rgb": [
+        166,
+        0,
+        75
+      ],
+      "hex": "#a6004b",
+      "primary_exemplar": false
+    },
+    {
+      "name": "Red Plum",
+      "published_hsv": [
+        333.0,
+        100.0,
+        44.0
+      ],
+      "rgb": [
+        112,
+        0,
+        51
+      ],
+      "hex": "#700033",
+      "primary_exemplar": false
+    }
+  ]
+}
