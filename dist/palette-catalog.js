@@ -1,5 +1,14 @@
 window.GAMUT_CATALOG=[
   {
+    "key": "okhwbStaggered1024",
+    "stem": "okhwb-staggered-1024",
+    "group": "OKHWB experiments",
+    "name": "OKHWB v2 \u00b7 staggered hues \u00b7 1024",
+    "count": 1024,
+    "description": "Version 2 keeps the regular 21-cell W/B triangle, 48 vivid anchors and 16 grays. Dot-count hue offsets interleave 576 hue angles across the 1,008 colored samples. The unchanged-hue cells follow the user\u2019s curved path; the other cells advance within each 7.5\u00b0 source sector. No perceptual pruning or fillers.",
+    "diagram": "okhwb-staggered.html"
+  },
+  {
     "key": "okhwbTriangle1024",
     "stem": "okhwb-triangle-1024",
     "group": "OKHWB experiments",
